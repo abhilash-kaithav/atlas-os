@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-03
+Last updated: 2026-08-04
 Status: Active
 
 ## Logging Rules
@@ -19,6 +19,8 @@ Status: Active
 | 2026-08-03 | D-004 | Do not change strategy without new evidence. | Direction changes should be justified by observed signals, not novelty. | Active | Ongoing |
 | 2026-08-03 | D-005 | Generate broadly, then cluster and validate before prioritizing. | Broad intake improves coverage; clustering and validation reduce noise. | Active | Monthly |
 | 2026-08-03 | D-006 | Record decisions and document revisions explicitly. | The repo must preserve operational memory independent of chat history. | Active | Ongoing |
+| 2026-08-03 | D-007 | Adopt a formal knowledge hierarchy with evidence thresholds and mandatory session closeout updates. | Separating observations, hypotheses, evidence, and principles preserves reasoning history and reduces premature certainty. | Active | Monthly |
+| 2026-08-04 | D-008 | Establish a permanent Atlas source-of-truth set before clustering work begins. | Atlas is transitioning from broad ideation into structured exploitation; charter, operating manual, constitution, roadmap, knowledge index, and opportunity-engine design reduce strategic drift and preserve working context. | Active | Monthly |
 
 ## Revision Notes
 

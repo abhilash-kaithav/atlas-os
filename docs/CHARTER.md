@@ -1,54 +1,63 @@
 # Charter
 
-Last updated: 2026-08-03
+Last updated: 2026-08-04
 Status: Active
 
 ## Mission
 
-Build and maintain a disciplined knowledge base for finding, validating, and acting on opportunities with clear revenue potential.
+Build Atlas as a disciplined operating system for discovering, classifying, validating, and acting on asymmetric opportunities with believable paths to durable value.
 
-## What Atlas OS Must Do
+## Success Definition
 
-1. Capture opportunities in a versioned system.
-2. Distinguish raw ideas from validated opportunities.
-3. Keep recommendations short, evidence-backed, and decision-ready.
-4. Make strategic changes traceable.
-5. Preserve historical reasoning through explicit decision records.
+Atlas succeeds when it can reliably do all of the following:
 
-## Operating Principles
+1. Preserve broad idea generation without losing strategic coherence.
+2. Convert raw ideas into clear primitives, clusters, and evidence-backed priorities.
+3. Keep recommendations concise, decision-ready, and explicitly tied to evidence.
+4. Surface believable wedges into large categories instead of collapsing into feature thinking.
+5. Let future sessions resume from the repository without reconstructing context from chat.
 
-1. Revenue first.
-2. Evidence over intuition when changing direction.
-3. Breadth before prioritization.
-4. Clustering before commitment.
-5. Versioned documents over chat-only memory.
+## Long-Term Vision
+
+Atlas should become a durable system for identifying new categories and high-leverage wedges before they are obvious. Over time, it should help us:
+
+- recognize recurring primitives across many ideas
+- distinguish transient excitement from compounding opportunity
+- identify categories that can become enduring platforms or institutions
+- move from idea abundance to evidence-backed selection without strategic drift
+
+The long-term goal is not to collect ideas. It is to create a repeatable capability for finding the rare opportunity families worth building.
+
+## Guiding Principles
+
+1. Evidence outranks opinion when direction changes are on the table.
+2. Atlas should reason from behaviors and primitives before products and features.
+3. Breadth comes first; convergence is earned through clustering and validation.
+4. Durable value matters more than novelty, excitement, or short-term elegance.
+5. Versioned documents are the memory layer; chat is not the source of truth.
+6. Every recommendation should preserve or increase future optionality when possible.
 
 ## In Scope
 
-- Opportunity intake and tracking
-- Research synthesis
-- Clustering and validation
-- Decision logging
-- Weekly operational review
+- Opportunity intake and idea inventory
+- Primitive and cluster design
+- Research synthesis and evidence collection
+- Validation planning and MVP wedge definition
+- Decision logging and operating-document maintenance
 
 ## Out of Scope
 
 - Unlogged strategy changes
-- Long-form speculative analysis without evidence
+- Feature brainstorming detached from category logic
+- Principles declared without evidence
 - Duplicate notes that bypass the source-of-truth documents
-
-## Success Criteria
-
-- The current top opportunities are visible in one place.
-- Every active recommendation has a revenue rationale.
-- Strategy changes can be traced to evidence and a logged decision.
-- Weekly work can resume from the repository without reconstructing context from chat.
 
 ## Governance
 
-- `docs/AI_OPERATING_MANUAL.md` defines how AI assistance behaves.
-- `docs/PLAYBOOK.md` defines the working cadence.
+- `docs/OPERATING_MANUAL.md` defines how Atlas work is performed.
+- `docs/ATLAS_CONSTITUTION.md` defines immutable operating rules.
 - `docs/DECISION_LOG.md` records durable decisions and revisions.
+- `roadmap/ROADMAP.md` records the active phase and near-term milestones.
 
 ## Amendment Rule
 
