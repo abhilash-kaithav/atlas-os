@@ -1,14 +1,14 @@
 # Atlas OS
 
-Atlas OS is the versioned operating system for evaluating, validating, and acting on revenue-relevant opportunities.
+Atlas OS is the versioned operating system for discovering, classifying, validating, and acting on asymmetric opportunities.
 
 ## Operating Priorities
 
-1. Revenue first.
-2. Recommendations stay concise.
-3. No thinking out loud in deliverables.
-4. No strategy changes without evidence.
-5. Generate broadly, then cluster and validate.
+1. Evidence before escalation.
+2. Behaviors before features.
+3. Categories before products.
+4. Best answer first, concise first.
+5. Generate broadly, then converge through clustering and validation.
 6. Record decisions and document changes explicitly.
 
 ## Repository Structure
@@ -18,9 +18,20 @@ atlas-os/
 ├── README.md
 ├── docs/
 │   ├── AI_OPERATING_MANUAL.md
+│   ├── ATLAS_CONSTITUTION.md
 │   ├── CHARTER.md
+│   ├── OPERATING_MANUAL.md
 │   ├── DECISION_LOG.md
 │   └── PLAYBOOK.md
+├── knowledge/
+│   ├── README.md
+│   ├── hypotheses/
+│   ├── observations/
+│   └── principles/
+├── roadmap/
+│   └── ROADMAP.md
+├── opportunity-engine/
+│   └── README.md
 ├── opportunities/
 │   ├── opportunity_db.csv
 │   ├── clusters.md
@@ -34,19 +45,23 @@ atlas-os/
 
 ## Default Workflow
 
-1. Capture raw ideas broadly in research notes or intake.
-2. Cluster related ideas before recommending action.
-3. Validate the strongest clusters with evidence.
-4. Recommend the next revenue-relevant move in a compact format.
-5. Update the decision log and any touched documents in the same pass.
+1. Capture ideas broadly before judging them.
+2. Translate recurring patterns into primitives, clusters, and hypotheses.
+3. Validate the strongest clusters with direct evidence and a believable wedge.
+4. Recommend the next highest-leverage move in a compact format.
+5. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
 
 ## Source of Truth
 
 - Mission, scope, and constraints: `docs/CHARTER.md`
-- AI operating rules: `docs/AI_OPERATING_MANUAL.md`
-- Execution rhythm: `docs/PLAYBOOK.md`
+- Operating rules and workflows: `docs/OPERATING_MANUAL.md`
+- Immutable rules: `docs/ATLAS_CONSTITUTION.md`
 - Decision history and version control: `docs/DECISION_LOG.md`
-- Opportunity pipeline: `opportunities/opportunity_db.csv`
+- Knowledge hierarchy: `knowledge/README.md`
+- Current phase and milestones: `roadmap/ROADMAP.md`
+- Opportunity system design: `opportunity-engine/README.md`
+
+`opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
 
 ## Document Control
 
