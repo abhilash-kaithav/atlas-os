@@ -1,6 +1,6 @@
 # Operating Manual
 
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 Status: Active
 
 ## Purpose
@@ -29,6 +29,29 @@ Do not escalate from idea to principle, or from interesting pattern to strategy,
 5. Prefer direct market, customer, usage, or operating evidence over abstract opinion.
 6. Record contradicting evidence with the same visibility as supporting evidence.
 7. When evidence is thin, recommend a validation step instead of a strategic rewrite.
+
+## Concept Schema Standard
+
+Atlas concept records must use `schemas/concept-schema.md` as the canonical schema.
+
+Every concept that enters structured analysis, comparative review, clustering, research, validation, or the representative 100-concept pilot must conform to the eight required fields in Concept Schema v1.0:
+
+1. Concept
+2. Primitive
+3. Job
+4. Customer
+5. Value Mechanism
+6. Initial Wedge
+7. Confidence
+8. Evidence
+
+Apply these operating rules:
+
+1. Raw capture may start as loose notes, but promotion into the working concept set requires the full schema.
+2. One concept record should describe one concept only.
+3. If the primitive, job, customer, or wedge is unclear, do not force clustering yet; clarify the record first.
+4. Confidence must reflect the evidence shown, not the attractiveness of the idea.
+5. The schema is mandatory for the representative 100-concept pilot and may not drift during that pilot without a new decision and schema version.
 
 ## Response Guidelines
 
@@ -66,12 +89,13 @@ Keep these stages separate. Early conviction is not evidence.
 Every Atlas session should follow this loop:
 
 1. Orient on the current repository state, roadmap, and recent decisions.
-2. Capture or review new ideas, research, or evidence.
+2. Capture or review new raw concepts, research, or evidence.
 3. Update observations, hypotheses, or principles when thresholds are met.
-4. Update opportunity structures, clusters, or validation notes as needed.
-5. Produce the best-answer-first recommendation.
-6. Update touched source-of-truth documents in the same session.
-7. Log any material decision or strategic change before closing.
+4. Normalize active concepts into the canonical concept schema before clustering or comparison work.
+5. Update opportunity structures, clusters, or validation notes as needed.
+6. Produce the best-answer-first recommendation.
+7. Update touched source-of-truth documents in the same session.
+8. Log any material decision or strategic change before closing.
 
 ## Session Closeout Standard
 
