@@ -1,72 +1,70 @@
 # Opportunity Engine
 
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 Status: Active design document
 
 ## Purpose
 
-The opportunity engine is the operating core of Atlas. It is where broad idea generation becomes structured opportunity discovery, comparison, validation, and eventual MVP selection.
+The opportunity engine is the operating core of Atlas. It is where broad concept generation becomes structured opportunity discovery, comparison, validation, and eventual venture selection.
 
 ## What It Must Hold
 
 The opportunity engine should preserve:
 
-1. Raw ideas
-2. Fusion ideas
+1. Raw concepts
+2. Concept schema records
 3. Primitives
-4. Clusters or opportunity families
+4. Opportunity families
 5. Scores
 6. Research
 7. Validation work
-8. MVP tracking
+8. Ventures
 
 ## Recommended Structure
 
 ```text
 opportunity-engine/
 ├── README.md
-├── ideas/
-├── fusion-ideas/
+├── raw-concepts/
+├── concept-records/
 ├── primitives/
-├── clusters/
+├── opportunity-families/
 ├── scoring/
 ├── research/
 ├── validation/
-└── mvp-tracking/
+└── ventures/
 ```
 
 ## Object Definitions
 
-### Ideas
+### Raw Concepts
 
-Raw ideas are the broad search layer.
+Raw concepts are the broad search layer.
 
-Each idea record should eventually capture:
+They may begin as loose captures, but they are not ready for structured comparison until they are normalized into the official concept schema.
 
-- idea ID
-- title
-- source or batch
-- short description
-- candidate primitive
-- candidate cluster
-- wedge hypothesis
-- current status
+### Concept Schema Records
 
-### Fusion Ideas
+Every structured concept record must use `../schemas/concept-schema.md`.
 
-Fusion ideas combine multiple patterns or mechanisms into a potential new category.
+Each concept schema record must contain exactly these eight fields:
 
-Each fusion record should capture:
+- Concept
+- Primitive
+- Job
+- Customer
+- Value Mechanism
+- Initial Wedge
+- Confidence
+- Evidence
 
-- parent ideas or patterns
-- reason the combination matters
-- candidate category
-- believable beachhead
-- platform expansion path
+This is the mandatory format for clustering, family formation, research, validation, and the representative 100-concept pilot.
+
+Fusion concepts can still be explored, but they should be captured as raw concepts first and promoted only after they fit the schema cleanly.
 
 ### Primitives
 
-Primitives are the irreducible capabilities beneath ideas.
+Primitives are the irreducible capabilities beneath concepts.
 
 Each primitive record should capture:
 
@@ -74,19 +72,19 @@ Each primitive record should capture:
 - name
 - definition
 - sanity-check question
-- representative ideas
+- representative concepts
 
-### Clusters
+### Opportunity Families
 
-Clusters are the strategic themes Atlas will compare and rank.
+Opportunity families are the strategic themes Atlas will compare and rank.
 
-Each cluster should capture:
+Each opportunity family should capture:
 
-- cluster ID
+- family ID
 - title
 - underlying value engine
 - related primitives
-- related ideas
+- related concept records
 - revenue thesis
 - evidence summary
 - evidence gaps
@@ -94,7 +92,7 @@ Each cluster should capture:
 
 ### Scoring
 
-Scoring should happen at the cluster level by default.
+Scoring should happen at the opportunity-family level by default.
 
 The default rubric should include:
 
@@ -139,11 +137,11 @@ Each validation record should capture:
 - result
 - decision implied by the result
 
-### MVP Tracking
+### Ventures
 
-MVP tracking keeps large visions grounded in a believable first wedge.
+Ventures keep larger visions grounded in a believable first wedge and a concrete build path.
 
-Each MVP record should capture:
+Each venture record should capture:
 
 - target user
 - wedge problem
@@ -156,15 +154,13 @@ Each MVP record should capture:
 
 The default flow is:
 
-1. Idea capture
-2. Fusion and pattern synthesis
-3. Primitive assignment
-4. Cluster formation
-5. Cluster scoring
-6. Research
-7. Validation
-8. MVP selection and tracking
+1. Raw Concept
+2. Concept Schema
+3. Opportunity Family
+4. Research
+5. Validation
+6. Venture
 
 ## Current Repository Note
 
-`opportunities/` remains the live working inventory today. This directory defines the fuller structure Atlas should grow into as the engine becomes more formal.
+`opportunities/` remains the live working inventory today. As Atlas formalizes the engine, active opportunity records should be normalized into the official concept schema before family-level analysis.
