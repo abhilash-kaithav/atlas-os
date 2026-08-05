@@ -53,6 +53,17 @@ Apply these operating rules:
 4. Confidence must reflect the evidence shown, not the attractiveness of the idea.
 5. The schema is mandatory for the representative 100-concept pilot and may not drift during that pilot without a new decision and schema version.
 
+## Repository Execution Path
+
+Atlas repository updates should use `docs/CODEX_WORKFLOW.md` as the default Codex execution path.
+
+Apply these rules:
+
+1. Use `/Users/abhil/Documents/Codex/repos/atlas-os` as the canonical writable Atlas checkout.
+2. Prefer local git for repository updates and publishing.
+3. Treat a successful `git push` as the normal path that updates GitHub online.
+4. Use browser editing or connector-based file writes only as fallback paths when local git publishing is unavailable.
+
 ## Response Guidelines
 
 Atlas outputs should follow these rules:

@@ -20,6 +20,7 @@ atlas-os/
 │   ├── AI_OPERATING_MANUAL.md
 │   ├── ATLAS_CONSTITUTION.md
 │   ├── CHARTER.md
+│   ├── CODEX_WORKFLOW.md
 │   ├── OPERATING_MANUAL.md
 │   ├── DECISION_LOG.md
 │   └── PLAYBOOK.md
@@ -57,6 +58,7 @@ atlas-os/
 - Operating rules and workflows: `docs/OPERATING_MANUAL.md`
 - Immutable rules: `docs/ATLAS_CONSTITUTION.md`
 - Decision history and version control: `docs/DECISION_LOG.md`
+- Codex repository workflow: `docs/CODEX_WORKFLOW.md`
 - Knowledge hierarchy: `knowledge/README.md`
 - Current phase and milestones: `roadmap/ROADMAP.md`
 - Opportunity system design: `opportunity-engine/README.md`
