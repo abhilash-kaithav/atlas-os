@@ -1,0 +1,21 @@
+task_id: TASK-000
+title: "<task title>"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: YYYY-MM-DD
+updated_on: YYYY-MM-DD
+source_task: "atlas/tasks/TASK-000.yaml"
+summary: "<short execution summary>"
+completed_work:
+  - "<workstream or outcome>"
+deliverables:
+  - "<artifact created or updated>"
+files_changed:
+  - "<repository path>"
+validation:
+  - "<check, review, or evidence used>"
+open_issues:
+  - "<open issue or None>"
+follow_up:
+  - "<recommended next action>"
+review_artifact: "atlas/reviews/TASK-000.md"

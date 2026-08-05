@@ -35,7 +35,7 @@ The long-term goal is not merely to collect ideas. It is to preserve the concept
 3. Atlas should reason from behaviors and primitives before products and features.
 4. Breadth comes first; convergence is earned through clustering and validation.
 5. Durable value matters more than novelty, excitement, or short-term elegance.
-6. Versioned documents are the memory layer; chat is not the source of truth.
+6. Atlas follows a repository-first operating model: Git and repository artifacts are the authoritative source of truth for tasks, results, reviews, and project state; chat provides reasoning and direction, not durable memory.
 7. Every recommendation should preserve or increase future optionality when possible.
 
 ## In Scope
@@ -58,6 +58,7 @@ The long-term goal is not merely to collect ideas. It is to preserve the concept
 - `docs/OPERATING_MANUAL.md` defines how Atlas work is performed.
 - `docs/ATLAS_CONSTITUTION.md` defines immutable operating rules.
 - `docs/DECISION_LOG.md` records durable decisions and revisions.
+- `atlas/STATE.md`, `atlas/TASK.md`, `atlas/RESULT.md`, and `atlas/REVIEW.md` track the active operating state and task loop.
 - `roadmap/ROADMAP.md` records the active phase and near-term milestones.
 
 ## Amendment Rule

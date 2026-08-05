@@ -64,6 +64,32 @@ Apply these rules:
 3. Treat a successful `git push` as the normal path that updates GitHub online.
 4. Use browser editing or connector-based file writes only as fallback paths when local git publishing is unavailable.
 
+## Atlas Operating Model v1.0
+
+Atlas follows a repository-first operating model. Git is the authoritative source of truth for active state, tasking, execution results, and review decisions.
+
+### Artifact Ownership
+
+- Chat owns `atlas/TASK.md`, `atlas/tasks/TASK-xxx.yaml`, `atlas/REVIEW.md`, and `atlas/reviews/TASK-xxx.md`.
+- Work owns `atlas/RESULT.md` and `atlas/results/TASK-xxx.yaml`.
+- Shared owns `atlas/STATE.md`.
+
+### Lifecycle
+
+`Draft -> In Progress -> Completed -> Approved/Rejected`
+
+Apply these rules:
+
+1. Create or update the task artifacts before execution starts.
+2. Move the task to `In Progress` only when Work is actively executing it.
+3. Record the result artifacts when execution reaches `Completed`.
+4. Close the loop only after Chat records `Approved` or `Rejected`.
+
+### Task Identity
+
+- Use `TASK-001`, `TASK-002`, `TASK-003`, and so on.
+- Reuse the same task ID across task, result, and review artifacts for traceability.
+
 ## Response Guidelines
 
 Atlas outputs should follow these rules:
@@ -100,13 +126,16 @@ Keep these stages separate. Early conviction is not evidence.
 Every Atlas session should follow this loop:
 
 1. Orient on the current repository state, roadmap, and recent decisions.
-2. Capture or review new raw concepts, research, or evidence.
-3. Update observations, hypotheses, or principles when thresholds are met.
-4. Normalize active concepts into the canonical concept schema before clustering or comparison work.
-5. Update opportunity structures, clusters, or validation notes as needed.
-6. Produce the best-answer-first recommendation.
-7. Update touched source-of-truth documents in the same session.
-8. Log any material decision or strategic change before closing.
+2. Define or refresh the active task in `atlas/TASK.md` and `atlas/tasks/TASK-xxx.yaml`.
+3. Capture or review new raw concepts, research, or evidence.
+4. Update observations, hypotheses, or principles when thresholds are met.
+5. Normalize active concepts into the canonical concept schema before clustering or comparison work.
+6. Update opportunity structures, clusters, or validation notes as needed.
+7. Record execution output in `atlas/RESULT.md` and `atlas/results/TASK-xxx.yaml` when work completes.
+8. Produce the best-answer-first recommendation.
+9. Review the result in `atlas/REVIEW.md` and `atlas/reviews/TASK-xxx.md`.
+10. Update touched source-of-truth documents in the same session, including `atlas/STATE.md` when state changes.
+11. Log any material decision or strategic change before closing.
 
 ## Session Closeout Standard
 
