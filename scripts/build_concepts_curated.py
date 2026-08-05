@@ -38,16 +38,7 @@ CURATED_COLUMNS = [
     "Original Wording",
 ]
 
-RECURRING_PRIMITIVES = {
-    "Decision Draft",
-    "Learning Loop",
-    "Trust Trial",
-    "Opportunity Queue",
-    "Compounding Loop",
-    "Discovery Engine",
-}
-
-PRIMITIVE_RULES = [
+ARCHETYPE_RULES = [
     ("Negotiation Agent", ["negotiat", "procurement", "vendor contract", "vendor renewal", "commercial agreement"]),
     ("Trust Trial", ["trust", "credential", "reputation", "verify", "verification", "trial"]),
     ("Learning Loop", ["learning", "coach", "tutor", "companion", "skills", "practice", "feedback"]),
@@ -63,7 +54,7 @@ PRIMITIVE_RULES = [
     ("Workflow Orchestration", ["workflow", "operating system", "operating layer", "chief of staff", "navigator", "concierge", "manager", "planner", "coordinator", "coordinates", "orchestr"]),
 ]
 
-TITLE_PRIMITIVE_OVERRIDES = {
+TITLE_ARCHETYPE_OVERRIDES = {
     "decision drafts": "Decision Draft",
     "learning loops": "Learning Loop",
     "trust trials": "Trust Trial",
@@ -85,6 +76,59 @@ TITLE_PRIMITIVE_OVERRIDES = {
     "prediction corporations": "Prediction Engine",
 }
 
+ARCHETYPE_TO_PRIMITIVE = {
+    "Decision Draft": "Optimize",
+    "Learning Loop": "Learn",
+    "Trust Trial": "Verify",
+    "Opportunity Queue": "Optimize",
+    "Compounding Loop": "Compound",
+    "Discovery Engine": "Discover",
+    "Memory Layer": "Remember",
+    "Simulation Twin": "Simulate",
+    "Measurement Index": "Verify",
+    "Prediction Engine": "Predict",
+    "Exchange Network": "Match",
+    "Workflow Orchestration": "Coordinate",
+    "Negotiation Agent": "Optimize",
+}
+
+CONTROLLED_PRIMITIVE_ORDER = (
+    "Discover",
+    "Predict",
+    "Verify",
+    "Coordinate",
+    "Compound",
+    "Remember",
+    "Adapt",
+    "Create",
+    "Simulate",
+    "Optimize",
+    "Match",
+    "Learn",
+)
+
+CONTROLLED_PRIMITIVE_RULES = [
+    ("Predict", ["predict", "prediction", "forecast", "forecasting", "anticipat", "early warning", "probabil", "risk engine"]),
+    ("Simulate", ["simulation", "simulator", "twin", "scenario", "what-if"]),
+    ("Remember", ["memory", "knowledge", "archive", "brain", "documentation", "history", "context"]),
+    ("Learn", ["learn", "coach", "tutor", "feedback", "practice", "training", "onboarding", "curriculum"]),
+    ("Match", ["marketplace", "exchange", "network", "match", "pair", "league"]),
+    ("Verify", ["verify", "validation", "validate", "credential", "trust", "proof", "quality", "inspect", "audit", "benchmark", "measure", "readiness", "detector", "compliance"]),
+    ("Discover", ["discover", "discovery", "research", "exploration", "explore", "breakthrough", "opportunity", "possibility"]),
+    ("Adapt", ["adapt", "adaptive", "resilien", "evolv", "dynamic", "reconfig", "respond", "retires obsolete", "promotes emerging"]),
+    ("Create", ["creator", "content", "author", "writer", "generator", "composer", "design", "publish", "licensing", "royalties", "builder", "studio"]),
+    ("Compound", ["compound", "compounding", "flywheel", "cumulative"]),
+    ("Coordinate", ["workflow", "orchestr", "coordinate", "scheduling", "scheduler", "dispatch", "chief of staff", "concierge", "operating system", "operating layer", "handoff", "automation"]),
+    ("Optimize", ["optimiz", "decision", "recommend", "priorit", "next best", "negotiat", "pricing", "allocation", "root-cause", "roadmap"]),
+]
+
+DIRECT_EVIDENCE_VALUES = {
+    "Interview Evidence",
+    "Customer Voice",
+    "Behavioral Data",
+    "Revenue Evidence",
+}
+
 
 @dataclass(frozen=True)
 class DomainProfile:
@@ -99,121 +143,121 @@ DOMAIN_PROFILES = [
     DomainProfile(
         "product",
         ("product manager", "roadmap", "jira", "support ticket", "customer call", "product team"),
-        "Product managers and product leaders",
-        "product planning and roadmap execution",
-        "Product teams already coordinating work across Jira, Slack, analytics, support, and customer feedback",
+        "Product manager",
+        "roadmap decisions",
+        "Mid-market SaaS product teams triaging weekly roadmap tradeoffs across Jira, support, and usage analytics.",
     ),
     DomainProfile(
         "org-ops",
         ("company", "enterprise", "organiz", "executive", "ceo", "board", "operating manual", "decision"),
-        "Executives and operating leaders",
-        "organizational operations and strategic choices",
-        "Mid-market teams whose operating context is fragmented across meetings, chat, docs, and dashboards",
+        "Operations executive",
+        "operating decisions",
+        "Mid-market leadership teams reconciling decisions across meetings, chat, docs, and dashboards.",
     ),
     DomainProfile(
         "workflow",
         ("workflow", "automation", "sop", "process", "back office", "operations", "chief of staff"),
-        "Operations teams and functional operators",
-        "repeatable workflows and operating processes",
-        "Teams running high-friction, multi-step workflows without reliable automation coverage",
+        "Operations manager",
+        "workflow execution",
+        "Back-office teams running repetitive approvals, service handoffs, or exception workflows across disconnected tools.",
     ),
     DomainProfile(
         "gtm",
         ("customer", "sales", "revenue", "support", "renewal", "interview", "go-to-market", "account"),
-        "Go-to-market, support, and research teams",
-        "customer-facing workflows and account decisions",
-        "Revenue and support teams handling recurring customer research, service, or renewal work",
+        "Revenue operations leader",
+        "account decisions",
+        "Customer-facing teams consolidating calls, tickets, and account signals before weekly decisions.",
     ),
     DomainProfile(
         "finance-legal",
         ("finance", "procurement", "vendor", "contract", "legal", "accounting", "wealth", "tax", "audit"),
-        "Finance, procurement, and legal operators",
-        "financial, commercial, and compliance work",
-        "Teams managing recurring contracts, renewals, compliance work, or high-stakes financial workflows",
+        "Procurement leader",
+        "commercial decisions",
+        "Procurement and finance teams handling recurring vendor renewals, contract reviews, or compliance packets.",
     ),
     DomainProfile(
         "talent-learning",
         ("recruit", "talent", "hr", "hiring", "employee", "learning", "school", "student", "teacher"),
-        "People teams, educators, and learners",
-        "learning and talent development",
-        "Organizations or households already investing time in recruiting, onboarding, or learning support",
+        "Learning and development leader",
+        "skill development",
+        "Teams running onboarding, recruiting, or coaching programs with limited manager bandwidth.",
     ),
     DomainProfile(
         "family-home",
         ("family", "home", "household", "calendar", "travel", "bill", "chore", "parent"),
-        "Busy households and family coordinators",
-        "household logistics and family coordination",
-        "Dual-income or high-coordination households juggling calendars, school, travel, finances, and home tasks",
+        "Parent",
+        "household coordination",
+        "Dual-income households coordinating calendars, school logistics, finances, and home tasks.",
     ),
     DomainProfile(
         "health-care",
-        ("health", "care", "patient", "clinic", "medical", "medication", "caregiver", "senior", "aging"),
-        "Care teams, patients, and family caregivers",
-        "care coordination and health management",
-        "Care settings where appointments, medications, follow-ups, and family communication regularly break down",
+        ("health", "patient", "clinic", "medical", "medication", "caregiver", "senior", "aging", "hospital", "nurse", "doctor"),
+        "Care coordinator",
+        "care coordination",
+        "Care teams managing appointments, medications, follow-ups, and family communication across settings.",
     ),
     DomainProfile(
         "ops-infra",
         ("supply chain", "logistics", "warehouse", "quality", "manufacturing", "factory", "rail", "port", "water"),
-        "Operations, logistics, and infrastructure leaders",
-        "industrial operations and infrastructure workflows",
-        "Operators managing physical systems with high coordination cost, downtime risk, or defect pressure",
+        "Operations manager",
+        "physical operations",
+        "Operators managing plants, fleets, or infrastructure with manual exception handling.",
     ),
     DomainProfile(
         "science",
-        ("science", "scientific", "research", "lab", "materials", "experiment", "discovery", "patent"),
-        "Research teams, labs, and discovery organizations",
-        "scientific discovery and R&D execution",
-        "Research organizations trying to shorten the gap between discovery, validation, and commercialization",
+        ("science", "scientific", "research", "lab", "materials", "hypothesis", "patent", "commercialization"),
+        "R&D leader",
+        "research programs",
+        "Applied research teams moving experiments from hypothesis to validation with fragmented evidence trails.",
     ),
     DomainProfile(
         "climate-energy",
         ("climate", "energy", "grid", "urban", "city", "infrastructure", "migration", "resilience"),
-        "Public-sector, climate, and infrastructure planners",
-        "climate adaptation and infrastructure planning",
-        "Cities, utilities, and infrastructure owners facing rising volatility and capital-allocation pressure",
+        "Infrastructure planner",
+        "adaptation planning",
+        "Cities, utilities, or asset owners planning capital decisions under climate or grid volatility.",
     ),
     DomainProfile(
         "creator-ip",
         ("creator", "content", "media", "course", "book", "patent", "intellectual property", "ip"),
-        "Creators and IP-heavy teams",
-        "content creation and intellectual-property development",
-        "Teams whose most valuable assets are created repeatedly but captured inconsistently today",
+        "Creator",
+        "content production",
+        "Creators or expert-led teams turning repeated knowledge work into reusable content or IP.",
     ),
     DomainProfile(
         "founder-investor",
         ("founder", "startup", "venture", "entrepreneur", "investor", "acquisition", "vc"),
-        "Founders, operators, and investors",
-        "venture creation and capital-allocation decisions",
-        "Founder-led teams or investment groups making repeated opportunity, diligence, or company-building decisions",
+        "Founder",
+        "venture decisions",
+        "Founder-led teams or early-stage investors evaluating repeated opportunities with lean analyst support.",
     ),
     DomainProfile(
         "social-community",
         ("community", "social", "relationship", "belonging", "contribution", "conversation", "network"),
-        "Communities, network builders, and socially active individuals",
-        "community behavior and relationship formation",
-        "Groups where repeated participation and contribution determine whether the system gets stronger over time",
+        "Community manager",
+        "community participation",
+        "Communities where retention depends on repeated contribution, matching, and moderation.",
     ),
     DomainProfile(
         "personal-growth",
         ("cognitive", "memory", "identity", "meaning", "play", "thinking", "reasoning", "opinion", "self", "possibility", "listening", "understand", "future self"),
-        "Individuals improving how they think, learn, and act",
-        "personal cognition and self-development",
-        "People already using reflective, learning, or self-improvement tools but lacking compounding support",
+        "Individual professional",
+        "personal development",
+        "Self-directed professionals already using journals, notes, or coaching tools without continuity between sessions.",
     ),
     DomainProfile(
         "robotics",
         ("robot", "robotics", "autonomous vehicle", "physical workforce", "microgravity", "manufacturing scheduler"),
-        "Operators deploying physical automation",
-        "physical capability deployment and automation planning",
-        "Teams integrating physical automation where labor shortages or scheduling complexity already justify new systems",
+        "Automation operations leader",
+        "automation deployment",
+        "Operations teams deploying physical automation in labor-constrained environments.",
     ),
     DomainProfile(
         "institutions",
         ("institution", "country", "nation", "civilization", "society", "government", "public", "future", "futures", "possibility", "progress"),
-        "Institutional and public-sector leaders",
-        "institutional adaptation and societal coordination",
-        "Institutions facing long-horizon adaptation problems that current quarterly systems handle poorly",
+        "Public sector strategist",
+        "public coordination",
+        "Policy and strategy teams working on multi-year public coordination problems.",
     ),
 ]
 
@@ -375,6 +419,20 @@ def ensure_period(text: str) -> str:
     return text
 
 
+PROFILE_SUBSTRING_KEYWORDS = {
+    "organiz",
+    "resilience",
+}
+
+
+def profile_keyword_match(keyword: str, haystack: str) -> bool:
+    if keyword in PROFILE_SUBSTRING_KEYWORDS:
+        return keyword in haystack
+    if " " in keyword:
+        return keyword in haystack
+    return re.search(rf"\b{re.escape(keyword)}\b", haystack) is not None
+
+
 def infer_profile(title: str, description: str, wording: str, track: str) -> DomainProfile:
     haystack = f"{title} {description} {wording}".lower()
     if track == "Behavior":
@@ -385,7 +443,7 @@ def infer_profile(title: str, description: str, wording: str, track: str) -> Dom
         best = next(profile for profile in DOMAIN_PROFILES if profile.name == "org-ops")
     best_score = 0
     for profile in DOMAIN_PROFILES:
-        score = sum(1 for keyword in profile.keywords if keyword in haystack)
+        score = sum(1 for keyword in profile.keywords if profile_keyword_match(keyword, haystack))
         if score > best_score:
             best = profile
             best_score = score
@@ -401,26 +459,162 @@ def extract_customer_from_title(title: str) -> str | None:
     return None
 
 
-def infer_customer(title: str, sections: dict[str, list[str]], profile: DomainProfile) -> tuple[str, bool]:
+def normalize_explicit_customer(customer: str) -> tuple[str | None, bool]:
+    candidate = clean_line(customer).rstrip(".")
+    lower = candidate.lower()
+    if not candidate:
+        return None, False
+    if any(separator in lower for separator in (",", " and ", "/", ";")):
+        return None, True
+
+    rules = [
+        (r"product manager", "Product manager"),
+        (r"product leader|head of product|vp product", "Product leader"),
+        (r"chief of staff", "Chief of staff"),
+        (r"executive|ceo|founder mode", "Operations executive"),
+        (r"operations", "Operations manager"),
+        (r"customer success", "Customer success manager"),
+        (r"support", "Support leader"),
+        (r"user research|researcher", "User researcher"),
+        (r"sales|revenue", "Revenue operations leader"),
+        (r"procurement|vendor", "Procurement leader"),
+        (r"legal|compliance|law firm", "Legal operations leader"),
+        (r"finance|accounting|wealth|tax", "Finance manager"),
+        (r"recruit", "Recruiter"),
+        (r"teacher|educator|professor", "Educator"),
+        (r"student|learner", "Learner"),
+        (r"learning|training|onboarding|coach", "Learning and development leader"),
+        (r"parent|family|household", "Parent"),
+        (r"patient", "Patient"),
+        (r"caregiver", "Family caregiver"),
+        (r"care|clinic|medical|hospital|nurse|doctor", "Care coordinator"),
+        (r"quality", "Quality manager"),
+        (r"supply chain|logistics|warehouse", "Supply chain manager"),
+        (r"manufacturing|factory|plant", "Plant manager"),
+        (r"rail|port|water|infrastructure", "Infrastructure operator"),
+        (r"scientist|lab|research", "Research scientist"),
+        (r"city planner|urban planner", "City planner"),
+        (r"utility", "Utility planner"),
+        (r"creator|author|youtuber|consultant", "Creator"),
+        (r"investor|vc|private equity|hedge fund", "Investor"),
+        (r"founder|entrepreneur", "Founder"),
+        (r"community", "Community manager"),
+        (r"individual|professional", "Individual professional"),
+        (r"robot|automation", "Automation operations leader"),
+        (r"government|public", "Public sector strategist"),
+    ]
+    for pattern, normalized in rules:
+        if re.search(pattern, lower):
+            return normalized, False
+    return None, False
+
+
+def infer_customer_from_keywords(profile: DomainProfile, haystack: str) -> str:
+    if profile.name == "product":
+        if re.search(r"head of product|vp product|product leader", haystack):
+            return "Product leader"
+        return "Product manager"
+    if profile.name == "org-ops":
+        if re.search(r"chief of staff", haystack):
+            return "Chief of staff"
+        return "Operations executive"
+    if profile.name == "workflow":
+        return "Operations manager"
+    if profile.name == "gtm":
+        if re.search(r"user research|customer interview|interview synthesis", haystack):
+            return "User researcher"
+        if re.search(r"support ticket|support\b|help desk|service desk", haystack):
+            return "Support leader"
+        if re.search(r"customer success|renewal|account\b", haystack):
+            return "Customer success manager"
+        return "Revenue operations leader"
+    if profile.name == "finance-legal":
+        if re.search(r"legal|compliance|law firm|evidence collection", haystack):
+            return "Legal operations leader"
+        if re.search(r"finance|accounting|wealth|tax|bookkeeping", haystack):
+            return "Finance manager"
+        return "Procurement leader"
+    if profile.name == "talent-learning":
+        if re.search(r"teacher|educator|classroom|school|professor", haystack):
+            return "Educator"
+        if re.search(r"student|learner", haystack):
+            return "Learner"
+        if re.search(r"recruit|hiring|talent acquisition", haystack):
+            return "Recruiter"
+        return "Learning and development leader"
+    if profile.name == "family-home":
+        return "Parent"
+    if profile.name == "health-care":
+        if re.search(r"family caregiver|caregiver", haystack):
+            return "Family caregiver"
+        if re.search(r"patient\b", haystack):
+            return "Patient"
+        return "Care coordinator"
+    if profile.name == "ops-infra":
+        if re.search(r"quality|defect|inspection", haystack):
+            return "Quality manager"
+        if re.search(r"supply chain|logistics|warehouse", haystack):
+            return "Supply chain manager"
+        if re.search(r"manufacturing|factory|plant", haystack):
+            return "Plant manager"
+        if re.search(r"rail|port|water|utility asset|infrastructure operator", haystack):
+            return "Infrastructure operator"
+        return "Operations manager"
+    if profile.name == "science":
+        if re.search(r"scientist|lab|experiment", haystack):
+            return "Research scientist"
+        return "R&D leader"
+    if profile.name == "climate-energy":
+        if re.search(r"city|urban", haystack):
+            return "City planner"
+        if re.search(r"grid|utility|energy", haystack):
+            return "Utility planner"
+        return "Infrastructure planner"
+    if profile.name == "creator-ip":
+        return "Creator"
+    if profile.name == "founder-investor":
+        if re.search(r"investor|vc|private equity|hedge fund", haystack):
+            return "Investor"
+        return "Founder"
+    if profile.name == "social-community":
+        return "Community manager"
+    if profile.name == "personal-growth":
+        return "Individual professional"
+    if profile.name == "robotics":
+        return "Automation operations leader"
+    if profile.name == "institutions":
+        return "Public sector strategist"
+    return profile.customer
+
+
+def infer_customer(title: str, wording: str, sections: dict[str, list[str]], profile: DomainProfile) -> tuple[str, bool, bool]:
+    explicit_candidates: list[str] = []
     if sections.get("customer"):
-        customer = trim_sentence(" ".join(sections["customer"][:2]), limit=120)
-        return customer.rstrip("."), False
+        explicit_candidates.append(trim_sentence(" ".join(sections["customer"][:2]), limit=120))
 
     title_customer = extract_customer_from_title(title)
     if title_customer:
-        return title_customer, True
+        explicit_candidates.append(title_customer)
 
-    return profile.customer, True
+    mixed_source = False
+    for candidate in explicit_candidates:
+        normalized, mixed = normalize_explicit_customer(candidate)
+        mixed_source = mixed_source or mixed
+        if normalized:
+            return normalized, False, mixed_source
+
+    haystack = f"{title} {wording}".lower()
+    return infer_customer_from_keywords(profile, haystack), True, mixed_source
 
 
-def infer_primitive(title: str, description: str, wording: str, track: str) -> tuple[str, bool]:
+def infer_archetype(title: str, description: str, wording: str, track: str) -> tuple[str, bool]:
     title_key = normalize_label(title)
-    if title_key in TITLE_PRIMITIVE_OVERRIDES:
-        return TITLE_PRIMITIVE_OVERRIDES[title_key], False
+    if title_key in TITLE_ARCHETYPE_OVERRIDES:
+        return TITLE_ARCHETYPE_OVERRIDES[title_key], False
 
     haystack = f"{title} {description} {wording}".lower()
     scored: list[tuple[int, str]] = []
-    for primitive, keywords in PRIMITIVE_RULES:
+    for primitive, keywords in ARCHETYPE_RULES:
         score = sum(1 for keyword in keywords if keyword in haystack)
         if score:
             scored.append((score, primitive))
@@ -442,14 +636,80 @@ def infer_primitive(title: str, description: str, wording: str, track: str) -> t
     return "Workflow Orchestration", True
 
 
-def infer_evidence(wording: str, primitive: str, track: str) -> str:
+def infer_primitive(title: str, description: str, wording: str, track: str) -> tuple[str, bool]:
+    archetype, archetype_uncertain = infer_archetype(title, description, wording, track)
+    haystack = f"{title} {description} {wording}".lower()
+    title_lower = title.lower()
+    scores: Counter[str] = Counter()
+    scores[ARCHETYPE_TO_PRIMITIVE[archetype]] += 3
+
+    for primitive, keywords in CONTROLLED_PRIMITIVE_RULES:
+        for keyword in keywords:
+            if keyword in haystack:
+                weight = 2 if keyword in title_lower else 1
+                scores[primitive] += weight * haystack.count(keyword)
+
+    if "quality inspector" in haystack or "defect detection" in haystack:
+        scores["Verify"] += 3
+    if "root-cause" in haystack and "quality" in haystack:
+        scores["Verify"] += 2
+    if "adaptive" in title_lower or "adaptation" in title_lower:
+        scores["Adapt"] += 4
+    if "valuable futures" in haystack or "possibility network" in haystack:
+        scores["Discover"] += 2
+    if "continuously optimizes" in haystack or "next highest-value" in haystack:
+        scores["Optimize"] += 2
+    if "adaptive knowledge" in haystack or "promotes emerging knowledge" in haystack:
+        scores["Adapt"] += 3
+    if track == "Behavior":
+        scores["Compound"] += 1
+        scores["Learn"] += 1
+    if track == "Fusion":
+        scores["Adapt"] += 1
+        scores["Discover"] += 1
+
+    ranked = sorted(
+        scores.items(),
+        key=lambda item: (-item[1], CONTROLLED_PRIMITIVE_ORDER.index(item[0])),
+    )
+    best_primitive = ranked[0][0]
+    best_score = ranked[0][1]
+    second_score = ranked[1][1] if len(ranked) > 1 else 0
+    uncertain = archetype_uncertain or best_score <= 3 or second_score >= best_score - 1
+    return best_primitive, uncertain
+
+
+def count_signal_lines(title: str, wording: str) -> int:
+    count = 0
+    for raw_line in wording.replace("\r\n", "\n").split("\n"):
+        if is_meta_line(raw_line, title):
+            continue
+        if clean_line(raw_line):
+            count += 1
+    return count
+
+
+def infer_evidence(title: str, wording: str, sections: dict[str, list[str]], description_fallback: bool) -> str:
     lower = wording.lower()
-    if primitive in RECURRING_PRIMITIVES:
-        return "Pattern"
-    if track in {"Behavior", "Fusion"}:
-        return "Pattern"
-    if any(marker in lower for marker in ("why now:", "collision:", "**problem**", "**current behavior**", "current behavior")):
-        return "Pattern"
+    signal_lines = count_signal_lines(title, wording)
+    has_sections = bool(sections)
+
+    if re.search(r"\b(arr|mrr|gmv|revenue|royalties|pricing experiment|retention|conversion|margin)\b", lower):
+        return "Revenue Evidence"
+    if re.search(r"\b(from|based on|trained from|using)\s+(real interactions|usage data|telemetry|sensor data|logs?)\b", lower):
+        return "Behavioral Data"
+    if re.search(r"\b(from|based on|after)\s+interviews?\b", lower) or re.search(r"\binterviews?\s+(show|revealed|suggest)\b", lower):
+        return "Interview Evidence"
+    if re.search(r"customer complaint|customers say|users say|customer quote|support complaint", lower):
+        return "Customer Voice"
+    if re.search(r"\b(study|report|paper|benchmark|survey|patent|academic)\b", lower) or "memcite" in wording:
+        return "Secondary Research"
+    if has_sections or any(marker in lower for marker in ("why now:", "collision:", "current behavior", "new behavior", "top 3", "candidate observation")):
+        return "Pattern Evidence"
+    if description_fallback:
+        return "None"
+    if signal_lines >= 3:
+        return "Pattern Evidence"
     return "Intuition"
 
 
@@ -460,106 +720,182 @@ def count_stars(wording: str) -> int | None:
     return match.group(1).count("⭐")
 
 
-def infer_confidence(wording: str, primitive: str, description_fallback: bool, track: str) -> int:
+def infer_confidence(
+    title: str,
+    wording: str,
+    why_now: str,
+    evidence: str,
+    description_fallback: bool,
+    primitive_uncertain: bool,
+    customer_inferred: bool,
+    wedge_review: bool,
+    track: str,
+) -> int:
     lower = wording.lower()
     stars = count_stars(wording)
+    signal_lines = count_signal_lines(title, wording)
+    score = 3
+
     if stars is not None:
-        score = max(3, min(5, stars))
-    else:
-        score = 3
+        if stars >= 4:
+            score += 1
+        elif stars <= 2:
+            score -= 1
 
+    if why_now != UNKNOWN:
+        score += 1
+    if evidence in DIRECT_EVIDENCE_VALUES or evidence == "Secondary Research":
+        score += 1
     if "my favorite idea of the entire exercise" in lower:
-        score = 5
+        score += 1
     elif "my favorite" in lower or "favorite of the" in lower or "top 3" in lower:
-        score = max(score, 4)
+        score += 1
 
-    if primitive in RECURRING_PRIMITIVES and track == "Behavior":
-        score = max(score, 4)
+    if description_fallback or signal_lines <= 1:
+        score -= 1
+    if primitive_uncertain:
+        score -= 1
+    if track == "Fusion" or any(marker in lower for marker in ("civilization", "society layer", "not a product")):
+        score -= 1
 
-    if "civilization" in lower or "society layer" in lower:
-        score = min(score, 4)
-
-    if description_fallback:
-        score = max(2, score - 1)
-
-    return max(1, min(5, score))
+    score = max(1, min(5, score))
+    if signal_lines <= 2 and why_now == UNKNOWN and evidence == "None":
+        score = min(score, 2)
+    if score == 5 and evidence not in DIRECT_EVIDENCE_VALUES and "my favorite idea of the entire exercise" not in lower:
+        score = 4
+    if score < 2 and evidence in {"Pattern Evidence", "Intuition"} and not description_fallback:
+        score = 2
+    return score
 
 
 def infer_job(primitive: str, profile: DomainProfile) -> str:
     templates = {
-        "Workflow Orchestration": "Coordinate {obj} with fewer manual handoffs.",
-        "Memory Layer": "Recall and reuse context for {obj} at the moment of work.",
-        "Decision Draft": "Make better decisions about {obj} with less manual synthesis.",
-        "Learning Loop": "Improve performance in {obj} through repeated feedback in context.",
-        "Trust Trial": "Reduce commitment risk in {obj} before full adoption.",
-        "Opportunity Queue": "See the next highest-value action in {obj}.",
-        "Compounding Loop": "Make each action in {obj} increase the value of the next one.",
-        "Prediction Engine": "Anticipate outcomes in {obj} early enough to act.",
-        "Simulation Twin": "Test changes in {obj} before committing resources.",
-        "Discovery Engine": "Discover new opportunities or breakthroughs in {obj} earlier.",
-        "Exchange Network": "Match the right participants, assets, or knowledge within {obj}.",
-        "Measurement Index": "Measure the health, readiness, or progress of {obj} consistently.",
-        "Negotiation Agent": "Negotiate better terms in {obj} with less manual effort.",
+        "Discover": "Find opportunities in {obj}.",
+        "Predict": "Predict outcomes in {obj}.",
+        "Verify": "Verify quality in {obj}.",
+        "Coordinate": "Coordinate {obj}.",
+        "Compound": "Compound gains in {obj}.",
+        "Remember": "Preserve context for {obj}.",
+        "Adapt": "Adapt {obj}.",
+        "Create": "Create reusable outputs for {obj}.",
+        "Simulate": "Test scenarios in {obj}.",
+        "Optimize": "Improve {obj}.",
+        "Match": "Match the right resources in {obj}.",
+        "Learn": "Accelerate {obj}.",
     }
     return templates[primitive].format(obj=profile.object_label)
 
 
 def infer_value_mechanism(primitive: str, profile: DomainProfile) -> str:
     templates = {
-        "Workflow Orchestration": "Creates a shared operating layer that automates coordination and reduces overhead across {obj}.",
-        "Memory Layer": "Turns fragmented history into reusable memory so teams spend less time searching and less often repeat mistakes in {obj}.",
-        "Decision Draft": "Surfaces signals, tradeoffs, and recommended next moves before decisions about {obj} stall or degrade.",
-        "Learning Loop": "Captures feedback from each cycle so capability in {obj} improves with continued use.",
-        "Trust Trial": "Makes adoption or partnership safer by introducing reversible tests and stronger trust signals around {obj}.",
-        "Opportunity Queue": "Concentrates attention on the next highest-leverage move in {obj} instead of leaving prioritization implicit.",
-        "Compounding Loop": "Stores gains from each cycle so value in {obj} accumulates instead of resetting after every action.",
-        "Prediction Engine": "Uses pattern recognition to surface future states, shortages, or risks early enough to change the outcome in {obj}.",
-        "Simulation Twin": "Models scenarios or digital twins so operators can explore tradeoffs in {obj} before spending time or capital.",
-        "Discovery Engine": "Searches a broader solution space and turns weak signals into actionable discoveries in {obj}.",
-        "Exchange Network": "Creates liquidity and coordination across fragmented participants involved in {obj}.",
-        "Measurement Index": "Turns hard-to-see system quality into a comparable signal that can guide action in {obj}.",
-        "Negotiation Agent": "Automates preparation and execution so teams can capture better outcomes in {obj} without proportional labor growth.",
+        "Discover": "Searches a wider option space and surfaces higher-value openings in {obj} before teams would find them manually.",
+        "Predict": "Turns leading signals into earlier forecasts so teams can change outcomes in {obj}.",
+        "Verify": "Produces trustworthy checks, measurements, or proofs so teams can reduce errors in {obj}.",
+        "Coordinate": "Reduces manual handoffs and keeps multi-step work moving across {obj}.",
+        "Compound": "Carries gains from one cycle into the next so value in {obj} accumulates instead of resetting.",
+        "Remember": "Makes prior decisions, context, and history reusable during {obj}.",
+        "Adapt": "Keeps plans and systems aligned with changing conditions during {obj}.",
+        "Create": "Converts expertise or intent into reusable outputs that accelerate {obj}.",
+        "Simulate": "Lets teams explore scenarios in {obj} before spending time, capital, or trust.",
+        "Optimize": "Improves prioritization, tradeoffs, or negotiated outcomes in {obj}.",
+        "Match": "Connects the right people, assets, or opportunities faster in {obj}.",
+        "Learn": "Improves performance through repeated feedback and practice in {obj}.",
     }
     return templates[primitive].format(obj=profile.object_label)
 
 
-def infer_wedge(wording: str, profile: DomainProfile, customer: str) -> str:
+def infer_wedge(title: str, wording: str, profile: DomainProfile, customer: str) -> tuple[str, bool]:
     start_match = re.search(r"Start in ([^.]+)\.?", wording, flags=re.IGNORECASE)
     if start_match:
         start_value = clean_line(start_match.group(1))
         if start_value.lower() == "one vertical":
-            return "One vertical where the workflow is repetitive enough to keep expert review in the loop."
-        return ensure_period(start_value)
+            return "One vertical where the workflow is repetitive enough to keep expert review in the loop.", True
+        return ensure_period(start_value), False
 
     one_vertical = re.search(r"one vertical", wording, flags=re.IGNORECASE)
     if one_vertical:
-        return "One vertical with repetitive, high-value workflows where expert review can stay in the loop."
+        return "One vertical with repetitive, high-value workflows where expert review can stay in the loop.", True
 
-    if "mid-market" in wording.lower():
-        return "Mid-market teams with enough process complexity to justify a shared operating layer but not enough specialists to build one internally."
+    wedge_by_customer = {
+        "Product manager": "Mid-market SaaS product teams triaging weekly roadmap tradeoffs across Jira, support, and usage analytics.",
+        "Product leader": "Mid-market SaaS product teams triaging weekly roadmap tradeoffs across Jira, support, and usage analytics.",
+        "Chief of staff": "Leadership teams coordinating recurring planning and execution handoffs across meetings, chat, docs, and dashboards.",
+        "Operations executive": "Mid-market leadership teams reconciling decisions across meetings, chat, docs, and dashboards.",
+        "Operations manager": "Back-office teams running repetitive approvals, service handoffs, or exception workflows across disconnected tools.",
+        "Customer success manager": "B2B SaaS customer-success teams preparing renewal and risk reviews from fragmented notes and product signals.",
+        "Support leader": "Support teams triaging recurring tickets and escalations across chat, email, and help desk systems.",
+        "User researcher": "Research teams synthesizing recurring interviews, calls, and feedback without dedicated research operations support.",
+        "Revenue operations leader": "Revenue teams consolidating account, pipeline, and customer signals before weekly decisions.",
+        "Procurement leader": "Procurement teams handling recurring SaaS renewals and vendor negotiations without a dedicated analyst.",
+        "Legal operations leader": "Legal and compliance teams assembling contract or evidence packets across fragmented systems.",
+        "Finance manager": "Finance teams reconciling repetitive close, audit, or spend workflows across spreadsheets and source systems.",
+        "Recruiter": "Recruiting teams screening high applicant volumes without enough recruiter capacity.",
+        "Learning and development leader": "People teams running onboarding or coaching programs with limited manager bandwidth.",
+        "Educator": "Classrooms or course teams managing repeated practice and feedback cycles outside live instruction.",
+        "Learner": "Self-directed learners seeking repeated practice, feedback, or coaching between formal sessions.",
+        "Parent": "Dual-income households coordinating calendars, school logistics, finances, and home tasks.",
+        "Patient": "Patients with ongoing care plans coordinating appointments, medications, and follow-ups across providers.",
+        "Family caregiver": "Family caregivers managing multi-party care updates, appointments, and medication schedules.",
+        "Care coordinator": "Care coordination teams managing appointments, medications, follow-ups, and family communication across settings.",
+        "Quality manager": "Manufacturers monitoring high-volume lines where defect detection and root-cause analysis are still manual.",
+        "Supply chain manager": "Supply chain teams scheduling constrained inventory, vendors, or routes under volatile demand.",
+        "Plant manager": "Plant teams coordinating maintenance, staffing, and throughput decisions across fragmented systems.",
+        "Infrastructure operator": "Infrastructure operators managing rail, port, water, or utility assets with manual exception handling.",
+        "Research scientist": "Research teams moving experiments from hypothesis to validation with fragmented evidence trails.",
+        "R&D leader": "Applied R&D teams moving experiments from hypothesis to validation with fragmented evidence trails.",
+        "City planner": "Cities planning long-horizon resilience or infrastructure investments under climate pressure.",
+        "Utility planner": "Utilities planning reliability or capital decisions under grid volatility.",
+        "Infrastructure planner": "Cities, utilities, or asset owners planning capital decisions under climate or grid volatility.",
+        "Creator": "Creators and small media teams turning repeated research into publishable content without a reusable system.",
+        "Investor": "Early-stage investors evaluating repeated deals, diligence, and portfolio decisions with lean teams.",
+        "Founder": "Founder-led teams evaluating repeated product, hiring, or expansion decisions without analyst support.",
+        "Community manager": "Communities where retention depends on repeated contribution, matching, and moderation.",
+        "Individual professional": "Self-directed professionals already using journals, notes, or coaching tools without continuity between sessions.",
+        "Automation operations leader": "Operations teams deploying physical automation in labor-constrained environments.",
+        "Public sector strategist": "Policy and strategy teams working on multi-year public coordination problems.",
+    }
 
-    return profile.wedge
+    lower = f"{title} {wording}".lower()
+    wedge = wedge_by_customer.get(customer, profile.wedge)
+    needs_review = customer in {"Operations executive", "Public sector strategist", "Individual professional"} and not any(
+        keyword in lower for keyword in ("mid-market", "saaS", "policy", "coach", "journal", "roadmap", "provider")
+    )
+    if "mid-market" in lower and customer == "Operations executive":
+        wedge = "Mid-market leadership teams reconciling decisions across meetings, chat, docs, and dashboards."
+    return wedge, needs_review
 
 
 def build_notes(
     track_known: bool,
     customer_inferred: bool,
+    customer_mixed: bool,
     primitive_uncertain: bool,
+    wedge_review: bool,
     description_fallback: bool,
     why_now: str,
     track: str,
+    evidence: str,
+    confidence: int,
 ) -> str:
     notes: list[str] = []
     if not track_known:
         notes.append("Track not recoverable from the raw inventory; marked Unknown.")
     if customer_inferred:
-        notes.append("Customer inferred from title or surrounding wording.")
+        notes.append("Customer normalized from title or domain cues rather than an explicit raw persona.")
+    if customer_mixed:
+        notes.append("Original customer wording mixed multiple personas, so one primary role was selected.")
     if primitive_uncertain:
-        notes.append("Primitive chosen from the nearest matching controlled taxonomy label.")
+        notes.append("Primitive required judgment between nearby controlled taxonomy labels.")
+    if wedge_review:
+        notes.append("Initial wedge remains broad and should be narrowed manually before external use.")
     if description_fallback:
         notes.append("Raw wording was minimal, so the description relies on title-level interpretation.")
     if why_now == UNKNOWN:
         notes.append("Why now was not explicit in the raw wording.")
+    if evidence in {"Intuition", "None"}:
+        notes.append("Evidence level is based on concept framing rather than cited external validation.")
+    if confidence <= 2:
+        notes.append("Confidence reduced because the concept remains broad or lightly specified.")
     if track == "Fusion":
         notes.append("Fusion concept combines multiple motifs; one primary primitive was selected for one-to-one schema coverage.")
     return " ".join(notes)
@@ -577,12 +913,34 @@ def derive_row(raw_row: dict[str, str]) -> dict[str, str]:
     track_known = bool(raw_track)
 
     profile = infer_profile(title, description, wording, track)
-    customer, customer_inferred = infer_customer(title, sections, profile)
+    customer, customer_inferred, customer_mixed = infer_customer(title, wording, sections, profile)
     primitive, primitive_uncertain = infer_primitive(title, description, wording, track)
     why_now = extract_why_now(wording)
-    evidence = infer_evidence(wording, primitive, track)
-    confidence = infer_confidence(wording, primitive, description_fallback, track)
-    notes = build_notes(track_known, customer_inferred, primitive_uncertain, description_fallback, why_now, track)
+    evidence = infer_evidence(title, wording, sections, description_fallback)
+    wedge, wedge_review = infer_wedge(title, wording, profile, customer)
+    confidence = infer_confidence(
+        title,
+        wording,
+        why_now,
+        evidence,
+        description_fallback,
+        primitive_uncertain,
+        customer_inferred,
+        wedge_review,
+        track,
+    )
+    notes = build_notes(
+        track_known,
+        customer_inferred,
+        customer_mixed,
+        primitive_uncertain,
+        wedge_review,
+        description_fallback,
+        why_now,
+        track,
+        evidence,
+        confidence,
+    )
 
     return {
         "Concept ID": raw_row["Concept ID"],
@@ -594,7 +952,7 @@ def derive_row(raw_row: dict[str, str]) -> dict[str, str]:
         "Job": infer_job(primitive, profile),
         "Customer": customer,
         "Value Mechanism": infer_value_mechanism(primitive, profile),
-        "Initial Wedge": infer_wedge(wording, profile, customer),
+        "Initial Wedge": wedge,
         "Confidence": str(confidence),
         "Evidence": evidence,
         "Why Now": why_now,
@@ -658,7 +1016,9 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
 
     review_buckets: dict[str, list[str]] = {
         "Minimal raw detail / description fallback": [],
-        "Low-confidence primitive assignment": [],
+        "Primitive assignments needing judgment": [],
+        "Broad initial wedges needing manual narrowing": [],
+        "Low-confidence concepts (1-2)": [],
         "Fusion concepts with multi-primitive overlap": [],
     }
     for row in curated_rows:
@@ -666,8 +1026,12 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
         concept_id = row["Concept ID"]
         if "description relies on title-level interpretation" in notes:
             review_buckets["Minimal raw detail / description fallback"].append(concept_id)
-        if "nearest matching controlled taxonomy label" in notes:
-            review_buckets["Low-confidence primitive assignment"].append(concept_id)
+        if "Primitive required judgment between nearby controlled taxonomy labels." in notes:
+            review_buckets["Primitive assignments needing judgment"].append(concept_id)
+        if "Initial wedge remains broad and should be narrowed manually before external use." in notes:
+            review_buckets["Broad initial wedges needing manual narrowing"].append(concept_id)
+        if row["Confidence"] in {"1", "2"}:
+            review_buckets["Low-confidence concepts (1-2)"].append(concept_id)
         if "Fusion concept combines multiple motifs" in notes:
             review_buckets["Fusion concepts with multi-primitive overlap"].append(concept_id)
 
