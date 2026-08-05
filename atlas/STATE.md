@@ -10,17 +10,18 @@ Owner: Shared
 - Curated Concepts: Complete
 - Primitive Taxonomy: Complete
 - Job + Domain Taxonomy: Complete
+- Reasoning Model: Complete
 
 ## Current Phase
 
-Opportunity Family Discovery
+Methodology Complete
 
 ## Next Task
 
-- Task ID: `TASK-001`
-- Title: Build Opportunity Families
-- Status: Draft
-- Execution Note: Defined and queued, but not executed in this setup task.
+- Task ID: `Pending`
+- Title: Value Pattern Discovery
+- Status: Not started
+- Execution Note: The reasoning model is complete. Value Pattern Discovery is the next milestone, but no discovery work has started in this change set.
 
 ## Operating Model Summary
 
@@ -31,6 +32,6 @@ Opportunity Family Discovery
 
 ## Immediate Focus
 
-1. Use `TASK-001` as the first task executed under Atlas operating model v1.0.
-2. Preserve traceability from future opportunity families back to the concept inventory.
-3. Keep the concept datasets unchanged while the operating model is being adopted.
+1. Adopt `docs/ATLAS_REASONING_MODEL.md` as the governing methodology for future Atlas analysis.
+2. Prepare the first dedicated Value Pattern Discovery task after methodology adoption is committed.
+3. Keep the concept datasets unchanged while discovery work remains unstarted.

@@ -12,7 +12,7 @@ Build Atlas as a disciplined operating system for discovering, classifying, vali
 Atlas succeeds when it can reliably do all of the following:
 
 1. Preserve broad idea generation without losing strategic coherence.
-2. Convert raw ideas into clear primitives, clusters, and evidence-backed priorities.
+2. Convert raw ideas into durable causal patterns, taxonomies, and evidence-backed priorities.
 3. Keep recommendations concise, decision-ready, and explicitly tied to evidence.
 4. Surface believable wedges into large categories instead of collapsing into feature thinking.
 5. Let future sessions resume from the repository without reconstructing context from chat.
@@ -32,11 +32,11 @@ The long-term goal is not merely to collect ideas. It is to preserve the concept
 
 1. The concept repository is Atlas's gold source and primary intellectual property; original concepts remain individually addressable, are never discarded or merged away, and all families, patterns, scores, research, and ventures are additive derived layers built on top of it.
 2. Evidence outranks opinion when direction changes are on the table.
-3. Atlas should reason from behaviors and primitives before products and features.
-4. Breadth comes first; convergence is earned through clustering and validation.
+3. Atlas classifies by cause, not appearance.
+4. Atlas should reason from behaviors, primitives, and economic mechanisms before products and features.
 5. Durable value matters more than novelty, excitement, or short-term elegance.
-6. Atlas follows a repository-first operating model: Git and repository artifacts are the authoritative source of truth for tasks, results, reviews, and project state; chat provides reasoning and direction, not durable memory.
-7. Every recommendation should preserve or increase future optionality when possible.
+6. Derived layers must remain reproducible, disposable, and traceable back to source evidence.
+7. Atlas follows a repository-first operating model: Git and repository artifacts are the authoritative source of truth for tasks, results, reviews, and project state; chat provides reasoning and direction, not durable memory.
 
 ## In Scope
 
@@ -56,7 +56,7 @@ The long-term goal is not merely to collect ideas. It is to preserve the concept
 ## Governance
 
 - `docs/OPERATING_MANUAL.md` defines how Atlas work is performed.
-- `docs/ATLAS_CONSTITUTION.md` defines immutable operating rules.
+- `docs/ATLAS_REASONING_MODEL.md` defines Atlas laws, the standard reasoning pipeline, and the taxonomy creation framework that governs methodology.
 - `docs/DECISION_LOG.md` records durable decisions and revisions.
 - `atlas/STATE.md`, `atlas/TASK.md`, `atlas/RESULT.md`, and `atlas/REVIEW.md` track the active operating state and task loop.
 - `roadmap/ROADMAP.md` records the active phase and near-term milestones.

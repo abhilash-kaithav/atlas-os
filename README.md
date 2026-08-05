@@ -36,6 +36,7 @@ atlas-os/
 ├── docs/
 │   ├── AI_OPERATING_MANUAL.md
 │   ├── ATLAS_CONSTITUTION.md
+│   ├── ATLAS_REASONING_MODEL.md
 │   ├── CHARTER.md
 │   ├── CODEX_WORKFLOW.md
 │   ├── OPERATING_MANUAL.md
@@ -74,7 +75,8 @@ atlas-os/
 - Active state, task, result, and review loop: `atlas/`
 - Mission, scope, and constraints: `docs/CHARTER.md`
 - Operating rules and workflows: `docs/OPERATING_MANUAL.md`
-- Immutable rules: `docs/ATLAS_CONSTITUTION.md`
+- Governing methodology: `docs/ATLAS_REASONING_MODEL.md`
+- Historical precursor: `docs/ATLAS_CONSTITUTION.md`
 - Decision history and version control: `docs/DECISION_LOG.md`
 - Codex repository workflow: `docs/CODEX_WORKFLOW.md`
 - Concept inventory policy: `concepts/README.md`

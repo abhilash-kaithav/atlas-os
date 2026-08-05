@@ -1,34 +1,35 @@
 task_id: TASK-001
-title: "Build Opportunity Families"
+title: "Value Pattern Discovery"
 status: Draft
 artifact_owner: Chat
 created_on: 2026-08-05
 updated_on: 2026-08-05
-objective: "Build the first Atlas opportunity-family layer from the curated concept base so ideas can be grouped into durable strategic families before pattern analysis and scoring."
+objective: "Build the first Atlas Value Pattern layer from the curated concept base so ideas can be grouped by reusable economic patterns of value creation before downstream analysis and prioritization."
 context:
   - "Atlas operating model v1.0 is now the required repository workflow."
+  - "Atlas Reasoning Model v1.0 is now the governing methodology."
   - "Gold Source, Curated Concepts, Primitive Taxonomy, and Job + Domain Taxonomy are complete."
-  - "This will be the first knowledge-discovery task executed under the new operating model."
+  - "This will be the first knowledge-discovery task executed after methodology adoption."
 inputs:
   - "data/concepts_raw.csv"
   - "data/concepts_curated.csv"
+  - "docs/ATLAS_REASONING_MODEL.md"
   - "docs/CHARTER.md"
-  - "docs/OPERATING_MANUAL.md"
   - "docs/DECISION_LOG.md"
-  - "roadmap/ROADMAP.md"
 deliverables:
-  - "A durable opportunity-family artifact that groups the concept inventory into high-level families."
-  - "A mapping or summary that explains the primitive, job, or value engine behind each family."
+  - "A durable Value Pattern taxonomy artifact that groups the concept inventory by reusable economic patterns of value creation."
+  - "A mapping or summary that explains why each Value Pattern passes the taxonomy tests and how concepts fit it."
   - "Completed Atlas result and review artifacts for TASK-001 after execution."
 constraints:
-  - "Do not execute this task as part of Atlas operating model v1.0 setup."
+  - "Do not execute this task as part of Atlas Reasoning Model v1.0 adoption."
   - "Preserve the raw concept layer as immutable."
-  - "Keep clustering grounded in primitives, jobs, and value mechanisms rather than industry labels alone."
+  - "Classify by cause, not appearance."
+  - "Keep every abstraction traceable back to the concept inventory."
   - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
 acceptance_criteria:
-  - "The task defines a clear method for deriving opportunity families from the curated concept base."
+  - "The task defines a clear method for deriving Value Patterns from the curated concept base."
   - "The planned deliverables preserve traceability back to the concept inventory."
-  - "The task is ready for Work to execute in a future session without additional operating-model setup."
+  - "The task is ready for Work to execute in a future session without additional methodology setup."
 handoff_to: Work
 result_artifact: "atlas/results/TASK-001.yaml"
 review_artifact: "atlas/reviews/TASK-001.md"

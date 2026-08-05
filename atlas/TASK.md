@@ -7,7 +7,7 @@ Owner: Chat
 ## Current Task
 
 - Task ID: `TASK-001`
-- Title: Build Opportunity Families
+- Title: Value Pattern Discovery
 - Lifecycle Status: Draft
 - Structured Artifact: `atlas/tasks/TASK-001.yaml`
 
