@@ -37,10 +37,12 @@ atlas-os/
 │   ├── AI_OPERATING_MANUAL.md
 │   ├── ATLAS_CONSTITUTION.md
 │   ├── ATLAS_REASONING_MODEL.md
+│   ├── BOOTSTRAP.md
 │   ├── CHARTER.md
 │   ├── CODEX_WORKFLOW.md
 │   ├── OPERATING_MANUAL.md
 │   ├── DECISION_LOG.md
+│   ├── PRODUCT_BOUNDARY.md
 │   └── PLAYBOOK.md
 ├── knowledge/
 │   ├── README.md
@@ -72,6 +74,7 @@ atlas-os/
 
 ## Source of Truth
 
+- First-read startup guide: `docs/BOOTSTRAP.md`
 - Active state, task, result, and review loop: `atlas/`
 - Mission, scope, and constraints: `docs/CHARTER.md`
 - Operating rules and workflows: `docs/OPERATING_MANUAL.md`

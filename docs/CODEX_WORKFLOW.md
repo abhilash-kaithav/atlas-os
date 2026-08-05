@@ -22,10 +22,11 @@ This document defines the default execution path for Codex work on Atlas OS so f
 ## Standard Session Steps
 
 1. Open the canonical repository checkout.
-2. Run `git pull --ff-only` before editing when the repository may have changed.
-3. Make the required repository updates in the canonical checkout.
-4. Commit intentionally with a concise message.
-5. Push with local git so local and GitHub stay in sync.
+2. Read `docs/BOOTSTRAP.md` before any other Atlas work.
+3. Run `git pull --ff-only` before editing when the repository may have changed.
+4. Make the required repository updates in the canonical checkout.
+5. Commit intentionally with a concise message.
+6. Push with local git so local and GitHub stay in sync.
 
 ## Standard Instruction For New Codex Sessions
 
@@ -33,6 +34,8 @@ Use this instruction at the start of a new chat when repository work is expected
 
 ```text
 Use the canonical Atlas repo at /Users/abhil/Documents/Codex/repos/atlas-os.
+Read docs/BOOTSTRAP.md first.
+Treat repository artifacts as canonical and prior conversations as historical context only.
 Use local git as the default write/publish path.
 Do not use dated temporary checkouts or browser editing unless local push fails.
 ```

@@ -60,9 +60,10 @@ Atlas repository updates should use `docs/CODEX_WORKFLOW.md` as the default Code
 Apply these rules:
 
 1. Use `/Users/abhil/Documents/Codex/repos/atlas-os` as the canonical writable Atlas checkout.
-2. Prefer local git for repository updates and publishing.
-3. Treat a successful `git push` as the normal path that updates GitHub online.
-4. Use browser editing or connector-based file writes only as fallback paths when local git publishing is unavailable.
+2. Start each new Atlas session by reading `docs/BOOTSTRAP.md`.
+3. Prefer local git for repository updates and publishing.
+4. Treat a successful `git push` as the normal path that updates GitHub online.
+5. Use browser editing or connector-based file writes only as fallback paths when local git publishing is unavailable.
 
 ## Atlas Operating Model v1.0
 
@@ -95,11 +96,12 @@ Apply these rules:
 Atlas outputs should follow these rules:
 
 1. Best-answer-first: lead with the clearest recommendation or conclusion.
-2. Concise-first: keep the primary answer compact enough to act on quickly.
-3. Evidence visible: state what supports the conclusion and what remains uncertain.
-4. Hypotheses labeled: do not present a working theory as an earned principle.
-5. Wedge explicit: show the believable entry point, not only the expansive vision.
-6. Ignore list included when useful: say what should not be prioritized yet.
+2. One recommendation by default: recommend the single best solution unless a genuine architectural tradeoff requires explicit alternatives.
+3. Concise-first: keep the primary answer compact enough to act on quickly.
+4. Evidence visible: state what supports the conclusion and what remains uncertain.
+5. Hypotheses labeled: do not present a working theory as an earned principle.
+6. Wedge explicit: show the believable entry point, not only the expansive vision.
+7. Ignore list included when useful: say what should not be prioritized yet.
 
 The default recommendation format is:
 
@@ -125,7 +127,7 @@ Keep these stages separate. Early conviction is not evidence.
 
 Every Atlas session should follow this loop:
 
-1. Orient on the current repository state, roadmap, and recent decisions.
+1. Orient on `docs/BOOTSTRAP.md`, the current repository state, roadmap, and recent decisions.
 2. Define or refresh the active task in `atlas/TASK.md` and `atlas/tasks/TASK-xxx.yaml`.
 3. Capture or review new raw concepts, research, or evidence.
 4. Update observations, hypotheses, or principles when thresholds are met.

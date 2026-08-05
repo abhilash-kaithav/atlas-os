@@ -55,6 +55,7 @@ The long-term goal is not merely to collect ideas. It is to preserve the concept
 
 ## Governance
 
+- `docs/BOOTSTRAP.md` is the first document future Atlas sessions should read; it summarizes the active Atlas state and points to the underlying source-of-truth artifacts without replacing them.
 - `docs/OPERATING_MANUAL.md` defines how Atlas work is performed.
 - `docs/ATLAS_REASONING_MODEL.md` defines Atlas laws, the standard reasoning pipeline, and the taxonomy creation framework that governs methodology.
 - `docs/DECISION_LOG.md` records durable decisions and revisions.

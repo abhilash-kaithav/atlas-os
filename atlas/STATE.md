@@ -11,17 +11,18 @@ Owner: Shared
 - Primitive Taxonomy: Complete
 - Job + Domain Taxonomy: Complete
 - Reasoning Model: Complete
+- Bootstrap Migration: Complete
 
 ## Current Phase
 
-Methodology Complete
+Value Pattern Discovery Ready
 
 ## Next Task
 
-- Task ID: `Pending`
+- Task ID: `TASK-001`
 - Title: Value Pattern Discovery
-- Status: Not started
-- Execution Note: The reasoning model is complete. Value Pattern Discovery is the next milestone, but no discovery work has started in this change set.
+- Status: Draft
+- Execution Note: The bootstrap migration is complete. `TASK-001` is the first post-migration execution task, and no Value Pattern discovery work has started yet.
 
 ## Operating Model Summary
 
@@ -32,6 +33,6 @@ Methodology Complete
 
 ## Immediate Focus
 
-1. Adopt `docs/ATLAS_REASONING_MODEL.md` as the governing methodology for future Atlas analysis.
-2. Prepare the first dedicated Value Pattern Discovery task after methodology adoption is committed.
-3. Keep the concept datasets unchanged while discovery work remains unstarted.
+1. Use `docs/BOOTSTRAP.md` as the first-read entry point for every future Atlas session.
+2. Execute `TASK-001` only when explicitly started through the task/result/review workflow.
+3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through all derived discovery layers.
