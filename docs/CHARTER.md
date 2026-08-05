@@ -1,6 +1,6 @@
 # Charter
 
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 Status: Active
 
 ## Mission
@@ -26,16 +26,17 @@ Atlas should become a durable system for identifying new categories and high-lev
 - identify categories that can become enduring platforms or institutions
 - move from idea abundance to evidence-backed selection without strategic drift
 
-The long-term goal is not to collect ideas. It is to create a repeatable capability for finding the rare opportunity families worth building.
+The long-term goal is not merely to collect ideas. It is to preserve the concept repository as a durable asset while creating a repeatable capability for finding the rare opportunity families worth building.
 
 ## Guiding Principles
 
-1. Evidence outranks opinion when direction changes are on the table.
-2. Atlas should reason from behaviors and primitives before products and features.
-3. Breadth comes first; convergence is earned through clustering and validation.
-4. Durable value matters more than novelty, excitement, or short-term elegance.
-5. Versioned documents are the memory layer; chat is not the source of truth.
-6. Every recommendation should preserve or increase future optionality when possible.
+1. The concept repository is Atlas's gold source and primary intellectual property; original concepts remain individually addressable, are never discarded or merged away, and all families, patterns, scores, research, and ventures are additive derived layers built on top of it.
+2. Evidence outranks opinion when direction changes are on the table.
+3. Atlas should reason from behaviors and primitives before products and features.
+4. Breadth comes first; convergence is earned through clustering and validation.
+5. Durable value matters more than novelty, excitement, or short-term elegance.
+6. Versioned documents are the memory layer; chat is not the source of truth.
+7. Every recommendation should preserve or increase future optionality when possible.
 
 ## In Scope
 
