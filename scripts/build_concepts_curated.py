@@ -41,6 +41,70 @@ CURATED_COLUMNS = [
     "Original Wording",
 ]
 
+# Targeted curation decisions that should survive regeneration.
+LEGACY_ROW_OVERRIDES = {
+    "C-0064": {
+        "Customer": "Educator",
+        "Initial Wedge": "Classrooms or course teams managing repeated practice and feedback cycles outside live instruction.",
+        "Notes": "Track not recoverable from the raw inventory; marked Unknown. Customer normalized from title or domain cues rather than an explicit raw persona. Why now was not explicit in the raw wording. Evidence level is based on concept framing rather than cited external validation. Confidence reduced because the concept remains broad or lightly specified.",
+    },
+    "C-0097": {
+        "Clear Description": "Certification that an AI agent can safely operate within regulated environments.",
+        "Primitive": "Verify",
+        "Job": "Verify quality in commercial decisions.",
+        "Customer": "Legal operations leader",
+        "Value Mechanism": "Produces trustworthy certification and compliance proofs before autonomous agents are allowed into sensitive workflows.",
+        "Initial Wedge": "Legal and compliance teams defining approval and certification gates for autonomous agents in regulated environments.",
+        "Confidence": "2",
+        "Evidence": "Intuition",
+        "Why Now": UNKNOWN,
+        "Notes": "Track not recoverable from the raw inventory; marked Unknown. Customer normalized from title or domain cues rather than an explicit raw persona. Why now was not explicit in the raw wording. Evidence level is based on concept framing rather than cited external validation. Confidence reduced because the concept remains broad or lightly specified. Likely near-duplicate of C-0190; this row appears to be the thinner or earlier restatement.",
+    },
+    "C-0190": {
+        "Clear Description": "Companies will need certification before autonomous agents can execute sensitive workflows; the equivalent of SOC 2 for AI agents.",
+        "Primitive": "Verify",
+        "Job": "Verify quality in commercial decisions.",
+        "Customer": "Legal operations leader",
+        "Value Mechanism": "Produces trustworthy certification and compliance proofs before autonomous agents are allowed into sensitive workflows.",
+        "Initial Wedge": "Legal and compliance teams defining approval and certification gates for autonomous agents in regulated environments.",
+        "Confidence": "2",
+        "Evidence": "Intuition",
+        "Why Now": UNKNOWN,
+        "Notes": "Track not recoverable from the raw inventory; marked Unknown. Customer normalized from title or domain cues rather than an explicit raw persona. Why now was not explicit in the raw wording. Evidence level is based on concept framing rather than cited external validation. Confidence reduced because the concept remains broad or lightly specified. Near-duplicate of C-0097, but this row preserves the fuller statement of the thesis.",
+    },
+    "C-0275": {
+        "Customer": "Procurement leader",
+        "Initial Wedge": "Procurement teams practicing recurring vendor and pricing negotiations without a structured feedback loop.",
+        "Notes": "Original customer wording mixed multiple personas, so one primary role was selected. Why now was not explicit in the raw wording.",
+    },
+    "C-0283": {
+        "Clear Description": "AI connects patents, startups, papers, acquisitions, hiring, regulations, and open-source signals to detect patterns before humans do.",
+        "Job": "Find opportunities in research programs.",
+        "Customer": "R&D leader",
+        "Value Mechanism": "Surfaces earlier weak-signal patterns across research, market, and policy signals before teams would spot them manually.",
+        "Initial Wedge": "Research and strategy teams scanning patents, papers, startups, and regulatory shifts for early pattern detection.",
+        "Notes": "Customer normalized from title or domain cues rather than an explicit raw persona. Why now was not explicit in the raw wording.",
+    },
+    "C-0291": {
+        "Job": "Coordinate venture decisions.",
+        "Value Mechanism": "Reduces manual handoffs and keeps multi-step work moving across venture decisions.",
+        "Initial Wedge": "Founder-led holding companies coordinating diligence, hiring, finance, and shared services across multiple businesses.",
+        "Notes": "Primitive required judgment between nearby controlled taxonomy labels. Why now was not explicit in the raw wording. Confidence reduced because the concept remains broad or lightly specified.",
+    },
+    "C-0625": {
+        "Clear Description": "Governments maintain an always-current map of critical skills that can be mobilized during emergencies.",
+        "Primitive": "Match",
+        "Job": "Match the right resources in public coordination.",
+        "Customer": "Public sector strategist",
+        "Value Mechanism": "Connects critical skills and surge capacity faster during public-sector emergency coordination.",
+        "Initial Wedge": "Government emergency-preparedness teams mapping critical skills across agencies, contractors, and reserves before crisis response.",
+        "Confidence": "2",
+        "Evidence": "Intuition",
+        "Why Now": UNKNOWN,
+        "Notes": "Customer normalized from title or domain cues rather than an explicit raw persona. Primitive required judgment between nearby controlled taxonomy labels. Why now was not explicit in the raw wording. Evidence level is based on concept framing rather than cited external validation. Confidence reduced because the concept remains broad or lightly specified.",
+    },
+}
+
 ARCHETYPE_RULES = [
     ("Negotiation Agent", ["negotiat", "procurement", "vendor contract", "vendor renewal", "commercial agreement"]),
     ("Trust Trial", ["trust", "credential", "reputation", "verify", "verification", "trial"]),
@@ -1497,6 +1561,15 @@ def load_rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def apply_legacy_overrides(row: dict[str, str]) -> dict[str, str]:
+    override = LEGACY_ROW_OVERRIDES.get(row["Concept ID"])
+    if not override:
+        return row
+    updated = row.copy()
+    updated.update(override)
+    return updated
+
+
 def format_counts(counter: Counter[str]) -> str:
     return ", ".join(f"{key}: {value}" for key, value in sorted(counter.items(), key=lambda item: item[0]))
 
@@ -1696,7 +1769,7 @@ def main() -> None:
         raise SystemExit(f"Missing raw source: {RAW_PATH}")
 
     raw_rows = load_rows(RAW_PATH)
-    legacy_rows = [derive_row(row) for row in raw_rows]
+    legacy_rows = [apply_legacy_overrides(derive_row(row)) for row in raw_rows]
     curated_rows = [finalize_row(row) for row in legacy_rows]
     write_csv(CURATED_PATH, curated_rows, CURATED_COLUMNS)
     write_csv(
