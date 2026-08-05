@@ -16,6 +16,18 @@ Atlas OS is the versioned operating system for discovering, classifying, validat
 ```text
 atlas-os/
 ├── README.md
+├── atlas/
+│   ├── STATE.md
+│   ├── TASK.md
+│   ├── RESULT.md
+│   ├── REVIEW.md
+│   ├── tasks/
+│   │   ├── TASK-001.yaml
+│   │   └── TASK_TEMPLATE.yaml
+│   ├── results/
+│   │   └── RESULT_TEMPLATE.yaml
+│   └── reviews/
+│       └── REVIEW_TEMPLATE.md
 ├── data/
 │   ├── README.md
 │   ├── concepts_raw.csv
@@ -59,6 +71,7 @@ atlas-os/
 
 ## Source of Truth
 
+- Active state, task, result, and review loop: `atlas/`
 - Mission, scope, and constraints: `docs/CHARTER.md`
 - Operating rules and workflows: `docs/OPERATING_MANUAL.md`
 - Immutable rules: `docs/ATLAS_CONSTITUTION.md`
