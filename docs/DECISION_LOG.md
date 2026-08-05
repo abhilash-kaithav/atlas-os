@@ -24,6 +24,7 @@ Status: Active
 | 2026-08-05 | D-009 | Adopt Concept Schema v1.0 as mandatory for every Atlas concept record. | Consistent clustering, cross-cutting analysis, prevention of schema drift, and future automation require one frozen eight-field concept format before the representative 100-concept pilot. | Active | Monthly |
 | 2026-08-05 | D-010 | Preserve the concept repository as Atlas's gold source and primary intellectual property. | Protecting concept-level fidelity preserves Atlas's foundational asset, keeps every original concept individually addressable, and supports future recombination, re-analysis, and layered enrichment without destructive consolidation. | Active | Monthly |
 | 2026-08-05 | D-011 | Adopt `docs/PRODUCT_BOUNDARY.md` as a permanent strategic artifact and update it after every meaningful competitor evaluation. | Competitive analysis should sharpen Atlas's boundary without turning the charter into a market-comparison document; a dedicated artifact preserves durable positioning and reduces drift toward startup execution. | Active | Monthly |
+| 2026-08-05 | D-012 | Adopt `data/concepts.csv` as the canonical Atlas Concept Inventory and immutable raw concept source. | The full ideation history has now been recovered into a durable, ID-stable repository artifact. Freezing the raw concept layer preserves chronology and original wording, prevents chat-history loss, and lets classification, families, scoring, and ventures remain additive layers instead of destructive edits. | Active | Monthly |
 
 ## Revision Notes
 
