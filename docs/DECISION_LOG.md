@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-04
+Last updated: 2026-08-05
 Status: Active
 
 ## Logging Rules
@@ -21,6 +21,7 @@ Status: Active
 | 2026-08-03 | D-006 | Record decisions and document revisions explicitly. | The repo must preserve operational memory independent of chat history. | Active | Ongoing |
 | 2026-08-03 | D-007 | Adopt a formal knowledge hierarchy with evidence thresholds and mandatory session closeout updates. | Separating observations, hypotheses, evidence, and principles preserves reasoning history and reduces premature certainty. | Active | Monthly |
 | 2026-08-04 | D-008 | Establish a permanent Atlas source-of-truth set before clustering work begins. | Atlas is transitioning from broad ideation into structured exploitation; charter, operating manual, constitution, roadmap, knowledge index, and opportunity-engine design reduce strategic drift and preserve working context. | Active | Monthly |
+| 2026-08-05 | D-009 | Adopt Concept Schema v1.0 as mandatory for every Atlas concept record. | Consistent clustering, cross-cutting analysis, prevention of schema drift, and future automation require one frozen eight-field concept format before the representative 100-concept pilot. | Active | Monthly |
 
 ## Revision Notes
 
