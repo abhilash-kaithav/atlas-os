@@ -4,6 +4,7 @@
 
 - `concepts_raw.csv`: immutable gold-source concept inventory
 - `concepts_curated.csv`: one-to-one derived concept layer for analysis
+- `job_taxonomy.csv`: canonical job definitions, example legacy variants, and concept counts
 - `concepts_inventory_qa.md`: QA summary for coverage, duplicates, missing fields, unknowns, and review flags
 
 ## Operating Policy
@@ -17,6 +18,7 @@
 Run `scripts/build_concepts_curated.py` from the repository root to rebuild:
 
 - `data/concepts_curated.csv`
+- `data/job_taxonomy.csv`
 - `data/concepts_inventory_qa.md`
 
 The script assumes `data/concepts_raw.csv` is the canonical raw source.

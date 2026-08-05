@@ -16,8 +16,10 @@ DATA_DIR = ROOT / "data"
 RAW_PATH = DATA_DIR / "concepts_raw.csv"
 CURATED_PATH = DATA_DIR / "concepts_curated.csv"
 QA_PATH = DATA_DIR / "concepts_inventory_qa.md"
+JOB_TAXONOMY_PATH = DATA_DIR / "job_taxonomy.csv"
 
 UNKNOWN = "Unknown"
+GENERATED_DATE = "2026-08-05"
 
 CURATED_COLUMNS = [
     "Concept ID",
@@ -26,7 +28,8 @@ CURATED_COLUMNS = [
     "Track",
     "Batch",
     "Primitive",
-    "Job",
+    "Canonical Job",
+    "Domain",
     "Customer",
     "Value Mechanism",
     "Initial Wedge",
@@ -260,6 +263,375 @@ DOMAIN_PROFILES = [
         "Policy and strategy teams working on multi-year public coordination problems.",
     ),
 ]
+
+JOB_PREFIXES = (
+    "Match the right resources in ",
+    "Create reusable outputs for ",
+    "Preserve context for ",
+    "Find opportunities in ",
+    "Predict outcomes in ",
+    "Verify quality in ",
+    "Test scenarios in ",
+    "Compound gains in ",
+    "Improve ",
+    "Coordinate ",
+    "Accelerate ",
+    "Adapt ",
+)
+
+DECISION_CONTEXTS = {
+    "roadmap decisions",
+    "operating decisions",
+    "account decisions",
+    "commercial decisions",
+    "venture decisions",
+}
+
+DEVELOPMENT_CONTEXTS = {
+    "skill development",
+    "personal development",
+}
+
+PLANNING_CONTEXTS = {
+    "adaptation planning",
+}
+
+CREATION_CONTEXTS = {
+    "content production",
+}
+
+CANONICAL_JOB_DESCRIPTIONS = {
+    "Improve decisions": "Help the customer make better choices, prioritization calls, and tradeoffs.",
+    "Improve execution": "Help the customer run ongoing work and coordination more effectively.",
+    "Improve capability": "Increase skill, expertise, or personal effectiveness over time.",
+    "Improve planning": "Make plans more robust, adaptive, or better informed before action.",
+    "Improve creation": "Increase the quality or leverage of created outputs and intellectual assets.",
+    "Preserve context": "Capture and recall knowledge, history, rationale, and prior decisions.",
+    "Find opportunities": "Surface unmet needs, openings, patterns, or high-upside possibilities.",
+    "Accelerate learning": "Help people or systems learn, onboard, or improve faster.",
+    "Accelerate execution": "Shorten time-to-progress in coordinated work or multi-step action.",
+    "Coordinate work": "Move multi-step work across people, tools, or systems with fewer handoffs.",
+    "Match resources": "Connect the right people, assets, opportunities, or support at the right time.",
+    "Verify quality": "Establish quality, trust, readiness, or compliance before proceeding.",
+    "Predict outcomes": "Forecast likely outcomes early enough for the customer to act.",
+    "Test scenarios": "Explore alternatives before committing time, capital, or trust.",
+    "Create reusable outputs": "Turn work into repeatable assets, reusable outputs, or durable IP.",
+    "Compound capability": "Make learning, self-improvement, or expertise accumulate across cycles.",
+    "Compound gains": "Make each cycle increase the value of the next instead of resetting.",
+    "Adapt continuously": "Keep plans, systems, or behavior aligned as conditions change.",
+}
+
+DOMAIN_DESCRIPTIONS = {
+    "Product": "Product planning, roadmap, launch, and product strategy work.",
+    "Operations": "Company-level management, planning, and operating decisions.",
+    "Workflow": "Repeated business processes, approvals, handoffs, and operational execution.",
+    "Commercial": "Revenue, customer, account, procurement, negotiation, and growth activity.",
+    "Finance": "Finance, accounting, audit, tax, wealth, and capital allocation workflows.",
+    "Legal": "Contracts, compliance, legal reasoning, rights, and legal process work.",
+    "Talent": "Recruiting, onboarding, workforce design, and employee capability development.",
+    "Education": "Teaching, schooling, structured learning, and formal capability building.",
+    "Household": "Family logistics, home management, and household coordination.",
+    "Healthcare": "Clinical care, caregiving, patient support, and health management.",
+    "Physical Operations": "Manufacturing, logistics, supply chain, field operations, and asset operations.",
+    "Research": "Scientific research, experimentation, interviews, and discovery programs.",
+    "Infrastructure": "Utilities, resilience, long-horizon assets, and shared technical or civic infrastructure.",
+    "Content & IP": "Content creation, publishing, knowledge products, and intellectual property.",
+    "Venture": "Startups, acquisitions, venture building, and investment-oriented company creation.",
+    "Community": "Community participation, belonging, reputation, and social coordination.",
+    "Personal Development": "Individual growth, identity, memory, habits, and personal leverage.",
+    "Automation": "Robotics, autonomous fleets, and physical automation deployment.",
+    "Public Sector": "Government, grants, policy execution, and public administration.",
+    "Institutions": "Society-scale systems, governance models, and long-horizon collective capability.",
+}
+
+JOB_CONTEXT_DOMAIN_BASES = {
+    "roadmap decisions": {"Product": 6},
+    "operating decisions": {"Operations": 6},
+    "workflow execution": {"Workflow": 6},
+    "account decisions": {"Commercial": 4, "Research": 1, "Venture": 1},
+    "commercial decisions": {"Commercial": 3, "Finance": 2, "Legal": 2},
+    "skill development": {"Talent": 3, "Education": 2, "Personal Development": 1},
+    "personal development": {"Personal Development": 6},
+    "household coordination": {"Household": 6},
+    "care coordination": {"Healthcare": 6},
+    "physical operations": {"Physical Operations": 6},
+    "research programs": {"Research": 6},
+    "adaptation planning": {"Infrastructure": 6},
+    "content production": {"Content & IP": 6},
+    "venture decisions": {"Venture": 6},
+    "community participation": {"Community": 6},
+    "automation deployment": {"Automation": 6},
+    "public coordination": {"Institutions": 4, "Public Sector": 2},
+}
+
+CUSTOMER_DOMAIN_BASES = {
+    "Product manager": {"Product": 4},
+    "Product leader": {"Product": 4},
+    "Chief of staff": {"Operations": 3},
+    "Operations executive": {"Operations": 4},
+    "Operations manager": {"Workflow": 2, "Operations": 2, "Physical Operations": 1},
+    "User researcher": {"Research": 4},
+    "Support leader": {"Commercial": 3},
+    "Customer success manager": {"Commercial": 3},
+    "Revenue operations leader": {"Commercial": 4},
+    "Procurement leader": {"Commercial": 4},
+    "Legal operations leader": {"Legal": 4},
+    "Finance manager": {"Finance": 4},
+    "Recruiter": {"Talent": 4},
+    "Learning and development leader": {"Talent": 3, "Education": 1, "Personal Development": 1},
+    "Educator": {"Education": 4},
+    "Learner": {"Education": 2, "Personal Development": 2},
+    "Parent": {"Household": 4},
+    "Patient": {"Healthcare": 4},
+    "Family caregiver": {"Healthcare": 4},
+    "Care coordinator": {"Healthcare": 4},
+    "Quality manager": {"Physical Operations": 4},
+    "Supply chain manager": {"Physical Operations": 4},
+    "Plant manager": {"Physical Operations": 4},
+    "Infrastructure operator": {"Physical Operations": 4},
+    "Research scientist": {"Research": 4},
+    "R&D leader": {"Research": 4},
+    "City planner": {"Infrastructure": 4, "Public Sector": 1},
+    "Utility planner": {"Infrastructure": 4},
+    "Infrastructure planner": {"Infrastructure": 4},
+    "Creator": {"Content & IP": 4},
+    "Investor": {"Venture": 4, "Finance": 1},
+    "Founder": {"Venture": 4},
+    "Community manager": {"Community": 4},
+    "Individual professional": {"Personal Development": 4},
+    "Automation operations leader": {"Automation": 4},
+    "Public sector strategist": {"Institutions": 3, "Public Sector": 2},
+}
+
+DOMAIN_KEYWORDS = {
+    "Product": (
+        "product manager",
+        "roadmap",
+        "jira",
+        "product launch",
+        "requirements",
+        "product studio",
+    ),
+    "Operations": (
+        "operating manual",
+        "organizational",
+        "organization",
+        "executive action",
+        "board meeting",
+        "company memory",
+        "leadership team",
+    ),
+    "Workflow": (
+        "workflow",
+        "approval",
+        "handoff",
+        "back-office",
+        "process",
+        "service desk",
+        "automation studio",
+    ),
+    "Commercial": (
+        "sales",
+        "account",
+        "client",
+        "customer success",
+        "lead",
+        "pipeline",
+        "pricing",
+        "procurement",
+        "vendor",
+        "renewal",
+        "negotiation",
+        "practice",
+        "go-to-market",
+    ),
+    "Finance": (
+        "finance",
+        "financial",
+        "accounting",
+        "tax",
+        "audit",
+        "wealth",
+        "credit",
+        "bookkeeping",
+        "spend",
+        "capital allocation",
+    ),
+    "Legal": (
+        "legal",
+        "contract",
+        "compliance",
+        "lawyer",
+        "case",
+        "rights",
+        "evidence",
+        "divorce",
+        "obligation",
+        "permit",
+    ),
+    "Talent": (
+        "recruit",
+        "hiring",
+        "talent",
+        "employee",
+        "onboarding",
+        "workforce",
+        "human capital",
+        "expertise",
+        "career pivot",
+    ),
+    "Education": (
+        "student",
+        "teacher",
+        "school",
+        "classroom",
+        "course",
+        "curriculum",
+        "learns",
+        "learning companion",
+        "lifelong model",
+        "retention",
+    ),
+    "Household": (
+        "family",
+        "household",
+        "home",
+        "parent",
+        "chore",
+        "school logistics",
+        "travel",
+        "bill",
+    ),
+    "Healthcare": (
+        "health",
+        "patient",
+        "medical",
+        "care",
+        "clinic",
+        "medication",
+        "elder",
+        "hospital",
+        "therapy",
+        "nutrition",
+        "longevity",
+    ),
+    "Physical Operations": (
+        "supply chain",
+        "logistics",
+        "warehouse",
+        "factory",
+        "plant",
+        "manufacturing",
+        "maintenance",
+        "defect",
+        "rail",
+        "port",
+        "throughput",
+        "fleet",
+    ),
+    "Research": (
+        "research",
+        "scientific",
+        "scientist",
+        "experiment",
+        "hypothesis",
+        "discovery",
+        "lab",
+        "customer interview",
+        "user research",
+        "feedback",
+        "patent",
+    ),
+    "Infrastructure": (
+        "infrastructure",
+        "utility",
+        "grid",
+        "climate",
+        "resilience",
+        "property",
+        "city",
+        "water",
+        "telecom",
+        "transportation",
+        "critical infrastructure",
+        "dependency",
+        "planetary",
+        "orbit",
+        "moon",
+    ),
+    "Content & IP": (
+        "creator",
+        "content",
+        "publish",
+        "podcast",
+        "subscriber",
+        "intellectual property",
+        "licens",
+        "whiteboard",
+        "media",
+    ),
+    "Venture": (
+        "venture",
+        "startup",
+        "founder",
+        "investor",
+        "acquisition",
+        "private equity",
+        "hedge fund",
+        "vc",
+        "thesis",
+        "deal",
+    ),
+    "Community": (
+        "community",
+        "belonging",
+        "volunteer",
+        "neighborhood",
+        "social",
+        "moderation",
+        "collective",
+    ),
+    "Personal Development": (
+        "identity",
+        "future self",
+        "journal",
+        "memory",
+        "meaning",
+        "curiosity",
+        "play",
+        "self-directed",
+        "personal leverage",
+        "future regret",
+    ),
+    "Automation": (
+        "robot",
+        "robotics",
+        "autonomous machine",
+        "physical workforce",
+        "microgravity",
+        "embodied",
+    ),
+    "Public Sector": (
+        "government",
+        "grant",
+        "policy",
+        "policymaker",
+        "public comment",
+        "public administration",
+        "city permit",
+    ),
+    "Institutions": (
+        "institution",
+        "civilization",
+        "society",
+        "nation",
+        "humanity",
+        "gdp",
+        "progress",
+        "valuable futures",
+        "future readiness",
+    ),
+}
 
 
 def clean_markdown(text: str) -> str:
@@ -786,6 +1158,156 @@ def infer_job(primitive: str, profile: DomainProfile) -> str:
     return templates[primitive].format(obj=profile.object_label)
 
 
+def extract_job_context(job: str) -> tuple[str, str]:
+    trimmed = job.rstrip(".")
+    for prefix in JOB_PREFIXES:
+        if trimmed.startswith(prefix):
+            return prefix, trimmed[len(prefix) :]
+    return trimmed, trimmed
+
+
+def infer_canonical_job(legacy_job: str) -> str:
+    prefix, context = extract_job_context(legacy_job)
+
+    if prefix == "Improve ":
+        if context in DECISION_CONTEXTS:
+            return "Improve decisions"
+        if context in DEVELOPMENT_CONTEXTS:
+            return "Improve capability"
+        if context in PLANNING_CONTEXTS:
+            return "Improve planning"
+        if context in CREATION_CONTEXTS:
+            return "Improve creation"
+        return "Improve execution"
+    if prefix == "Accelerate ":
+        if context in DEVELOPMENT_CONTEXTS:
+            return "Accelerate learning"
+        return "Accelerate execution"
+    if prefix == "Coordinate ":
+        return "Coordinate work"
+    if prefix == "Preserve context for ":
+        return "Preserve context"
+    if prefix == "Find opportunities in ":
+        return "Find opportunities"
+    if prefix == "Match the right resources in ":
+        return "Match resources"
+    if prefix == "Verify quality in ":
+        return "Verify quality"
+    if prefix == "Predict outcomes in ":
+        return "Predict outcomes"
+    if prefix == "Test scenarios in ":
+        return "Test scenarios"
+    if prefix == "Create reusable outputs for ":
+        return "Create reusable outputs"
+    if prefix == "Compound gains in ":
+        if context in DEVELOPMENT_CONTEXTS:
+            return "Compound capability"
+        return "Compound gains"
+    if prefix == "Adapt ":
+        return "Adapt continuously"
+    raise ValueError(f"Unexpected legacy job format: {legacy_job}")
+
+
+def add_scores(scores: Counter[str], additions: dict[str, int]) -> None:
+    for label, weight in additions.items():
+        scores[label] += weight
+
+
+def score_keyword_matches(text: str, title_lower: str, scores: Counter[str]) -> None:
+    for domain, keywords in DOMAIN_KEYWORDS.items():
+        for keyword in keywords:
+            if keyword in text:
+                weight = 3 if keyword in title_lower else 1
+                scores[domain] += weight
+
+
+def infer_domain(row: dict[str, str]) -> tuple[str, bool]:
+    legacy_job = row["Job"]
+    customer = row["Customer"]
+    title_lower = row["Concept Title"].lower()
+    text = " ".join(
+        [
+            row["Concept Title"],
+            row["Clear Description"],
+            legacy_job,
+            customer,
+            row["Initial Wedge"],
+            row["Original Wording"],
+        ]
+    ).lower()
+
+    _, context = extract_job_context(legacy_job)
+    scores: Counter[str] = Counter()
+    add_scores(scores, JOB_CONTEXT_DOMAIN_BASES.get(context, {}))
+    add_scores(scores, CUSTOMER_DOMAIN_BASES.get(customer, {}))
+    score_keyword_matches(text, title_lower, scores)
+
+    if "user research" in text or "customer feedback" in text or "interview" in text:
+        scores["Research"] += 3
+    if "career pivot" in text or "career changes" in text:
+        scores["Talent"] += 2
+        scores["Personal Development"] += 2
+    if "trust infrastructure" in text or "critical infrastructure" in text:
+        scores["Infrastructure"] += 3
+    if any(keyword in text for keyword in ("public comment", "policy", "government", "regulation", "grant", "laws")):
+        scores["Public Sector"] += 8
+    if any(keyword in text for keyword in ("civilization", "society", "humanity", "civilizational", "institutions", "collective intelligence")):
+        scores["Institutions"] += 8
+    if any(keyword in title_lower for keyword in ("civilization", "society", "institution")):
+        scores["Institutions"] += 5
+    if any(keyword in title_lower for keyword in ("policy", "regulation", "grant", "public comment")):
+        scores["Public Sector"] += 5
+    if "play " in text or title_lower.startswith("play "):
+        scores["Personal Development"] += 4
+
+    ranked = sorted(scores.items(), key=lambda item: (-item[1], item[0]))
+    if not ranked:
+        return "Operations", True
+
+    best_domain, best_score = ranked[0]
+    second_score = ranked[1][1] if len(ranked) > 1 else 0
+    uncertain = best_score < 4 or best_score - second_score <= 1
+    return best_domain, uncertain
+
+
+def append_note(notes: str, new_note: str) -> str:
+    notes = notes.strip()
+    if not notes:
+        return new_note
+    if new_note in notes:
+        return notes
+    return f"{notes} {new_note}"
+
+
+def finalize_row(base_row: dict[str, str]) -> dict[str, str]:
+    legacy_job = base_row["Job"]
+    canonical_job = infer_canonical_job(legacy_job)
+    domain, domain_uncertain = infer_domain(base_row)
+    notes = base_row["Notes"]
+    if domain_uncertain:
+        notes = append_note(notes, "Domain required judgment between nearby controlled vocabulary labels.")
+
+    return {
+        "Concept ID": base_row["Concept ID"],
+        "Concept Title": base_row["Concept Title"],
+        "Clear Description": base_row["Clear Description"],
+        "Track": base_row["Track"],
+        "Batch": base_row["Batch"],
+        "Primitive": base_row["Primitive"],
+        "Canonical Job": canonical_job,
+        "Domain": domain,
+        "Customer": base_row["Customer"],
+        "Value Mechanism": base_row["Value Mechanism"],
+        "Initial Wedge": base_row["Initial Wedge"],
+        "Confidence": base_row["Confidence"],
+        "Evidence": base_row["Evidence"],
+        "Why Now": base_row["Why Now"],
+        "Notes": notes,
+        "Raw Source ID": base_row["Raw Source ID"],
+        "Original Wording": base_row["Original Wording"],
+    }
+
+
 def infer_value_mechanism(primitive: str, profile: DomainProfile) -> str:
     templates = {
         "Discover": "Searches a wider option space and surfaces higher-value openings in {obj} before teams would find them manually.",
@@ -979,7 +1501,50 @@ def format_counts(counter: Counter[str]) -> str:
     return ", ".join(f"{key}: {value}" for key, value in sorted(counter.items(), key=lambda item: item[0]))
 
 
-def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]) -> str:
+def markdown_frequency_table(counter: Counter[str], first_col: str) -> list[str]:
+    lines = [
+        f"| {first_col} | Count |",
+        "| --- | ---: |",
+    ]
+    for label, count in sorted(counter.items(), key=lambda item: (-item[1], item[0])):
+        lines.append(f"| {label} | {count} |")
+    return lines
+
+
+def build_job_taxonomy_rows(
+    legacy_rows: list[dict[str, str]],
+    curated_rows: list[dict[str, str]],
+) -> list[dict[str, str]]:
+    canonical_to_variants: dict[str, Counter[str]] = {}
+    canonical_to_count: Counter[str] = Counter()
+
+    for legacy_row, curated_row in zip(legacy_rows, curated_rows):
+        canonical_job = curated_row["Canonical Job"]
+        canonical_to_count[canonical_job] += 1
+        canonical_to_variants.setdefault(canonical_job, Counter())[legacy_row["Job"]] += 1
+
+    rows: list[dict[str, str]] = []
+    for canonical_job, concept_count in sorted(
+        canonical_to_count.items(),
+        key=lambda item: (-item[1], item[0]),
+    ):
+        variants = canonical_to_variants[canonical_job]
+        rows.append(
+            {
+                "Canonical Job": canonical_job,
+                "Description": CANONICAL_JOB_DESCRIPTIONS[canonical_job],
+                "Example Variants": "; ".join(job for job, _count in variants.most_common(5)),
+                "Concept Count": str(concept_count),
+            }
+        )
+    return rows
+
+
+def qa_report(
+    raw_rows: list[dict[str, str]],
+    legacy_rows: list[dict[str, str]],
+    curated_rows: list[dict[str, str]],
+) -> str:
     raw_ids = [row["Concept ID"] for row in raw_rows]
     curated_ids = [row["Concept ID"] for row in curated_rows]
     raw_counter = Counter(raw_ids)
@@ -996,7 +1561,8 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
         "Track",
         "Batch",
         "Primitive",
-        "Job",
+        "Canonical Job",
+        "Domain",
         "Customer",
         "Value Mechanism",
         "Initial Wedge",
@@ -1013,10 +1579,19 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
     unknown_track_count = sum(1 for row in curated_rows if row["Track"] == UNKNOWN)
     unknown_batch_count = sum(1 for row in curated_rows if row["Batch"] == UNKNOWN)
     unknown_why_now_count = sum(1 for row in curated_rows if row["Why Now"] == UNKNOWN)
+    legacy_job_count = len({row["Job"] for row in legacy_rows})
+    canonical_job_count = len({row["Canonical Job"] for row in curated_rows})
+    distinct_domain_count = len({row["Domain"] for row in curated_rows})
+    changed_concepts = sum(
+        1
+        for legacy_row, curated_row in zip(legacy_rows, curated_rows)
+        if legacy_row["Job"].rstrip(".") != curated_row["Canonical Job"]
+    )
 
     review_buckets: dict[str, list[str]] = {
         "Minimal raw detail / description fallback": [],
         "Primitive assignments needing judgment": [],
+        "Domain mappings needing judgment": [],
         "Broad initial wedges needing manual narrowing": [],
         "Low-confidence concepts (1-2)": [],
         "Fusion concepts with multi-primitive overlap": [],
@@ -1028,6 +1603,8 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
             review_buckets["Minimal raw detail / description fallback"].append(concept_id)
         if "Primitive required judgment between nearby controlled taxonomy labels." in notes:
             review_buckets["Primitive assignments needing judgment"].append(concept_id)
+        if "Domain required judgment between nearby controlled vocabulary labels." in notes:
+            review_buckets["Domain mappings needing judgment"].append(concept_id)
         if "Initial wedge remains broad and should be narrowed manually before external use." in notes:
             review_buckets["Broad initial wedges needing manual narrowing"].append(concept_id)
         if row["Confidence"] in {"1", "2"}:
@@ -1037,16 +1614,22 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
 
     evidence_counts = Counter(row["Evidence"] for row in curated_rows)
     confidence_counts = Counter(row["Confidence"] for row in curated_rows)
+    canonical_job_counts = Counter(row["Canonical Job"] for row in curated_rows)
+    domain_counts = Counter(row["Domain"] for row in curated_rows)
 
     lines = [
         "# Atlas Concept Inventory QA",
         "",
-        "Generated: 2026-08-05",
+        f"Generated: {GENERATED_DATE}",
         "",
         "## Summary",
         "",
         f"- Raw row count: {len(raw_rows)}",
         f"- Curated row count: {len(curated_rows)}",
+        f"- Original distinct Job count: {legacy_job_count}",
+        f"- Canonical Job count: {canonical_job_count}",
+        f"- Distinct Domain count: {distinct_domain_count}",
+        f"- Concepts changed: {changed_concepts}",
         f"- One-to-one ID coverage: {'PASS' if not missing_raw and not extra_curated and len(raw_rows) == len(curated_rows) else 'FAIL'}",
         f"- Duplicate raw IDs: {len(duplicate_raw)}",
         f"- Duplicate curated IDs: {len(duplicate_curated)}",
@@ -1079,6 +1662,22 @@ def qa_report(raw_rows: list[dict[str, str]], curated_rows: list[dict[str, str]]
             f"- Evidence distribution: {format_counts(evidence_counts)}",
             f"- Confidence distribution: {format_counts(confidence_counts)}",
             "",
+            "## Canonical Job Frequency",
+            "",
+        ]
+    )
+    lines.extend(markdown_frequency_table(canonical_job_counts, "Canonical Job"))
+    lines.extend(
+        [
+            "",
+            "## Domain Frequency",
+            "",
+        ]
+    )
+    lines.extend(markdown_frequency_table(domain_counts, "Domain"))
+    lines.extend(
+        [
+            "",
             "## Ambiguous Rows Requiring Review",
             "",
         ]
@@ -1097,9 +1696,15 @@ def main() -> None:
         raise SystemExit(f"Missing raw source: {RAW_PATH}")
 
     raw_rows = load_rows(RAW_PATH)
-    curated_rows = [derive_row(row) for row in raw_rows]
+    legacy_rows = [derive_row(row) for row in raw_rows]
+    curated_rows = [finalize_row(row) for row in legacy_rows]
     write_csv(CURATED_PATH, curated_rows, CURATED_COLUMNS)
-    QA_PATH.write_text(qa_report(raw_rows, curated_rows), encoding="utf-8")
+    write_csv(
+        JOB_TAXONOMY_PATH,
+        build_job_taxonomy_rows(legacy_rows, curated_rows),
+        ["Canonical Job", "Description", "Example Variants", "Concept Count"],
+    )
+    QA_PATH.write_text(qa_report(raw_rows, legacy_rows, curated_rows), encoding="utf-8")
 
 
 if __name__ == "__main__":

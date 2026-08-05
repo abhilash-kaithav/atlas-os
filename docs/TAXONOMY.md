@@ -38,20 +38,31 @@ Rules:
 - Do not introduce a new primitive silently.
 - If a concept appears to need a thirteenth primitive, keep the best-fit existing primitive and record the ambiguity in `Notes`.
 
-## Job Rules
+## Canonical Job And Domain Rules
 
-Jobs should be:
+The curated layer now stores `Canonical Job` and `Domain` separately instead of one mixed `Job` field.
 
-- customer outcomes, not product descriptions
+`Canonical Job` should be:
+
+- a customer outcome, not a product description
 - concise and verb-led
+- domain independent
 - solution-independent
+
+`Domain` should be:
+
+- a controlled context label
+- stable across similar concepts
+- inferred from the concept context, not the product category
 
 Examples:
 
-- `Improve roadmap decisions.`
-- `Preserve context for operating decisions.`
-- `Coordinate workflow execution.`
-- `Predict outcomes in physical operations.`
+- `Improve roadmap decisions.` -> `Canonical Job: Improve decisions`, `Domain: Product`
+- `Preserve context for operating decisions.` -> `Canonical Job: Preserve context`, `Domain: Operations`
+- `Coordinate workflow execution.` -> `Canonical Job: Coordinate work`, `Domain: Workflow`
+- `Predict outcomes in physical operations.` -> `Canonical Job: Predict outcomes`, `Domain: Physical Operations`
+
+See [JOB_TAXONOMY.md](/Users/abhil/Documents/Codex/repos/atlas-os/docs/JOB_TAXONOMY.md) for the full controlled vocabulary and normalization rules.
 
 ## Customer Rules
 
