@@ -2,29 +2,43 @@
 
 ## Purpose
 
-`data/concepts.csv` is Atlas's canonical concept inventory.
+Atlas now uses a two-layer concept inventory model:
 
-It preserves the raw concept layer extracted from the original Atlas ideation history as a durable repository artifact.
+- `data/concepts_raw.csv` is the immutable gold source.
+- `data/concepts_curated.csv` is the derived analytical layer.
 
-This file is the immutable gold source for the concept corpus.
+The split preserves original intent while making the concept corpus usable for schema-based review, comparison, and future clustering.
 
-## Core Rule
+## File Roles
 
-All future work is additive to the inventory, not destructive of it.
+`data/concepts_raw.csv`
 
-That means:
+- Canonical raw inventory recovered from Atlas ideation history.
+- Preserves original wording, chronology, IDs, and source links.
+- May only change through append-only source recovery or a path rename that does not alter row content.
 
-- Do not rewrite original concept wording.
-- Do not merge similar concepts.
-- Do not renumber concept IDs.
-- Do not delete rows unless an exact duplicate is proven from source.
-- Do record ambiguity in `Notes` rather than inventing missing detail.
+`data/concepts_curated.csv`
 
-## What Belongs Here
+- One-to-one derived layer for structured analysis.
+- Adds normalized schema fields and analytical metadata.
+- Must preserve `Concept ID`, keep `Original Wording` exact, and map every raw row to exactly one curated row.
 
-Each row in `data/concepts.csv` represents one concept exactly once.
+`data/concepts_inventory_qa.md`
 
-Current columns:
+- QA report for row counts, ID coverage, duplicate checks, unknown normalization counts, and ambiguous rows that still need review.
+
+## Core Rules
+
+- Never overwrite or "clean up" `data/concepts_raw.csv`.
+- Never merge, delete, or renumber concepts in either layer.
+- Preserve `Concept ID` exactly.
+- Preserve `Original Wording` exactly in the curated layer.
+- Record ambiguity in `Notes` instead of inventing certainty.
+- Mark unknown `Track` or `Batch` values explicitly in the curated layer when they cannot be recovered from source.
+
+## Raw Schema
+
+`data/concepts_raw.csv` keeps the recovered source columns:
 
 - `Concept ID`
 - `Concept`
@@ -35,37 +49,41 @@ Current columns:
 - `Source`
 - `Notes`
 
-## What Does Not Belong Here
+## Curated Schema
 
-Derived metadata should live outside the canonical inventory.
+`data/concepts_curated.csv` keeps one derived row per raw concept with these columns:
 
-Examples:
+- `Concept ID`
+- `Concept Title`
+- `Clear Description`
+- `Track`
+- `Batch`
+- `Primitive`
+- `Job`
+- `Customer`
+- `Value Mechanism`
+- `Initial Wedge`
+- `Confidence`
+- `Evidence`
+- `Why Now`
+- `Notes`
+- `Raw Source ID`
+- `Original Wording`
 
-- classification
-- primitives
-- jobs
-- opportunity families
-- scoring
-- venture recommendations
-- clustering
-- ranking
+The schema fields align with `schemas/concept-schema.md`, while the extra columns preserve lineage and curation context.
 
-Those layers may reference `Concept ID`, but they must not overwrite source concepts.
+## Versioning
 
-## Naming And ID Policy
+- Treat `data/concepts_raw.csv` as append-only source material.
+- Treat `data/concepts_curated.csv` as a versioned interpretation layer that can improve over time.
+- Any curated update should happen in a normal repository commit so the evolution of titles, primitives, wedges, and notes stays auditable.
 
-- IDs are permanent and sequential: `C-0001`, `C-0002`, ..., `C-0700`.
-- Once assigned, an ID is never reused.
-- If new source concepts are recovered later, append new IDs rather than renumbering existing rows.
+## Build Path
 
-## Versioning Policy
+Use `scripts/build_concepts_curated.py` to regenerate the curated CSV and QA report from the raw source.
 
-- Treat the inventory as append-only source material.
-- Any material change requires an explicit Decision Log entry.
-- If source recovery improves a row, preserve the same `Concept ID` and document the reason in the commit and, when relevant, in `Notes`.
+That script is intentionally conservative:
 
-## Ambiguity Policy
-
-If the recovered source only provided a concept title, keep the title and note the limitation.
-
-Do not infer missing explanation, customer, moat, or business model details from adjacent concepts.
+- it does not modify the raw file
+- it preserves one-to-one ID coverage
+- it marks unresolved ambiguity in `Notes` and the QA report

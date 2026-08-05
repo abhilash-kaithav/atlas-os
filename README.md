@@ -16,6 +16,11 @@ Atlas OS is the versioned operating system for discovering, classifying, validat
 ```text
 atlas-os/
 ├── README.md
+├── data/
+│   ├── README.md
+│   ├── concepts_raw.csv
+│   ├── concepts_curated.csv
+│   └── concepts_inventory_qa.md
 ├── docs/
 │   ├── AI_OPERATING_MANUAL.md
 │   ├── ATLAS_CONSTITUTION.md
@@ -59,6 +64,7 @@ atlas-os/
 - Immutable rules: `docs/ATLAS_CONSTITUTION.md`
 - Decision history and version control: `docs/DECISION_LOG.md`
 - Codex repository workflow: `docs/CODEX_WORKFLOW.md`
+- Concept inventory policy: `concepts/README.md`
 - Knowledge hierarchy: `knowledge/README.md`
 - Current phase and milestones: `roadmap/ROADMAP.md`
 - Opportunity system design: `opportunity-engine/README.md`
