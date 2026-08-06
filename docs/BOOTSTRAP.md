@@ -69,17 +69,18 @@ Atlas has completed the core setup required before discovery work:
 - Atlas reasoning model v1.0: complete
 - bootstrap migration into the persistent Work environment: complete
 - first Value Pattern taxonomy and full concept map: complete
+- first Opportunity Family taxonomy and full family map: complete
 
-Atlas has now completed its first dedicated discovery task and is ready to move one layer up into Opportunity Families.
+Atlas has now completed its second dedicated discovery task and is ready to move into family-level triage.
 
 ### Active Next Task
 
-- Task ID: `TASK-002`
-- Title: `Opportunity Family Formation`
+- Task ID: `TASK-003`
+- Title: `Opportunity Family Triage`
 - Status: `Draft`
 - State: not started
 
-`TASK-001` is complete and approved. `TASK-002` is the next draft task and should merge the approved Value Patterns into larger strategic Opportunity Families.
+`TASK-002` is complete and approved. `TASK-003` is the next draft task and should score the approved Opportunity Family layer before research or venture work begins.
 
 ## Product Boundary
 
@@ -150,6 +151,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - Atlas classifies by cause, not appearance.
 - Discovery follows the Atlas Reasoning Model pipeline.
 - `opportunity-engine/value-patterns/README.md` and `value_pattern_map.csv` are the active first-pass Value Pattern layer above the concept schema.
+- `opportunity-engine/opportunity-families/README.md` and `opportunity_family_map.csv` are the active second-pass Opportunity Family layer above Value Patterns.
 - Atlas uses the task/result/review/state operating loop.
 - Atlas scores and compares higher-order structures, not isolated flashy ideas, whenever family-level reasoning is available.
 
@@ -195,6 +197,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-002` only when explicitly instructed to start execution.
+Begin `TASK-003` only when explicitly instructed to start execution.
 
-That task should merge the approved Value Pattern layer into a first Opportunity Family taxonomy, define each family's value engine and related patterns, and preserve traceability back through `value_pattern_map.csv` to the concept inventory.
+That task should score the approved Opportunity Family layer with an explicit family-level rubric, identify the strongest research candidates, and preserve traceability back through `opportunity_family_map.csv` and `value_pattern_map.csv` to the concept inventory.

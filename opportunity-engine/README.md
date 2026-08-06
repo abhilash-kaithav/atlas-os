@@ -103,10 +103,10 @@ Each opportunity family should capture:
 - family ID
 - title
 - underlying value engine
-- related primitives
-- related concept records
+- related Value Patterns
+- source primitives
+- representative concepts
 - revenue thesis
-- evidence summary
 - evidence gaps
 - next validation step
 
@@ -184,4 +184,4 @@ The default flow is:
 
 ## Current Repository Note
 
-`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is now the active first discovery layer above the concept schema. Active opportunity records should be normalized into the official concept schema before family-level analysis.
+`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is the active first discovery layer above the concept schema, and `opportunity-engine/opportunity-families/` is the active second discovery layer above Value Patterns. Active scoring and research work should now begin from the approved family layer rather than raw concept clustering.

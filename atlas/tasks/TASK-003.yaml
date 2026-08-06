@@ -1,0 +1,37 @@
+task_id: TASK-003
+title: "Opportunity Family Triage"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-06
+updated_on: 2026-08-06
+objective: "Score the approved Opportunity Family taxonomy at the family level so Atlas can identify which strategic spaces deserve research depth before any concept-level or venture-level commitment."
+context:
+  - "TASK-002 is complete and approved."
+  - "Atlas Opportunity Family Taxonomy v1.0 now classifies all 700 Value Pattern rows into 5 strategic families."
+  - "The opportunity-family artifacts now live in opportunity-engine/opportunity-families/."
+  - "Scoring should happen at the family level by default before research or venture work."
+inputs:
+  - "opportunity-engine/opportunity-families/README.md"
+  - "opportunity-engine/opportunity-families/opportunity_family_map.csv"
+  - "opportunity-engine/opportunity-families/opportunity_family_summary.md"
+  - "opportunity-engine/README.md"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A durable family-level scoring artifact with an explicit rubric and weighted criteria."
+  - "A ranked summary that compares all approved Opportunity Families and identifies the strongest research candidates."
+  - "Completed Atlas result and review artifacts for TASK-003 after execution."
+constraints:
+  - "Do not score raw concepts directly when a family-level comparison is available."
+  - "Preserve traceability from every score back through the approved Opportunity Family and Value Pattern layers."
+  - "Keep the scoring rubric causal, comparable, and explicit enough for reuse in future sessions."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The scoring method is explicit and reproducible from repository artifacts."
+  - "Every approved Opportunity Family receives a comparable score and short rationale."
+  - "The output identifies which family or families should move into deeper research next."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-003.yaml"
+review_artifact: "atlas/reviews/TASK-003.md"
+notes:
+  - "Do not start execution until explicitly instructed."

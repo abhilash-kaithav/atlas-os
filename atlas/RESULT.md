@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-001` execution is complete.
+`TASK-002` execution is complete.
 
-- Task ID: `TASK-001`
-- Title: `Value Pattern Discovery`
+- Task ID: `TASK-002`
+- Title: `Opportunity Family Formation`
 - Execution Status: `Completed`
-- Structured Artifact: `atlas/results/TASK-001.yaml`
+- Structured Artifact: `atlas/results/TASK-002.yaml`
 
-The execution produced the first Atlas Value Pattern taxonomy, a one-to-one 700-row concept map, a generated summary report, and the supporting script that reproduces those outputs from `data/concepts_curated.csv`.
+The execution produced the first Atlas Opportunity Family taxonomy, a one-to-one 700-row family map derived from the approved Value Pattern layer, a generated summary report, and the supporting script that reproduces those outputs from `value_pattern_map.csv`.
 
 ## Ownership
 

@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-001` review is complete.
+`TASK-002` review is complete.
 
-- Task ID: `TASK-001`
-- Title: `Value Pattern Discovery`
+- Task ID: `TASK-002`
+- Title: `Opportunity Family Formation`
 - Review Decision: `Approved`
-- Structured Artifact: `atlas/reviews/TASK-001.md`
+- Structured Artifact: `atlas/reviews/TASK-002.md`
 
-The result meets the task criteria: the taxonomy is explicit, reproducible, fully mapped to the curated inventory, and ready to support Opportunity Family formation without reopening methodology setup.
+The result meets the task criteria: the family taxonomy is explicit, reproducible, fully mapped from the approved Value Pattern layer, and ready to support family-level triage without reopening methodology setup.
 
 ## Ownership
 

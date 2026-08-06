@@ -13,17 +13,18 @@ Owner: Shared
 - Reasoning Model: Complete
 - Bootstrap Migration: Complete
 - Value Pattern Taxonomy: Complete
+- Opportunity Family Taxonomy: Complete
 
 ## Current Phase
 
-Opportunity Family Formation Ready
+Opportunity Family Triage Ready
 
 ## Next Task
 
-- Task ID: `TASK-002`
-- Title: Opportunity Family Formation
+- Task ID: `TASK-003`
+- Title: Opportunity Family Triage
 - Status: Draft
-- Execution Note: `TASK-001` is complete and approved. `TASK-002` is the next draft task and should merge the approved Value Pattern layer into larger strategic Opportunity Families.
+- Execution Note: `TASK-002` is complete and approved. `TASK-003` is the next draft task and should score the approved Opportunity Family layer before research or venture work begins.
 
 ## Operating Model Summary
 
@@ -34,6 +35,6 @@ Opportunity Family Formation Ready
 
 ## Immediate Focus
 
-1. Use the approved Value Pattern layer in `opportunity-engine/value-patterns/` as the required input to Opportunity Family work.
-2. Execute `TASK-002` only when explicitly started through the task/result/review workflow.
-3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns into all higher discovery layers.
+1. Use the approved Opportunity Family layer in `opportunity-engine/opportunity-families/` as the required input to family-level triage.
+2. Execute `TASK-003` only when explicitly started through the task/result/review workflow.
+3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns and Opportunity Families into all higher discovery layers.

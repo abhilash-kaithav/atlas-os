@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-002`
-- Title: Opportunity Family Formation
+- Task ID: `TASK-003`
+- Title: Opportunity Family Triage
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-002.yaml`
+- Structured Artifact: `atlas/tasks/TASK-003.yaml`
 
 ## Ownership
 

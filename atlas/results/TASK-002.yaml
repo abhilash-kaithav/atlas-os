@@ -1,0 +1,47 @@
+task_id: TASK-002
+title: "Opportunity Family Formation"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-06
+updated_on: 2026-08-06
+source_task: "atlas/tasks/TASK-002.yaml"
+summary: "Derived Atlas Opportunity Family Taxonomy v1.0, mapped all 700 approved Value Pattern rows into 5 reproducible strategic families, and updated the repository to make the Opportunity Family layer the active bridge into family-level triage."
+completed_work:
+  - "Defined a Value Pattern anchored Opportunity Family rule set with 5 strategic families."
+  - "Generated a one-to-one Opportunity Family classification map for all 700 approved Value Pattern rows."
+  - "Generated a summary artifact covering family distribution, review-flag counts, representative concepts, evidence gaps, and next validation steps."
+  - "Updated the bootstrap, roadmap, opportunity-engine, and Atlas workflow artifacts to reflect TASK-002 completion and the next family-triage phase."
+deliverables:
+  - "opportunity-engine/opportunity-families/README.md"
+  - "opportunity-engine/opportunity-families/opportunity_family_map.csv"
+  - "opportunity-engine/opportunity-families/opportunity_family_summary.md"
+  - "scripts/build_opportunity_families.py"
+files_changed:
+  - "README.md"
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-002.yaml"
+  - "atlas/tasks/TASK-003.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-002.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-002.md"
+  - "atlas/STATE.md"
+  - "roadmap/ROADMAP.md"
+  - "opportunity-engine/README.md"
+  - "opportunity-engine/opportunity-families/README.md"
+  - "opportunity-engine/opportunity-families/opportunity_family_map.csv"
+  - "opportunity-engine/opportunity-families/opportunity_family_summary.md"
+  - "scripts/build_opportunity_families.py"
+validation:
+  - "Ran scripts/build_opportunity_families.py successfully."
+  - "Verified that 700 of 700 approved Value Pattern rows were classified with 0 unmapped rows."
+  - "Verified that the family counts sum to 700 across 5 Opportunity Families."
+open_issues:
+  - "671 mapped concepts still have no explicit why-now signal in the underlying curated layer."
+  - "445 mapped concepts still carry low concept confidence from the underlying curated layer."
+  - "375 mapped concepts still carry broad initial wedges that should be narrowed during research."
+follow_up:
+  - "Execute TASK-003 Opportunity Family Triage from the approved Opportunity Family layer."
+review_artifact: "atlas/reviews/TASK-002.md"
