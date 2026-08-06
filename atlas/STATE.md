@@ -17,17 +17,18 @@ Owner: Shared
 - Opportunity Family Triage: Complete
 - Top-Family Research: Complete
 - Wedge Validation Planning: Complete
+- Validation Sprint 1: Complete (Hold)
 
 ## Current Phase
 
-Validation Sprint Ready
+Buyer Access Activation Ready
 
 ## Next Task
 
-- Task ID: `TASK-006`
-- Title: Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns
+- Task ID: `TASK-007`
+- Title: Buyer Access Activation for Renewal Validation Sprint 1
 - Status: Draft
-- Execution Note: `TASK-005` is complete and approved. `TASK-006` is the next draft task and should run the first customer-facing validation sprint for the recommended wedge while keeping OF-005 as the backup lane if the wedge fails kill criteria.
+- Execution Note: `TASK-006` is complete and approved with a hold outcome. `TASK-007` is the next draft task and should secure real interview targets and live teardown candidates so the sprint can be rerun with direct buyer evidence.
 
 ## Operating Model Summary
 
@@ -38,6 +39,6 @@ Validation Sprint Ready
 
 ## Immediate Focus
 
-1. Use the approved validation artifacts in `opportunity-engine/validation/` as the required input to validation sprint execution.
-2. Execute `TASK-006` only when explicitly started through the task/result/review workflow.
+1. Use the approved validation artifacts in `opportunity-engine/validation/` as the required input to buyer-access activation.
+2. Execute `TASK-007` only when explicitly started through the task/result/review workflow.
 3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns, Opportunity Families, scoring, research, and validation into all higher discovery layers.

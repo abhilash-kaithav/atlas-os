@@ -32,6 +32,10 @@ The active goal is to test:
 - `of-002_renewal_copilot_validation_plan.md`: core hypotheses, kill criteria, and validation sequence
 - `of-002_validation_test_queue.csv`: prioritized test list with success and failure signals
 - `of-002_interview_guide.md`: interview script for the first customer-facing discovery sprint
+- `of-002_validation_sprint_1_summary.md`: current sprint hold summary and buyer-access blocker
+- `of-002_outreach_message.md`: default outreach note for recruiting interview targets
+- `of-002_live_teardown_request.md`: follow-up request for securing live teardown candidates
+- `of-002_validation_sprint_tracker.csv`: active tracker for target recruitment and sprint progress
 
 ## Rule
 

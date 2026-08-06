@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-006`
-- Title: Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns
+- Task ID: `TASK-007`
+- Title: Buyer Access Activation for Renewal Validation Sprint 1
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-006.yaml`
+- Structured Artifact: `atlas/tasks/TASK-007.yaml`
 
 ## Ownership
 

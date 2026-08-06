@@ -1,0 +1,37 @@
+task_id: TASK-007
+title: "Buyer Access Activation for Renewal Validation Sprint 1"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-06
+updated_on: 2026-08-06
+objective: "Secure the first qualified interview targets and live teardown candidates so Atlas can rerun Validation Sprint 1 with real buyer evidence instead of remaining blocked on access."
+context:
+  - "TASK-006 is complete and approved."
+  - "Atlas did not collect direct buyer evidence because the canonical repository contains no target-buyer list, outreach history, or live renewal candidates."
+  - "The wedge remains on hold rather than killed."
+  - "Atlas now has an outreach message, teardown request, and tracker ready to use."
+inputs:
+  - "opportunity-engine/validation/of-002_validation_sprint_1_summary.md"
+  - "opportunity-engine/validation/of-002_outreach_message.md"
+  - "opportunity-engine/validation/of-002_live_teardown_request.md"
+  - "opportunity-engine/validation/of-002_validation_sprint_tracker.csv"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A durable target list or outreach log sufficient to begin real buyer interviews."
+  - "An updated sprint tracker showing interview and teardown recruitment progress."
+  - "Completed Atlas result and review artifacts for TASK-007 after execution."
+constraints:
+  - "Do not fabricate buyer evidence or interview outcomes."
+  - "Preserve confidentiality and do not store sensitive contact details without need or consent."
+  - "Differentiate clearly between sourced targets, scheduled interviews, and completed evidence."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The task secures a credible path to the first 12 interviews or clearly states the remaining external blocker."
+  - "The sprint tracker is updated with real recruitment progress."
+  - "The output leaves Atlas materially closer to collecting live buyer evidence."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-007.yaml"
+review_artifact: "atlas/reviews/TASK-007.md"
+notes:
+  - "Do not start execution until explicitly instructed."
