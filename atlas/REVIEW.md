@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-003` review is complete.
+`TASK-004` review is complete.
 
-- Task ID: `TASK-003`
-- Title: `Opportunity Family Triage`
+- Task ID: `TASK-004`
+- Title: `Top-Family Research: Decision and Foresight Infrastructure`
 - Review Decision: `Approved`
-- Structured Artifact: `atlas/reviews/TASK-003.md`
+- Structured Artifact: `atlas/reviews/TASK-004.md`
 
-The result meets the task criteria: the ranking method is explicit, reproducible, family-level, and specific enough to move Atlas into focused research without reopening the family taxonomy.
+The result meets the task criteria: the top-family research is specific, traceable, and decisive enough to move Atlas into wedge validation without reopening family-level strategy.
 
 ## Ownership
 

@@ -15,17 +15,18 @@ Owner: Shared
 - Value Pattern Taxonomy: Complete
 - Opportunity Family Taxonomy: Complete
 - Opportunity Family Triage: Complete
+- Top-Family Research: Complete
 
 ## Current Phase
 
-Top-Family Research Ready
+Wedge Validation Ready
 
 ## Next Task
 
-- Task ID: `TASK-004`
-- Title: Top-Family Research: Decision and Foresight Infrastructure
+- Task ID: `TASK-005`
+- Title: Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot
 - Status: Draft
-- Execution Note: `TASK-003` is complete and approved. `TASK-004` is the next draft task and should research OF-002 Decision and Foresight Infrastructure as the top-ranked family while keeping OF-005 as the backup lane.
+- Execution Note: `TASK-004` is complete and approved. `TASK-005` is the next draft task and should validate the recommended OF-002 wedge while keeping OF-005 as the backup lane if the wedge weakens materially.
 
 ## Operating Model Summary
 
@@ -36,6 +37,6 @@ Top-Family Research Ready
 
 ## Immediate Focus
 
-1. Use the approved scoring layer in `opportunity-engine/scoring/` as the required input to top-family research.
-2. Execute `TASK-004` only when explicitly started through the task/result/review workflow.
-3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns, Opportunity Families, and scoring into all higher discovery layers.
+1. Use the approved research artifacts in `opportunity-engine/research/` as the required input to wedge validation planning.
+2. Execute `TASK-005` only when explicitly started through the task/result/review workflow.
+3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns, Opportunity Families, scoring, and research into all higher discovery layers.

@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-003` execution is complete.
+`TASK-004` execution is complete.
 
-- Task ID: `TASK-003`
-- Title: `Opportunity Family Triage`
+- Task ID: `TASK-004`
+- Title: `Top-Family Research: Decision and Foresight Infrastructure`
 - Execution Status: `Completed`
-- Structured Artifact: `atlas/results/TASK-003.yaml`
+- Structured Artifact: `atlas/results/TASK-004.yaml`
 
-The execution produced the first Atlas family-level scorecard, a ranked summary that shortlists the strongest families, and the supporting script that reproduces those outputs from the approved Opportunity Family map.
+The execution produced the first OF-002 research memo, a wedge shortlist with one recommended build candidate, and the workflow updates that move Atlas from family strategy into validation planning.
 
 ## Ownership
 

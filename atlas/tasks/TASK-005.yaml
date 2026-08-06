@@ -1,0 +1,36 @@
+task_id: TASK-005
+title: "Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-06
+updated_on: 2026-08-06
+objective: "Design the cheapest credible validation plan for the recommended OF-002 wedge so Atlas can test whether benchmark-backed SaaS and AI renewal intelligence is strong enough to justify building."
+context:
+  - "TASK-004 is complete and approved."
+  - "Atlas now recommends a benchmark-backed SaaS and AI renewal decision copilot as the most credible first wedge inside OF-002."
+  - "The wedge still needs direct validation around buyer urgency, willingness to pay, benchmark moat, and product-versus-service boundary."
+  - "OF-005 Capability Capital Platforms remains the backup family if the recommended wedge weakens materially."
+inputs:
+  - "opportunity-engine/research/of-002_decision_and_foresight_memo.md"
+  - "opportunity-engine/research/of-002_wedge_shortlist.md"
+  - "opportunity-engine/scoring/opportunity_family_ranked_summary.md"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A durable validation memo with explicit hypotheses, interview targets, risk tests, and success or failure signals."
+  - "A prioritized list of the first customer and market tests Atlas should run."
+  - "Completed Atlas result and review artifacts for TASK-005 after execution."
+constraints:
+  - "Validate the recommended wedge first rather than reopening family-level strategy."
+  - "Use the cheapest credible tests before considering a full product build."
+  - "Preserve traceability from every validation hypothesis back to the research memo and underlying concepts."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The task defines clear hypotheses, test methods, and success or failure signals for the recommended wedge."
+  - "The output makes the next customer-facing validation step obvious."
+  - "The task leaves Atlas ready to run validation rather than continue abstract planning."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-005.yaml"
+review_artifact: "atlas/reviews/TASK-005.md"
+notes:
+  - "Do not start execution until explicitly instructed."

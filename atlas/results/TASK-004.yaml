@@ -1,0 +1,43 @@
+task_id: TASK-004
+title: "Top-Family Research: Decision and Foresight Infrastructure"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-06
+updated_on: 2026-08-06
+source_task: "atlas/tasks/TASK-004.yaml"
+summary: "Researched the top-ranked Opportunity Family with current external evidence, narrowed OF-002 into a wedge shortlist, and recommended a benchmark-backed SaaS and AI renewal decision copilot as the most credible first build lane."
+completed_work:
+  - "Reviewed current official product pages and current 2026 reports relevant to procurement AI, software and AI spend control, product-decision platforms, and scenario-planning platforms."
+  - "Wrote a durable research memo for OF-002 covering market structure, current signals, white space, invalidating evidence, and a recommended build candidate."
+  - "Produced a wedge shortlist that ranks the strongest OF-002 build paths and preserves traceability back to Atlas concept records."
+  - "Updated the Atlas workflow, roadmap, bootstrap, and decision log to move from top-family research into validation planning."
+deliverables:
+  - "opportunity-engine/research/of-002_decision_and_foresight_memo.md"
+  - "opportunity-engine/research/of-002_wedge_shortlist.md"
+files_changed:
+  - "README.md"
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-004.yaml"
+  - "atlas/tasks/TASK-005.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-004.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-004.md"
+  - "atlas/STATE.md"
+  - "roadmap/ROADMAP.md"
+  - "opportunity-engine/README.md"
+  - "opportunity-engine/research/of-002_decision_and_foresight_memo.md"
+  - "opportunity-engine/research/of-002_wedge_shortlist.md"
+validation:
+  - "Verified that the memo and shortlist stay anchored to OF-002 and cite current external sources reviewed on 2026-08-06."
+  - "Verified that the recommended build candidate is traceable to concept records C-0009, C-0193, C-0247, C-0268, and C-0275."
+  - "Verified that the workflow now advances to a validation-planning task rather than reopening family-level strategy."
+open_issues:
+  - "Several current market signals come from vendor-published studies and product pages, so customer interviews are still required before treating the wedge as validated."
+  - "Benchmark access and data moat remain unresolved for the recommended wedge."
+  - "The product boundary between software and services still needs pressure-testing during validation."
+follow_up:
+  - "Execute TASK-005 Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot."
+review_artifact: "atlas/reviews/TASK-004.md"

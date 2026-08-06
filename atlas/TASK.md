@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-004`
-- Title: Top-Family Research: Decision and Foresight Infrastructure
+- Task ID: `TASK-005`
+- Title: Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-004.yaml`
+- Structured Artifact: `atlas/tasks/TASK-005.yaml`
 
 ## Ownership
 

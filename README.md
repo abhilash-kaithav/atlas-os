@@ -57,6 +57,9 @@ atlas-os/
 │   │   ├── README.md
 │   │   ├── opportunity_family_map.csv
 │   │   └── opportunity_family_summary.md
+│   ├── research/
+│   │   ├── of-002_decision_and_foresight_memo.md
+│   │   └── of-002_wedge_shortlist.md
 │   ├── scoring/
 │   │   ├── README.md
 │   │   ├── opportunity_family_ranked_summary.md
@@ -82,9 +85,10 @@ atlas-os/
 2. Translate recurring patterns into primitives, Value Patterns, and hypotheses.
 3. Compare opportunity space at the Opportunity Family layer before committing to deeper research.
 4. Score the approved families and pick one default research lane.
-5. Validate the strongest wedge with direct evidence and a believable build path.
-6. Recommend the next highest-leverage move in a compact format.
-7. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
+5. Research the top family and name one recommended wedge by default.
+6. Validate the strongest wedge with direct evidence and a believable build path.
+7. Recommend the next highest-leverage move in a compact format.
+8. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
 
 ## Source of Truth
 
@@ -103,6 +107,7 @@ atlas-os/
 - Value Pattern taxonomy: `opportunity-engine/value-patterns/README.md`
 - Opportunity Family taxonomy: `opportunity-engine/opportunity-families/README.md`
 - Opportunity Family scorecard: `opportunity-engine/scoring/README.md`
+- Active top-family research: `opportunity-engine/research/of-002_decision_and_foresight_memo.md`
 
 `opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
 

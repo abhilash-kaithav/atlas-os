@@ -71,17 +71,18 @@ Atlas has completed the core setup required before discovery work:
 - first Value Pattern taxonomy and full concept map: complete
 - first Opportunity Family taxonomy and full family map: complete
 - first Opportunity Family triage and ranked shortlist: complete
+- first top-family research memo and recommended wedge: complete
 
-Atlas has now completed its third dedicated discovery task and is ready to move into top-family research.
+Atlas has now completed its fourth dedicated discovery task and is ready to move into wedge validation.
 
 ### Active Next Task
 
-- Task ID: `TASK-004`
-- Title: `Top-Family Research: Decision and Foresight Infrastructure`
+- Task ID: `TASK-005`
+- Title: `Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot`
 - Status: `Draft`
 - State: not started
 
-`TASK-003` is complete and approved. `TASK-004` is the next draft task and should research the top-ranked family, `OF-002 Decision and Foresight Infrastructure`, while keeping `OF-005 Capability Capital Platforms` as the backup lane.
+`TASK-004` is complete and approved. `TASK-005` is the next draft task and should validate the recommended wedge inside `OF-002`: a benchmark-backed SaaS and AI renewal decision copilot for mid-market teams without dedicated procurement.
 
 ## Product Boundary
 
@@ -155,6 +156,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - `opportunity-engine/value-patterns/README.md` and `value_pattern_map.csv` are the active first-pass Value Pattern layer above the concept schema.
 - `opportunity-engine/opportunity-families/README.md` and `opportunity_family_map.csv` are the active second-pass Opportunity Family layer above Value Patterns.
 - `opportunity-engine/scoring/README.md` and `opportunity_family_scores.csv` are the active family-prioritization layer above Opportunity Families.
+- `opportunity-engine/research/of-002_decision_and_foresight_memo.md` is the active top-family research artifact for the current wedge-selection phase.
 - Atlas uses the task/result/review/state operating loop.
 - Atlas scores and compares higher-order structures, not isolated flashy ideas, whenever family-level reasoning is available.
 
@@ -200,6 +202,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-004` only when explicitly instructed to start execution.
+Begin `TASK-005` only when explicitly instructed to start execution.
 
-That task should research `OF-002 Decision and Foresight Infrastructure`, identify the strongest wedge candidates inside that family, and preserve traceability back through `opportunity_family_scores.csv`, `opportunity_family_map.csv`, and `value_pattern_map.csv` to the concept inventory.
+That task should validate the benchmark-backed SaaS and AI renewal decision copilot wedge, define the cheapest credible tests, and preserve traceability back through the research memo, scoring artifacts, family map, and value-pattern map to the concept inventory.
