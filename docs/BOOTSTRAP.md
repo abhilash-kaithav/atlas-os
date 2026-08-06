@@ -72,17 +72,18 @@ Atlas has completed the core setup required before discovery work:
 - first Opportunity Family taxonomy and full family map: complete
 - first Opportunity Family triage and ranked shortlist: complete
 - first top-family research memo and recommended wedge: complete
+- first wedge-validation plan and test queue: complete
 
-Atlas has now completed its fourth dedicated discovery task and is ready to move into wedge validation.
+Atlas has now completed its fifth dedicated discovery task and is ready to move into the first validation sprint.
 
 ### Active Next Task
 
-- Task ID: `TASK-005`
-- Title: `Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot`
+- Task ID: `TASK-006`
+- Title: `Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns`
 - Status: `Draft`
 - State: not started
 
-`TASK-004` is complete and approved. `TASK-005` is the next draft task and should validate the recommended wedge inside `OF-002`: a benchmark-backed SaaS and AI renewal decision copilot for mid-market teams without dedicated procurement.
+`TASK-005` is complete and approved. `TASK-006` is the next draft task and should run the first customer-facing validation sprint for the recommended wedge inside `OF-002`: a benchmark-backed SaaS and AI renewal decision copilot for mid-market teams without dedicated procurement.
 
 ## Product Boundary
 
@@ -157,6 +158,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - `opportunity-engine/opportunity-families/README.md` and `opportunity_family_map.csv` are the active second-pass Opportunity Family layer above Value Patterns.
 - `opportunity-engine/scoring/README.md` and `opportunity_family_scores.csv` are the active family-prioritization layer above Opportunity Families.
 - `opportunity-engine/research/of-002_decision_and_foresight_memo.md` is the active top-family research artifact for the current wedge-selection phase.
+- `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md` is the active wedge-validation artifact for the current validation phase.
 - Atlas uses the task/result/review/state operating loop.
 - Atlas scores and compares higher-order structures, not isolated flashy ideas, whenever family-level reasoning is available.
 
@@ -202,6 +204,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-005` only when explicitly instructed to start execution.
+Begin `TASK-006` only when explicitly instructed to start execution.
 
-That task should validate the benchmark-backed SaaS and AI renewal decision copilot wedge, define the cheapest credible tests, and preserve traceability back through the research memo, scoring artifacts, family map, and value-pattern map to the concept inventory.
+That task should run the first interview-and-teardown validation sprint for the benchmark-backed SaaS and AI renewal decision copilot wedge, evaluate the results against the stated pass/fail thresholds, and preserve traceability back through the validation plan, research memo, scoring artifacts, family map, and value-pattern map to the concept inventory.

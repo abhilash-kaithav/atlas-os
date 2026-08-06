@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-005`
-- Title: Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot
+- Task ID: `TASK-006`
+- Title: Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-005.yaml`
+- Structured Artifact: `atlas/tasks/TASK-006.yaml`
 
 ## Ownership
 

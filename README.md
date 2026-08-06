@@ -64,6 +64,11 @@ atlas-os/
 │   │   ├── README.md
 │   │   ├── opportunity_family_ranked_summary.md
 │   │   └── opportunity_family_scores.csv
+│   ├── validation/
+│   │   ├── README.md
+│   │   ├── of-002_interview_guide.md
+│   │   ├── of-002_renewal_copilot_validation_plan.md
+│   │   └── of-002_validation_test_queue.csv
 │   └── value-patterns/
 │       ├── README.md
 │       ├── value_pattern_map.csv
@@ -87,8 +92,9 @@ atlas-os/
 4. Score the approved families and pick one default research lane.
 5. Research the top family and name one recommended wedge by default.
 6. Validate the strongest wedge with direct evidence and a believable build path.
-7. Recommend the next highest-leverage move in a compact format.
-8. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
+7. Run interviews and concierge tests before broad product build work.
+8. Recommend the next highest-leverage move in a compact format.
+9. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
 
 ## Source of Truth
 
@@ -108,6 +114,7 @@ atlas-os/
 - Opportunity Family taxonomy: `opportunity-engine/opportunity-families/README.md`
 - Opportunity Family scorecard: `opportunity-engine/scoring/README.md`
 - Active top-family research: `opportunity-engine/research/of-002_decision_and_foresight_memo.md`
+- Active validation plan: `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md`
 
 `opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
 

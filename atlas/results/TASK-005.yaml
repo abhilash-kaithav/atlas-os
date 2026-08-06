@@ -1,0 +1,47 @@
+task_id: TASK-005
+title: "Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-06
+updated_on: 2026-08-06
+source_task: "atlas/tasks/TASK-005.yaml"
+summary: "Designed the first Atlas wedge-validation plan, defined the gating hypotheses and kill criteria for the recommended renewal-copilot wedge, and prepared the first customer-facing validation assets instead of moving prematurely into product build work."
+completed_work:
+  - "Defined the active validation goal, recommended ICP, exclusion criteria, and six gating hypotheses for the recommended wedge."
+  - "Created a prioritized validation sequence with success and failure thresholds for interviews, concierge teardowns, pricing tests, data-access checks, and benchmark-moat feasibility."
+  - "Created the first customer-facing interview guide and structured validation test queue."
+  - "Updated the bootstrap, roadmap, opportunity-engine, and Atlas workflow artifacts to move from wedge research into validation execution readiness."
+deliverables:
+  - "opportunity-engine/validation/README.md"
+  - "opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md"
+  - "opportunity-engine/validation/of-002_validation_test_queue.csv"
+  - "opportunity-engine/validation/of-002_interview_guide.md"
+files_changed:
+  - "README.md"
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-005.yaml"
+  - "atlas/tasks/TASK-006.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-005.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-005.md"
+  - "atlas/STATE.md"
+  - "roadmap/ROADMAP.md"
+  - "opportunity-engine/README.md"
+  - "opportunity-engine/validation/README.md"
+  - "opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md"
+  - "opportunity-engine/validation/of-002_validation_test_queue.csv"
+  - "opportunity-engine/validation/of-002_interview_guide.md"
+validation:
+  - "Verified that every test in the queue maps back to one or more explicit wedge hypotheses."
+  - "Verified that the plan defines concrete success and failure thresholds for the first validation sprint."
+  - "Verified that the next customer-facing step is explicit: 12 interviews ending with asks for live renewal teardowns."
+open_issues:
+  - "The plan still needs real customer access to execute."
+  - "Benchmark moat quality remains unproven until concierge briefs are run on live renewals."
+  - "The software-versus-service boundary remains an active risk until pricing tests are completed."
+follow_up:
+  - "Execute TASK-006 Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns."
+review_artifact: "atlas/reviews/TASK-005.md"

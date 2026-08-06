@@ -5,33 +5,33 @@ Status: Active
 
 ## Current Phase
 
-Atlas has completed the first top-family research pass. The immediate phase is to validate the recommended wedge before any build commitment.
+Atlas has completed the first wedge-validation planning pass. The immediate phase is to run the first customer-facing validation sprint before any build commitment.
 
-The goal is still not to reopen family strategy. The goal is to pressure-test the recommended wedge so Atlas can decide whether it is strong enough to build or whether the backup lane should become active.
+The goal is still not to design product features. The goal is to pressure-test the recommended wedge against real buyer behavior so Atlas can decide whether it is strong enough to survive.
 
 ## Current Priorities
 
-1. Execute `TASK-005` Validation Plan: Benchmark-Backed SaaS and AI Renewal Decision Copilot.
-2. Define the cheapest credible tests for buyer urgency, willingness to pay, benchmark moat, and product-versus-service fit.
-3. Preserve traceability from every validation hypothesis back through research, scoring, Opportunity Family, and Value Pattern layers.
+1. Execute `TASK-006` Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns.
+2. Collect direct evidence on urgency, benchmark value, pricing posture, and low-integration feasibility.
+3. Preserve traceability from every validation result back through validation, research, scoring, Opportunity Family, and Value Pattern layers.
 
 ## Next Milestones
 
-1. Validate the recommended wedge: benchmark-backed SaaS and AI renewal decision intelligence.
+1. Run the first interview-and-teardown sprint for the recommended wedge.
 2. Decide whether the wedge is software-first, service-heavy, or not strong enough.
 3. Keep OF-005 as the backup family if the wedge weakens under validation.
-4. Define the narrowest believable first product workflow only after validation evidence is strong enough.
+4. Define the narrowest believable first product workflow only after sprint evidence is strong enough.
 5. Define venture candidates only after wedge-level validation supports them.
 
-## Upcoming Research Work
+## Upcoming Validation Work
 
-Top-family research should follow these rules:
+Validation sprint execution should follow these rules:
 
-1. Start from the approved scoring layer and top-ranked family, not from reopening the whole ranking.
-2. Use external evidence to eliminate weak wedges instead of broadening the family abstraction again.
-3. Keep representative concepts, family evidence gaps, and uncertainty visible during research.
-4. Produce one recommended wedge by default unless research uncovers a real tradeoff.
-5. Keep the raw concept, Value Pattern, Opportunity Family, and scoring layers all traceable.
+1. Start from the approved validation plan and pass/fail thresholds, not from improvising new criteria mid-sprint.
+2. Use real buyer evidence before discussing product scope changes.
+3. Keep urgency, willingness to pay, moat quality, and data-access risk visible in every sprint artifact.
+4. Use the wedge kill criteria if the evidence weakens materially.
+5. Keep the raw concept, Value Pattern, Opportunity Family, scoring, research, and validation layers all traceable.
 
 ## Major Decisions Already Made
 
@@ -46,10 +46,11 @@ Top-family research should follow these rules:
 9. Atlas Opportunity Family Taxonomy v1.0 is the active second discovery layer above Value Patterns.
 10. Atlas Opportunity Family Scoring Rubric v1.0 is the active family-ranking method above Opportunity Families.
 11. Atlas currently prioritizes a benchmark-backed SaaS and AI renewal decision copilot as the first wedge to validate inside OF-002.
+12. Atlas requires interviews and concierge renewal decision briefs before building the renewal-copilot wedge.
 
 ## Inputs Needed For The Next Phase
 
-1. `opportunity-engine/research/of-002_decision_and_foresight_memo.md`
-2. `opportunity-engine/research/of-002_wedge_shortlist.md`
-3. `atlas/tasks/TASK-005.yaml`
-4. `docs/DECISION_LOG.md`
+1. `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md`
+2. `opportunity-engine/validation/of-002_validation_test_queue.csv`
+3. `opportunity-engine/validation/of-002_interview_guide.md`
+4. `atlas/tasks/TASK-006.yaml`

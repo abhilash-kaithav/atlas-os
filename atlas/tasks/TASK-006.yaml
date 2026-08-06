@@ -1,0 +1,37 @@
+task_id: TASK-006
+title: "Validation Sprint 1: Renewal Pain Interviews and Concierge Teardowns"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-06
+updated_on: 2026-08-06
+objective: "Run the first customer-facing validation sprint for the recommended wedge so Atlas can decide whether the renewal-copilot concept survives contact with real buyer pain, real renewal workflows, and real willingness-to-pay conversations."
+context:
+  - "TASK-005 is complete and approved."
+  - "Atlas now has an explicit validation plan, test queue, and interview guide for the benchmark-backed SaaS and AI renewal decision copilot."
+  - "The next gating questions are buyer urgency, benchmark value, software-versus-service fit, and low-integration feasibility."
+  - "OF-005 Capability Capital Platforms remains the backup family if the wedge fails kill criteria."
+inputs:
+  - "opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md"
+  - "opportunity-engine/validation/of-002_validation_test_queue.csv"
+  - "opportunity-engine/validation/of-002_interview_guide.md"
+  - "opportunity-engine/research/of-002_decision_and_foresight_memo.md"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A durable validation sprint summary covering interview findings, concierge teardown reactions, and updated go / hold / kill status."
+  - "Structured notes or a summary artifact for the first interview and teardown batch."
+  - "Completed Atlas result and review artifacts for TASK-006 after execution."
+constraints:
+  - "Run the cheapest learning sequence first rather than building software."
+  - "Preserve confidentiality and do not store sensitive customer data in the repository."
+  - "Use the validation plan's pass/fail thresholds instead of post-hoc rationalization."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The sprint records real evidence from target buyers or clearly explains the access blocker."
+  - "The output updates the wedge status with a concrete go / hold / kill recommendation."
+  - "The task leaves Atlas closer to a build decision, not farther from one."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-006.yaml"
+review_artifact: "atlas/reviews/TASK-006.md"
+notes:
+  - "Do not start execution until explicitly instructed."
