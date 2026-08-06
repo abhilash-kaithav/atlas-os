@@ -134,6 +134,8 @@ Draft starting weights:
 - long-term platform potential: 15
 - revenue potential: 10
 
+When no durable founder-fit artifact exists yet, hold founder fit at a neutral score rather than inventing it from chat memory.
+
 ### Research
 
 Research artifacts should answer:
@@ -178,10 +180,11 @@ The default flow is:
 2. Concept Schema
 3. Value Pattern
 4. Opportunity Family
-5. Research
-6. Validation
-7. Venture
+5. Scoring
+6. Research
+7. Validation
+8. Venture
 
 ## Current Repository Note
 
-`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is the active first discovery layer above the concept schema, and `opportunity-engine/opportunity-families/` is the active second discovery layer above Value Patterns. Active scoring and research work should now begin from the approved family layer rather than raw concept clustering.
+`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is the active first discovery layer above the concept schema, `opportunity-engine/opportunity-families/` is the active second discovery layer above Value Patterns, and `opportunity-engine/scoring/` is the active family-ranking layer above Opportunity Families. Active research work should now begin from the approved scoring output rather than raw concept clustering.

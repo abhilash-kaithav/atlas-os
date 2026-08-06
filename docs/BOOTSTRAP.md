@@ -70,17 +70,18 @@ Atlas has completed the core setup required before discovery work:
 - bootstrap migration into the persistent Work environment: complete
 - first Value Pattern taxonomy and full concept map: complete
 - first Opportunity Family taxonomy and full family map: complete
+- first Opportunity Family triage and ranked shortlist: complete
 
-Atlas has now completed its second dedicated discovery task and is ready to move into family-level triage.
+Atlas has now completed its third dedicated discovery task and is ready to move into top-family research.
 
 ### Active Next Task
 
-- Task ID: `TASK-003`
-- Title: `Opportunity Family Triage`
+- Task ID: `TASK-004`
+- Title: `Top-Family Research: Decision and Foresight Infrastructure`
 - Status: `Draft`
 - State: not started
 
-`TASK-002` is complete and approved. `TASK-003` is the next draft task and should score the approved Opportunity Family layer before research or venture work begins.
+`TASK-003` is complete and approved. `TASK-004` is the next draft task and should research the top-ranked family, `OF-002 Decision and Foresight Infrastructure`, while keeping `OF-005 Capability Capital Platforms` as the backup lane.
 
 ## Product Boundary
 
@@ -115,6 +116,7 @@ data/concepts_raw.csv
 -> Discovery layers
     Value Patterns
     Opportunity Families
+    Scoring
     Research
     Validation
     Ventures
@@ -152,6 +154,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - Discovery follows the Atlas Reasoning Model pipeline.
 - `opportunity-engine/value-patterns/README.md` and `value_pattern_map.csv` are the active first-pass Value Pattern layer above the concept schema.
 - `opportunity-engine/opportunity-families/README.md` and `opportunity_family_map.csv` are the active second-pass Opportunity Family layer above Value Patterns.
+- `opportunity-engine/scoring/README.md` and `opportunity_family_scores.csv` are the active family-prioritization layer above Opportunity Families.
 - Atlas uses the task/result/review/state operating loop.
 - Atlas scores and compares higher-order structures, not isolated flashy ideas, whenever family-level reasoning is available.
 
@@ -197,6 +200,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-003` only when explicitly instructed to start execution.
+Begin `TASK-004` only when explicitly instructed to start execution.
 
-That task should score the approved Opportunity Family layer with an explicit family-level rubric, identify the strongest research candidates, and preserve traceability back through `opportunity_family_map.csv` and `value_pattern_map.csv` to the concept inventory.
+That task should research `OF-002 Decision and Foresight Infrastructure`, identify the strongest wedge candidates inside that family, and preserve traceability back through `opportunity_family_scores.csv`, `opportunity_family_map.csv`, and `value_pattern_map.csv` to the concept inventory.

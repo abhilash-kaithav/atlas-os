@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-002` execution is complete.
+`TASK-003` execution is complete.
 
-- Task ID: `TASK-002`
-- Title: `Opportunity Family Formation`
+- Task ID: `TASK-003`
+- Title: `Opportunity Family Triage`
 - Execution Status: `Completed`
-- Structured Artifact: `atlas/results/TASK-002.yaml`
+- Structured Artifact: `atlas/results/TASK-003.yaml`
 
-The execution produced the first Atlas Opportunity Family taxonomy, a one-to-one 700-row family map derived from the approved Value Pattern layer, a generated summary report, and the supporting script that reproduces those outputs from `value_pattern_map.csv`.
+The execution produced the first Atlas family-level scorecard, a ranked summary that shortlists the strongest families, and the supporting script that reproduces those outputs from the approved Opportunity Family map.
 
 ## Ownership
 

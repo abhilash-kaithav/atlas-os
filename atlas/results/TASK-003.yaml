@@ -1,0 +1,47 @@
+task_id: TASK-003
+title: "Opportunity Family Triage"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-06
+updated_on: 2026-08-06
+source_task: "atlas/tasks/TASK-003.yaml"
+summary: "Applied Atlas Opportunity Family Scoring Rubric v1.0 to all 5 approved families, generated a reproducible scorecard and ranked shortlist, and updated the repository so Atlas can move from family comparison into top-family research."
+completed_work:
+  - "Defined a weighted family-level scoring rubric aligned with the opportunity-engine scoring criteria."
+  - "Generated a structured scorecard for all 5 Opportunity Families with explicit scores, points, and rationales."
+  - "Generated a ranked summary that recommends OF-002 Decision and Foresight Infrastructure as the primary research family and OF-005 Capability Capital Platforms as the secondary shortlist."
+  - "Updated the bootstrap, roadmap, opportunity-engine, and Atlas workflow artifacts to reflect TASK-003 completion and the move into top-family research."
+deliverables:
+  - "opportunity-engine/scoring/README.md"
+  - "opportunity-engine/scoring/opportunity_family_scores.csv"
+  - "opportunity-engine/scoring/opportunity_family_ranked_summary.md"
+  - "scripts/build_opportunity_family_scores.py"
+files_changed:
+  - "README.md"
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-003.yaml"
+  - "atlas/tasks/TASK-004.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-003.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-003.md"
+  - "atlas/STATE.md"
+  - "roadmap/ROADMAP.md"
+  - "opportunity-engine/README.md"
+  - "opportunity-engine/scoring/README.md"
+  - "opportunity-engine/scoring/opportunity_family_scores.csv"
+  - "opportunity-engine/scoring/opportunity_family_ranked_summary.md"
+  - "scripts/build_opportunity_family_scores.py"
+validation:
+  - "Ran scripts/build_opportunity_family_scores.py successfully."
+  - "Verified that all 5 approved Opportunity Families received weighted scores and ranks."
+  - "Verified that OF-002 ranked first at 83/100 and OF-005 ranked second at 81/100."
+open_issues:
+  - "Founder fit is neutralized at 3/5 for every family until a dedicated founder-fit artifact exists."
+  - "Why-now coverage remains weak across all families, including only 4.2% for OF-002 and 1.5% for OF-005."
+  - "The ranking is still an internal prioritization layer and does not replace external market research."
+follow_up:
+  - "Execute TASK-004 to research OF-002 Decision and Foresight Infrastructure and identify the most credible build wedge."
+review_artifact: "atlas/reviews/TASK-003.md"

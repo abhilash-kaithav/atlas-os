@@ -14,17 +14,18 @@ Owner: Shared
 - Bootstrap Migration: Complete
 - Value Pattern Taxonomy: Complete
 - Opportunity Family Taxonomy: Complete
+- Opportunity Family Triage: Complete
 
 ## Current Phase
 
-Opportunity Family Triage Ready
+Top-Family Research Ready
 
 ## Next Task
 
-- Task ID: `TASK-003`
-- Title: Opportunity Family Triage
+- Task ID: `TASK-004`
+- Title: Top-Family Research: Decision and Foresight Infrastructure
 - Status: Draft
-- Execution Note: `TASK-002` is complete and approved. `TASK-003` is the next draft task and should score the approved Opportunity Family layer before research or venture work begins.
+- Execution Note: `TASK-003` is complete and approved. `TASK-004` is the next draft task and should research OF-002 Decision and Foresight Infrastructure as the top-ranked family while keeping OF-005 as the backup lane.
 
 ## Operating Model Summary
 
@@ -35,6 +36,6 @@ Opportunity Family Triage Ready
 
 ## Immediate Focus
 
-1. Use the approved Opportunity Family layer in `opportunity-engine/opportunity-families/` as the required input to family-level triage.
-2. Execute `TASK-003` only when explicitly started through the task/result/review workflow.
-3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns and Opportunity Families into all higher discovery layers.
+1. Use the approved scoring layer in `opportunity-engine/scoring/` as the required input to top-family research.
+2. Execute `TASK-004` only when explicitly started through the task/result/review workflow.
+3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns, Opportunity Families, and scoring into all higher discovery layers.

@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-002` review is complete.
+`TASK-003` review is complete.
 
-- Task ID: `TASK-002`
-- Title: `Opportunity Family Formation`
+- Task ID: `TASK-003`
+- Title: `Opportunity Family Triage`
 - Review Decision: `Approved`
-- Structured Artifact: `atlas/reviews/TASK-002.md`
+- Structured Artifact: `atlas/reviews/TASK-003.md`
 
-The result meets the task criteria: the family taxonomy is explicit, reproducible, fully mapped from the approved Value Pattern layer, and ready to support family-level triage without reopening methodology setup.
+The result meets the task criteria: the ranking method is explicit, reproducible, family-level, and specific enough to move Atlas into focused research without reopening the family taxonomy.
 
 ## Ownership
 
