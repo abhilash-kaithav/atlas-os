@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 Status: Active
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-001`
-- Title: Value Pattern Discovery
+- Task ID: `TASK-002`
+- Title: Opportunity Family Formation
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-001.yaml`
+- Structured Artifact: `atlas/tasks/TASK-002.yaml`
 
 ## Ownership
 

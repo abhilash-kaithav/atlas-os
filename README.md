@@ -52,7 +52,11 @@ atlas-os/
 ├── roadmap/
 │   └── ROADMAP.md
 ├── opportunity-engine/
-│   └── README.md
+│   ├── README.md
+│   └── value-patterns/
+│       ├── README.md
+│       ├── value_pattern_map.csv
+│       └── value_pattern_summary.md
 ├── opportunities/
 │   ├── opportunity_db.csv
 │   ├── clusters.md
@@ -67,7 +71,7 @@ atlas-os/
 ## Default Workflow
 
 1. Capture ideas broadly before judging them.
-2. Translate recurring patterns into primitives, clusters, and hypotheses.
+2. Translate recurring patterns into primitives, Value Patterns, and hypotheses.
 3. Validate the strongest clusters with direct evidence and a believable wedge.
 4. Recommend the next highest-leverage move in a compact format.
 5. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
@@ -86,6 +90,7 @@ atlas-os/
 - Knowledge hierarchy: `knowledge/README.md`
 - Current phase and milestones: `roadmap/ROADMAP.md`
 - Opportunity system design: `opportunity-engine/README.md`
+- Value Pattern taxonomy: `opportunity-engine/value-patterns/README.md`
 
 `opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
 

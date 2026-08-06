@@ -1,6 +1,6 @@
 # Atlas Bootstrap
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 Status: Active first-read startup document
 
 ## Purpose
@@ -57,7 +57,7 @@ Treat these as historical context, not active authority:
 - `docs/PLAYBOOK.md`
 - `docs/AI_OPERATING_MANUAL.md`
 
-## Current Atlas State On 2026-08-05
+## Current Atlas State On 2026-08-06
 
 Atlas has completed the core setup required before discovery work:
 
@@ -68,17 +68,18 @@ Atlas has completed the core setup required before discovery work:
 - Atlas operating model v1.0: complete
 - Atlas reasoning model v1.0: complete
 - bootstrap migration into the persistent Work environment: complete
+- first Value Pattern taxonomy and full concept map: complete
 
-Atlas is now ready to begin its first dedicated discovery task.
+Atlas has now completed its first dedicated discovery task and is ready to move one layer up into Opportunity Families.
 
 ### Active Next Task
 
-- Task ID: `TASK-001`
-- Title: `Value Pattern Discovery`
+- Task ID: `TASK-002`
+- Title: `Opportunity Family Formation`
 - Status: `Draft`
 - State: not started
 
-`TASK-001` is the first post-migration execution task. No Value Pattern discovery work has been executed yet.
+`TASK-001` is complete and approved. `TASK-002` is the next draft task and should merge the approved Value Patterns into larger strategic Opportunity Families.
 
 ## Product Boundary
 
@@ -148,6 +149,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - Structured concept work uses Concept Schema v1.0.
 - Atlas classifies by cause, not appearance.
 - Discovery follows the Atlas Reasoning Model pipeline.
+- `opportunity-engine/value-patterns/README.md` and `value_pattern_map.csv` are the active first-pass Value Pattern layer above the concept schema.
 - Atlas uses the task/result/review/state operating loop.
 - Atlas scores and compares higher-order structures, not isolated flashy ideas, whenever family-level reasoning is available.
 
@@ -193,6 +195,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-001` only when explicitly instructed to start execution.
+Begin `TASK-002` only when explicitly instructed to start execution.
 
-That task should derive the first Atlas Value Pattern layer from `data/concepts_curated.csv`, test candidate patterns against the reasoning-model standards, keep counterexamples visible, and preserve one-to-one traceability back to the concept inventory.
+That task should merge the approved Value Pattern layer into a first Opportunity Family taxonomy, define each family's value engine and related patterns, and preserve traceability back through `value_pattern_map.csv` to the concept inventory.

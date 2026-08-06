@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 Status: Active
 
 ## Logging Rules
@@ -29,6 +29,7 @@ Status: Active
 | 2026-08-05 | D-014 | Adopt Atlas operating model v1.0 as the repository-first workflow for tasking, execution, review, and shared state. | Atlas now needs a durable handoff loop between Chat and Work before Opportunity Families begins. Standard task, result, review, and state artifacts make work traceable, reusable by future sessions, and independent of chat history. | Active | Monthly |
 | 2026-08-05 | D-015 | Adopt Atlas Reasoning Model v1.0 as the governing methodology for Atlas. | Atlas now needs one concise constitutional artifact that defines its laws, standard reasoning pipeline, taxonomy tests, and Value Pattern standard before Value Pattern Discovery begins. This replaces the earlier constitution as the active methodological source of truth while preserving the evidence-first repository model. | Active | Monthly |
 | 2026-08-05 | D-016 | Adopt `docs/BOOTSTRAP.md` as the first-read startup artifact for all future Atlas sessions. | Atlas now has stable constitutional documents, active state artifacts, and canonical data layers, but future sessions still need one repository-grounded entry point that prevents drift back to chat-memory reconstruction during the permanent Chat -> Work migration. | Active | Monthly |
+| 2026-08-06 | D-017 | Adopt Atlas Value Pattern Taxonomy v1.0 as the active first discovery layer above the concept schema. | `TASK-001` classified all 700 curated concepts into 10 reproducible economic patterns using explicit primitive-to-pattern rules, a generated one-to-one map, and a summary artifact that preserves traceability and keeps uncertainty visible before Opportunity Family formation begins. | Active | Monthly |
 
 ## Revision Notes
 

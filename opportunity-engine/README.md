@@ -1,6 +1,6 @@
 # Opportunity Engine
 
-Last updated: 2026-08-05
+Last updated: 2026-08-06
 Status: Active design document
 
 ## Purpose
@@ -14,11 +14,12 @@ The opportunity engine should preserve:
 1. Raw concepts
 2. Concept schema records
 3. Primitives
-4. Opportunity families
-5. Scores
-6. Research
-7. Validation work
-8. Ventures
+4. Value Patterns
+5. Opportunity families
+6. Scores
+7. Research
+8. Validation work
+9. Ventures
 
 ## Recommended Structure
 
@@ -28,6 +29,7 @@ opportunity-engine/
 ├── raw-concepts/
 ├── concept-records/
 ├── primitives/
+├── value-patterns/
 ├── opportunity-families/
 ├── scoring/
 ├── research/
@@ -73,6 +75,24 @@ Each primitive record should capture:
 - definition
 - sanity-check question
 - representative concepts
+
+### Value Patterns
+
+Value Patterns are the first reusable economic layer above primitives.
+
+They explain how value is created across many concepts before Atlas merges those concepts into larger strategic families.
+
+Each Value Pattern artifact should capture:
+
+- value pattern ID
+- title
+- definition
+- economic mechanism
+- source primitives
+- representative concepts
+- classification rules
+- boundary notes
+- counts and review flags
 
 ### Opportunity Families
 
@@ -156,11 +176,12 @@ The default flow is:
 
 1. Raw Concept
 2. Concept Schema
-3. Opportunity Family
-4. Research
-5. Validation
-6. Venture
+3. Value Pattern
+4. Opportunity Family
+5. Research
+6. Validation
+7. Venture
 
 ## Current Repository Note
 
-`opportunities/` remains the live working inventory today. As Atlas formalizes the engine, active opportunity records should be normalized into the official concept schema before family-level analysis.
+`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is now the active first discovery layer above the concept schema. Active opportunity records should be normalized into the official concept schema before family-level analysis.

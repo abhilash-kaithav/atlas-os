@@ -1,0 +1,37 @@
+task_id: TASK-002
+title: "Opportunity Family Formation"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-06
+updated_on: 2026-08-06
+objective: "Merge the approved Value Pattern taxonomy into the first Atlas Opportunity Family layer so larger strategic themes can be compared, researched, and prioritized without losing traceability back to the concept inventory."
+context:
+  - "TASK-001 is complete and approved."
+  - "Atlas Value Pattern Taxonomy v1.0 now classifies all 700 curated concepts into 10 economic patterns."
+  - "The value-pattern artifacts now live in opportunity-engine/value-patterns/."
+  - "Atlas Reasoning Model v1.0 remains the governing methodology."
+inputs:
+  - "opportunity-engine/value-patterns/README.md"
+  - "opportunity-engine/value-patterns/value_pattern_map.csv"
+  - "opportunity-engine/value-patterns/value_pattern_summary.md"
+  - "docs/ATLAS_REASONING_MODEL.md"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A durable Opportunity Family taxonomy artifact that groups the approved Value Patterns into larger strategic families."
+  - "A family map or summary that explains each family's value engine, related Value Patterns, representative concepts, evidence gaps, and next validation step."
+  - "Completed Atlas result and review artifacts for TASK-002 after execution."
+constraints:
+  - "Do not rewrite the raw or curated concept layers."
+  - "Preserve traceability from every Opportunity Family back through the Value Pattern map to the concept inventory."
+  - "Family boundaries must be causal and economically distinct, not theme labels based on surface similarity."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The family taxonomy is derived from the approved Value Pattern layer rather than direct naming intuition."
+  - "Each Opportunity Family has an explicit value engine, related Value Patterns, and traceability back to representative concepts."
+  - "The task is ready for Work to execute in a future session without additional methodology setup."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-002.yaml"
+review_artifact: "atlas/reviews/TASK-002.md"
+notes:
+  - "Do not start execution until explicitly instructed."

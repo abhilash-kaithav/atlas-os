@@ -1,0 +1,46 @@
+task_id: TASK-001
+title: "Value Pattern Discovery"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-06
+updated_on: 2026-08-06
+source_task: "atlas/tasks/TASK-001.yaml"
+summary: "Derived Atlas Value Pattern Taxonomy v1.0, mapped all 700 curated concepts into 10 reproducible economic patterns, and updated the repository to make the Value Pattern layer the active bridge into Opportunity Family work."
+completed_work:
+  - "Defined a primitive-anchored Value Pattern rule set with 10 economic patterns."
+  - "Generated a one-to-one Value Pattern classification map for all 700 curated concepts."
+  - "Generated a summary artifact covering pattern distribution, review-flag counts, and representative concepts."
+  - "Updated the opportunity-engine, bootstrap, roadmap, and Atlas workflow artifacts to reflect TASK-001 completion and the next family-formation phase."
+deliverables:
+  - "opportunity-engine/value-patterns/README.md"
+  - "opportunity-engine/value-patterns/value_pattern_map.csv"
+  - "opportunity-engine/value-patterns/value_pattern_summary.md"
+  - "scripts/build_value_patterns.py"
+files_changed:
+  - "README.md"
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-001.yaml"
+  - "atlas/tasks/TASK-002.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-001.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-001.md"
+  - "atlas/STATE.md"
+  - "roadmap/ROADMAP.md"
+  - "opportunity-engine/README.md"
+  - "opportunity-engine/value-patterns/README.md"
+  - "opportunity-engine/value-patterns/value_pattern_map.csv"
+  - "opportunity-engine/value-patterns/value_pattern_summary.md"
+validation:
+  - "Ran scripts/build_value_patterns.py successfully."
+  - "Verified that 700 of 700 curated concepts were classified with 0 unmapped rows."
+  - "Verified that the pattern counts sum to 700 across 10 Value Patterns."
+open_issues:
+  - "671 concepts still have no explicit why-now signal in the curated layer."
+  - "375 concepts still carry broad initial wedges."
+  - "339 concepts still include primitive ambiguity notes from curation."
+follow_up:
+  - "Execute TASK-002 Opportunity Family Formation from the approved Value Pattern layer."
+review_artifact: "atlas/reviews/TASK-001.md"
