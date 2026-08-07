@@ -1,6 +1,6 @@
 # Opportunity Engine
 
-Last updated: 2026-08-06
+Last updated: 2026-08-07
 Status: Active design document
 
 ## Purpose
@@ -187,4 +187,4 @@ The default flow is:
 
 ## Current Repository Note
 
-`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is the active first discovery layer above the concept schema, `opportunity-engine/opportunity-families/` is the active second discovery layer above Value Patterns, `opportunity-engine/scoring/` is the active family-ranking layer above Opportunity Families, `opportunity-engine/research/` holds the active top-family research artifacts, and `opportunity-engine/validation/` now holds the active wedge-validation assets. The current blocker is not strategic ambiguity; it is missing buyer access. Active work should therefore focus on sourcing interview targets and live teardown candidates before any build work continues.
+`opportunities/` remains the live working inventory today. `opportunity-engine/value-patterns/` is the active first discovery layer above the concept schema, `opportunity-engine/opportunity-families/` is the active second discovery layer above Value Patterns, `opportunity-engine/scoring/` is the active family-ranking layer above Opportunity Families, `opportunity-engine/research/` holds the active top-family research artifacts, and `opportunity-engine/validation/` now holds the active wedge-validation assets. The current blocker is still buyer access, but Atlas now has a founder-led activation plan for it. Active work should therefore focus on sourcing real targets, sending outreach, and scheduling interviews before any build work continues.

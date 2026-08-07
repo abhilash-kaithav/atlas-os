@@ -1,0 +1,38 @@
+task_id: TASK-008
+title: "Founder-Led Outreach Execution for Renewal Validation Sprint 1"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-07
+updated_on: 2026-08-07
+objective: "Execute the first founder-led outreach wave by sourcing real targets, sending messages, and scheduling the first renewal interviews needed to unblock direct validation evidence."
+context:
+  - "TASK-007 is complete and approved."
+  - "Atlas now has an explicit buyer-access activation plan, outreach message set, teardown request, and operational tracker."
+  - "The renewal-copilot wedge remains on hold until direct buyer evidence is collected."
+  - "The immediate goal is not product design; it is interview recruitment and scheduling."
+inputs:
+  - "opportunity-engine/validation/of-002_buyer_access_activation_plan.md"
+  - "opportunity-engine/validation/of-002_outreach_message.md"
+  - "opportunity-engine/validation/of-002_live_teardown_request.md"
+  - "opportunity-engine/validation/of-002_validation_sprint_tracker.csv"
+  - "opportunity-engine/validation/of-002_interview_guide.md"
+  - "docs/CHARTER.md"
+  - "docs/DECISION_LOG.md"
+deliverables:
+  - "A populated outreach tracker with real target companies, channel paths, and outreach status."
+  - "A durable outreach log or summary showing what was sent and what responses were received."
+  - "Completed Atlas result and review artifacts for TASK-008 after execution."
+constraints:
+  - "Do not fabricate contacts, outreach attempts, or interview outcomes."
+  - "Preserve confidentiality and avoid storing unnecessary personal contact data."
+  - "Differentiate clearly between sourced targets, contacted targets, replies, scheduled interviews, and completed interviews."
+  - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
+acceptance_criteria:
+  - "The task creates a real target pipeline and sends the first outreach wave, or clearly records the remaining external blocker."
+  - "The tracker contains real recruitment progress."
+  - "The output leaves Atlas measurably closer to the first 12 interviews."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-008.yaml"
+review_artifact: "atlas/reviews/TASK-008.md"
+notes:
+  - "Do not start execution until explicitly instructed."

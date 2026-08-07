@@ -66,6 +66,7 @@ atlas-os/
 │   │   └── opportunity_family_scores.csv
 │   ├── validation/
 │   │   ├── README.md
+│   │   ├── of-002_buyer_access_activation_plan.md
 │   │   ├── of-002_interview_guide.md
 │   │   ├── of-002_live_teardown_request.md
 │   │   ├── of-002_outreach_message.md
@@ -98,8 +99,9 @@ atlas-os/
 6. Validate the strongest wedge with direct evidence and a believable build path.
 7. Run interviews and concierge tests before broad product build work.
 8. Treat missing buyer access as an execution blocker, not automatic wedge invalidation.
-9. Recommend the next highest-leverage move in a compact format.
-10. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
+9. When buyer access depends on the founder, convert the blocker into a concrete outreach plan before expecting interview evidence.
+10. Recommend the next highest-leverage move in a compact format.
+11. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
 
 ## Source of Truth
 
@@ -111,7 +113,7 @@ atlas-os/
 - Historical precursor: `docs/ATLAS_CONSTITUTION.md`
 - Decision history and version control: `docs/DECISION_LOG.md`
 - Codex repository workflow: `docs/CODEX_WORKFLOW.md`
-- Concept inventory policy: `concepts/README.md`
+- Concept inventory policy: `data/README.md`
 - Knowledge hierarchy: `knowledge/README.md`
 - Current phase and milestones: `roadmap/ROADMAP.md`
 - Opportunity system design: `opportunity-engine/README.md`
@@ -121,6 +123,7 @@ atlas-os/
 - Active top-family research: `opportunity-engine/research/of-002_decision_and_foresight_memo.md`
 - Active validation plan: `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md`
 - Current validation sprint summary: `opportunity-engine/validation/of-002_validation_sprint_1_summary.md`
+- Active buyer-access activation plan: `opportunity-engine/validation/of-002_buyer_access_activation_plan.md`
 
 `opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
 

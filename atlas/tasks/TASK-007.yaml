@@ -1,37 +1,41 @@
 task_id: TASK-007
 title: "Buyer Access Activation for Renewal Validation Sprint 1"
-status: Draft
+status: Approved
 artifact_owner: Chat
 created_on: 2026-08-06
-updated_on: 2026-08-06
-objective: "Secure the first qualified interview targets and live teardown candidates so Atlas can rerun Validation Sprint 1 with real buyer evidence instead of remaining blocked on access."
+updated_on: 2026-08-07
+objective: "Convert the buyer-access blocker into a founder-led outreach plan that specifies who to contact, which companies to target, which channels to use, and how to explain the research so the first real renewal interviews can be booked."
 context:
   - "TASK-006 is complete and approved."
   - "Atlas did not collect direct buyer evidence because the canonical repository contains no target-buyer list, outreach history, or live renewal candidates."
   - "The wedge remains on hold rather than killed."
-  - "Atlas now has an outreach message, teardown request, and tracker ready to use."
+  - "The founder clarified that live interviews must be conducted personally, so the right output is a practical outreach system rather than pretending Atlas can perform customer access autonomously."
 inputs:
   - "opportunity-engine/validation/of-002_validation_sprint_1_summary.md"
   - "opportunity-engine/validation/of-002_outreach_message.md"
   - "opportunity-engine/validation/of-002_live_teardown_request.md"
   - "opportunity-engine/validation/of-002_validation_sprint_tracker.csv"
+  - "opportunity-engine/validation/of-002_interview_guide.md"
   - "docs/CHARTER.md"
   - "docs/DECISION_LOG.md"
 deliverables:
-  - "A durable target list or outreach log sufficient to begin real buyer interviews."
-  - "An updated sprint tracker showing interview and teardown recruitment progress."
+  - "A durable buyer-access activation plan covering target personas, company archetypes, outreach channels, and founder talk tracks."
+  - "An updated outreach message artifact with practical variants for warm, cold, and referral-based recruiting."
+  - "An updated sprint tracker that can be used as the operating sheet for founder-led outreach."
   - "Completed Atlas result and review artifacts for TASK-007 after execution."
 constraints:
   - "Do not fabricate buyer evidence or interview outcomes."
   - "Preserve confidentiality and do not store sensitive contact details without need or consent."
-  - "Differentiate clearly between sourced targets, scheduled interviews, and completed evidence."
+  - "Differentiate clearly between outreach planning, sourced targets, scheduled interviews, and completed evidence."
   - "Record any material strategic or process change in docs/DECISION_LOG.md before closeout."
 acceptance_criteria:
-  - "The task secures a credible path to the first 12 interviews or clearly states the remaining external blocker."
-  - "The sprint tracker is updated with real recruitment progress."
+  - "The task leaves a credible path to the first 12 interviews by defining who to contact, how to reach them, and how to frame the research."
+  - "The outreach artifacts are detailed enough for the founder to begin sending messages immediately."
   - "The output leaves Atlas materially closer to collecting live buyer evidence."
 handoff_to: Work
 result_artifact: "atlas/results/TASK-007.yaml"
 review_artifact: "atlas/reviews/TASK-007.md"
 notes:
-  - "Do not start execution until explicitly instructed."
+  - "Execution completed on 2026-08-07."
+  - "Review approved on 2026-08-07."
+  - "Outcome: the buyer-access blocker is now converted into a founder-led outreach system."

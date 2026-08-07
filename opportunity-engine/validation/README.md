@@ -1,6 +1,6 @@
 # Atlas Validation Layer
 
-Last updated: 2026-08-06
+Last updated: 2026-08-07
 Status: Active
 
 ## Purpose
@@ -19,7 +19,7 @@ The active wedge is:
 
 The active goal is not to build software yet.
 
-The active goal is to test:
+The active goal is to execute founder-led outreach, collect direct buyer evidence, and then test:
 
 - buyer urgency
 - willingness to pay
@@ -33,6 +33,7 @@ The active goal is to test:
 - `of-002_validation_test_queue.csv`: prioritized test list with success and failure signals
 - `of-002_interview_guide.md`: interview script for the first customer-facing discovery sprint
 - `of-002_validation_sprint_1_summary.md`: current sprint hold summary and buyer-access blocker
+- `of-002_buyer_access_activation_plan.md`: founder-led targeting, channel, and messaging plan for unlocking interviews
 - `of-002_outreach_message.md`: default outreach note for recruiting interview targets
 - `of-002_live_teardown_request.md`: follow-up request for securing live teardown candidates
 - `of-002_validation_sprint_tracker.csv`: active tracker for target recruitment and sprint progress

@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-06
+Last updated: 2026-08-07
 Status: Active
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-007`
-- Title: Buyer Access Activation for Renewal Validation Sprint 1
+- Task ID: `TASK-008`
+- Title: Founder-Led Outreach Execution for Renewal Validation Sprint 1
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-007.yaml`
+- Structured Artifact: `atlas/tasks/TASK-008.yaml`
 
 ## Ownership
 
