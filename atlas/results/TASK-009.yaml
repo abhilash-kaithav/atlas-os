@@ -1,0 +1,38 @@
+task_id: TASK-009
+title: "Market Archaeology Sprint 2: Decision Anatomy & Opportunity Validation"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-09
+updated_on: 2026-08-09
+source_task: "atlas/tasks/TASK-009.yaml"
+summary: "Created a durable market-archeology artifact for the renewal wedge, mapped the renewal decision system, and updated Atlas state so future validation starts from stronger founder conviction rather than generic outreach execution."
+completed_work:
+  - "Synthesized repository context and current external evidence into a market-archeology artifact that separates facts, hypotheses, and unknowns."
+  - "Documented the renewal decision lifecycle, stakeholder map, decision anatomy, economic-leakage model, current solution landscape, and expansion test for the renewal wedge."
+  - "Updated Atlas state and decision history to pause the old generic outreach restart and require the next validation task to use the new decision anatomy."
+deliverables:
+  - "opportunity-engine/research/of-002_market_archaeology.md"
+  - "atlas/STATE.md"
+  - "docs/DECISION_LOG.md"
+files_changed:
+  - "docs/BOOTSTRAP.md"
+  - "docs/DECISION_LOG.md"
+  - "atlas/TASK.md"
+  - "atlas/tasks/TASK-009.yaml"
+  - "atlas/RESULT.md"
+  - "atlas/results/TASK-009.yaml"
+  - "atlas/REVIEW.md"
+  - "atlas/reviews/TASK-009.md"
+  - "atlas/STATE.md"
+  - "opportunity-engine/research/of-002_market_archaeology.md"
+validation:
+  - "Verified that the archaeology artifact contains the required task sections: decision lifecycle, stakeholder map, decision anatomy, economic leakage analysis, current solution landscape, opportunity assessment, and expansion analysis."
+  - "Verified that the artifact separates facts, hypotheses, and unknowns and grounds the fact section in current repository and external evidence."
+  - "Verified that Atlas state and decision artifacts now reflect the pause of generic outreach restart pending next-task definition."
+open_issues:
+  - "Atlas still has no direct buyer evidence."
+  - "The next validation task is not yet defined."
+  - "Benchmark trust, buyer ownership, and software-versus-service preference remain unvalidated."
+follow_up:
+  - "Define the next validation task before restarting founder-led outreach."
+review_artifact: "atlas/reviews/TASK-009.md"

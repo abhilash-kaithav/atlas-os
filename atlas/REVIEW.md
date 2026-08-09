@@ -1,19 +1,19 @@
 # Atlas Review Board
 
-Last updated: 2026-08-07
+Last updated: 2026-08-09
 Status: Latest review approved
 Owner: Chat
 
 ## Current Review
 
-`TASK-007` review is complete.
+`TASK-009` review is complete.
 
-- Task ID: `TASK-007`
-- Title: `Buyer Access Activation for Renewal Validation Sprint 1`
+- Task ID: `TASK-009`
+- Title: `Market Archaeology Sprint 2: Decision Anatomy & Opportunity Validation`
 - Review Decision: `Approved`
-- Structured Artifact: `atlas/reviews/TASK-007.md`
+- Structured Artifact: `atlas/reviews/TASK-009.md`
 
-The result meets the task criteria: it turns the buyer-access blocker into a practical founder action plan and leaves the next execution step obvious without pretending interviews can happen automatically.
+The result meets the task criteria: it creates the missing founder-conviction layer, makes the renewal wedge legible as a real decision system, and leaves the next validation task better defined without drifting into product ideation.
 
 ## Ownership
 

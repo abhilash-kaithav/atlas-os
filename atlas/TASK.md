@@ -1,6 +1,6 @@
 # Atlas Task Board
 
-Last updated: 2026-08-08
+Last updated: 2026-08-09
 Status: Active
 Owner: Chat
 
@@ -8,7 +8,7 @@ Owner: Chat
 
 - Task ID: `TASK-009`
 - Title: Market Archaeology Sprint 2: Decision Anatomy & Opportunity Validation
-- Lifecycle Status: Draft
+- Lifecycle Status: Approved
 - Structured Artifact: `atlas/tasks/TASK-009.yaml`
 
 ## Ownership

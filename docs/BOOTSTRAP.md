@@ -1,6 +1,6 @@
 # Atlas Bootstrap
 
-Last updated: 2026-08-07
+Last updated: 2026-08-09
 Status: Active first-read startup document
 
 ## Purpose
@@ -57,7 +57,7 @@ Treat these as historical context, not active authority:
 - `docs/PLAYBOOK.md`
 - `docs/AI_OPERATING_MANUAL.md`
 
-## Current Atlas State On 2026-08-07
+## Current Atlas State On 2026-08-09
 
 Atlas has completed the core setup required before discovery work:
 
@@ -75,17 +75,18 @@ Atlas has completed the core setup required before discovery work:
 - first wedge-validation plan and test queue: complete
 - first validation sprint closeout with explicit hold criteria: complete
 - first buyer-access activation plan for founder-led outreach: complete
+- first market-archeology artifact for the renewal wedge: complete
 
-Atlas has now completed its seventh dedicated task and is ready for founder-led outreach execution for the first real validation sprint.
+Atlas has now completed its eighth dedicated task and has a stronger founder-conviction layer around enterprise software renewals before direct customer outreach restarts.
 
 ### Active Next Task
 
-- Task ID: `TASK-008`
-- Title: `Founder-Led Outreach Execution for Renewal Validation Sprint 1`
-- Status: `Draft`
-- State: not started
+- Task ID: `TBD`
+- Title: `Next validation task not yet defined`
+- Status: `Pending definition`
+- State: `TASK-009` complete and approved; define the next validation task before founder-led outreach resumes
 
-`TASK-007` is complete and approved. `TASK-008` is the next draft task and should source real targets, send founder-led outreach, and schedule the first qualified renewal interviews for the recommended wedge inside `OF-002`.
+`TASK-009` is complete and approved. Atlas should now define the next validation task using the market-archeology artifact before any founder-led outreach restarts.
 
 ## Product Boundary
 
@@ -160,6 +161,7 @@ Do not reopen these without new evidence and, when material, a decision log entr
 - `opportunity-engine/opportunity-families/README.md` and `opportunity_family_map.csv` are the active second-pass Opportunity Family layer above Value Patterns.
 - `opportunity-engine/scoring/README.md` and `opportunity_family_scores.csv` are the active family-prioritization layer above Opportunity Families.
 - `opportunity-engine/research/of-002_decision_and_foresight_memo.md` is the active top-family research artifact for the current wedge-selection phase.
+- `opportunity-engine/research/of-002_market_archaeology.md` is the active founder-conviction and decision-system analysis artifact for the renewal wedge.
 - `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md` is the active wedge-validation artifact for the current validation phase.
 - `opportunity-engine/validation/of-002_validation_sprint_1_summary.md` records the current sprint hold status and buyer-access blocker.
 - `opportunity-engine/validation/of-002_buyer_access_activation_plan.md` is the active founder-led outreach plan for restarting direct validation.
@@ -209,6 +211,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Begin `TASK-008` only when explicitly instructed to start execution.
+Define the next validation task before restarting founder-led outreach.
 
-That task should source real interview targets and send the first founder-led outreach wave for the benchmark-backed SaaS and AI renewal decision copilot wedge, update the sprint tracker with real recruitment progress, and preserve traceability back through the validation artifacts, research memo, scoring artifacts, family map, and value-pattern map to the concept inventory.
+That next task should use `opportunity-engine/research/of-002_market_archaeology.md` to sharpen customer evidence collection around decision ownership, timing, benchmark trust, and economic leakage rather than resuming the earlier generic outreach framing unchanged.
