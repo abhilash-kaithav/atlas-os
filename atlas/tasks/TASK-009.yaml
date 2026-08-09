@@ -1,0 +1,40 @@
+task_id: TASK-009
+title: "Market Archaeology Sprint 2: Decision Anatomy & Opportunity Validation"
+status: Draft
+artifact_owner: Chat
+created_on: 2026-08-08
+updated_on: 2026-08-08
+objective: "Build an evidence-backed understanding of enterprise software renewal decisions, identify economic bottlenecks, and validate whether the renewal wedge expands into Enterprise Decision Intelligence."
+context:
+  - "Founder conviction before customer outreach."
+inputs:
+  - "docs/BOOTSTRAP.md"
+  - "atlas/STATE.md"
+  - "docs/DECISION_LOG.md"
+  - "opportunity-engine/research/of-002_decision_and_foresight_memo.md"
+  - "opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md"
+  - "opportunity-engine/value-patterns/value_pattern_summary.md"
+  - "opportunity-engine/value-patterns/value_pattern_map.csv"
+  - "opportunity-engine/opportunity-families/opportunity_family_summary.md"
+  - "opportunity-engine/opportunity-families/opportunity_family_map.csv"
+deliverables:
+  - "Create opportunity-engine/research/of-002_market_archaeology.md"
+  - "Update atlas/STATE.md"
+  - "Update docs/DECISION_LOG.md"
+constraints:
+  - "No product feature ideation."
+  - "No taxonomy changes."
+  - "Separate facts, hypotheses, and unknowns."
+acceptance_criteria:
+  - "Decision lifecycle documented."
+  - "Stakeholder map completed."
+  - "Decision Anatomy table completed."
+  - "Economic leakage analysis completed."
+  - "Current solution landscape documented."
+  - "Opportunity assessment with supporting and contradicting evidence."
+  - "Expansion analysis completed."
+handoff_to: Work
+result_artifact: "atlas/results/TASK-009.yaml"
+review_artifact: "atlas/reviews/TASK-009.md"
+notes:
+  - "Do not start execution until explicitly instructed."

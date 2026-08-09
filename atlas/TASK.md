@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-07
+Last updated: 2026-08-08
 Status: Active
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-008`
-- Title: Founder-Led Outreach Execution for Renewal Validation Sprint 1
+- Task ID: `TASK-009`
+- Title: Market Archaeology Sprint 2: Decision Anatomy & Opportunity Validation
 - Lifecycle Status: Draft
-- Structured Artifact: `atlas/tasks/TASK-008.yaml`
+- Structured Artifact: `atlas/tasks/TASK-009.yaml`
 
 ## Ownership
 
