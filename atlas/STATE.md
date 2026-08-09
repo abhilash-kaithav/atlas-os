@@ -20,17 +20,18 @@ Owner: Shared
 - Validation Sprint 1: Complete (Hold)
 - Buyer Access Activation Plan: Complete
 - Market Archaeology Sprint 2: Complete
+- OF-002 Investigation: Complete (Validated Problem / Unattractive Entry)
 
 ## Current Phase
 
-Market Archaeology / Founder Conviction
+Evaluate next ranked opportunity using the revised kill-fast methodology
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: Next validation task not yet defined
-- Status: Pending definition
-- Execution Note: `TASK-009` is complete and approved. Atlas now has a durable decision-system map for enterprise software renewals. The next task should use that artifact to redefine the customer-evidence sprint before founder-led outreach resumes.
+- Title: Evaluate next ranked opportunity using the revised kill-fast methodology
+- Status: Ready for definition
+- Execution Note: `OF-002` investigation is complete. Atlas validated the renewal problem but did not approve the current venture because the entry wedge appears insufficiently differentiated under incumbent moat, cold-start, and founder-entry constraints. The next task should apply the revised evaluation order before another deep research sprint is authorized.
 
 ## Operating Model Summary
 
@@ -41,6 +42,6 @@ Market Archaeology / Founder Conviction
 
 ## Immediate Focus
 
-1. Use `opportunity-engine/research/of-002_market_archaeology.md` to define the next validation task around decision ownership, timing, benchmark trust, and economic leakage.
-2. Do not restart the old generic `TASK-008` outreach framing until the next validation task folds in the new decision anatomy.
+1. Evaluate the next ranked opportunity using this order: market magnitude, incumbent map, structural moat and cold-start test, founder entry feasibility, deep market archaeology, and customer discovery.
+2. Preserve `OF-002` as institutional knowledge and use its postmortem as a kill-fast reference rather than an active venture brief.
 3. Keep `data/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through Value Patterns, Opportunity Families, scoring, research, and validation into all higher discovery layers.

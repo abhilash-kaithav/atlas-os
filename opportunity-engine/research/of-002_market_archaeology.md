@@ -1,15 +1,15 @@
 # OF-002 Market Archaeology: Enterprise Software Renewal Decision System
 
 Last updated: 2026-08-09
-Status: Active research artifact
+Status: Completed research artifact
 Task ID: TASK-009
 
 ## Executive Summary
 
 - Core thesis: enterprise software renewals are recurring capital-allocation and risk-governance decisions made under fragmented evidence, pricing opacity, and time pressure.
 - Why this matters now: AI and SaaS spend are becoming more volatile while ownership, benchmarking, and procurement operating models remain immature.
-- Current recommendation: keep the renewal wedge alive, but frame it as renewal decision intelligence rather than generic procurement automation or pure negotiation outsourcing.
-- Confidence: Medium. The system anatomy is now clearer, but direct buyer evidence is still missing.
+- Current recommendation: Hold / Do Not Pursue as the current venture. Preserve `OF-002` as institutional knowledge because the problem is real, but the entry wedge is not sufficiently differentiated.
+- Confidence: Medium-High. Problem validation is strong; the decisive weakness is entry defensibility rather than market existence.
 
 ## Question
 
@@ -157,11 +157,13 @@ The current market appears to cluster into four visible groups.
 
 ### Current verdict
 
-The wedge survives this archaeology pass.
+The problem survives this archaeology pass.
 
-It looks stronger as a cross-functional renewal decision-intelligence problem than as a generic "AI procurement" idea.
+The current venture does not.
 
-But it is not yet validated enough to justify product assumptions. The biggest risk is mistaking a real category for an open category.
+The cross-functional renewal decision remains real, frequent, and economically meaningful, but the evidence now points to a more occupied and data-moat-dependent category than Atlas initially assumed.
+
+The biggest risk is not chasing a fake pain point. It is entering a real category with insufficient differentiation, no benchmark moat, and a severe cold-start disadvantage.
 
 ## Expansion Analysis
 
@@ -227,3 +229,47 @@ If the customer mostly buys negotiation services, or if benchmark data alone doe
 - [Forrester: The Convergence of Software Asset Management and SaaS Management, published 2026-05-26](https://www.forrester.com/blogs/the-convergence-of-software-asset-management-and-saas-management/)
 - [ServiceNow: Software Asset Management product overview](https://www.servicenow.com/uk/products/software-asset-management.html)
 - [ServiceNow: Software asset overview documentation](https://www.servicenow.com/docs/r/it-asset-management/software-asset-management/sam-workspace-landing.html)
+
+## Investment Committee Outcome
+
+### Decision
+
+- Hold / Do Not Pursue as current venture.
+
+### Outcome Summary
+
+- `OF-002` advanced through Market Archaeology and produced a validated problem statement.
+- The investment outcome is `Validated Problem / Unattractive Entry`.
+- Atlas should preserve this artifact as institutional knowledge rather than delete or hide it.
+
+### Evidence-backed conclusions
+
+These points are supported by the archaeology artifact, companion research, and the subsequent investment review.
+
+- Market is attractive. Renewal volume, pricing opacity, value leakage, AI-spend volatility, and fragmented ownership all point to a large recurring problem.
+- Incumbents already possess significant benchmark and transaction-data moats. The current landscape and broader review show vendors such as Tropic, Vertice/Vendr, Zylo, and adjacent platforms already compounding proprietary spend, negotiation, contract, and license data at scale.
+- The `system of reasoning` / decision-memory concept already has established vendors. The broader category test found that enterprise decision intelligence is not an unclaimed category simply because it is framed around decision memory.
+- Cold-start data disadvantage is a major strategic risk. Benchmark credibility appears to be table stakes, while Atlas has no proven proprietary dataset, distribution channel, or live customer base that offsets the incumbent head start.
+- The underlying Value Pattern remains valid even though this company formation is not recommended. `OF-002` still expresses real signal in `VP-002 Decision Advantage`, `VP-003 Memory Infrastructure`, and `VP-008 Pre-Commitment Foresight`; the failure is venture entry attractiveness, not pattern invalidity.
+
+### Hypotheses and interpretations
+
+These are forward-looking judgments, not closed facts.
+
+- A differentiated entrant may still exist if it enters through a proprietary data source, a uniquely advantaged founder channel, or a narrower domain where incumbents are weaker.
+- Atlas may revisit this opportunity family later if a future concept passes the moat and cold-start test before deep archaeology begins.
+- The recommendation should change only if new evidence materially alters the benchmark, founder-advantage, or data-access picture.
+
+### Lessons for Atlas methodology
+
+- Separate `problem validation` from `venture attractiveness` earlier. A real and painful problem can still be an unattractive company entry.
+- Test incumbent benchmark depth and data accumulation before spending heavily on workflow anatomy or category-legibility analysis.
+- Run a structural moat and cold-start screen before assuming a recommendation layer or decision-memory layer is defensible.
+- Preserve attractive rejected opportunities as institutional knowledge instead of keeping them artificially active.
+- Revised evaluation order for future top-ranked opportunities:
+  1. Market magnitude
+  2. Incumbent map
+  3. Structural moat and cold-start test
+  4. Founder entry feasibility
+  5. Deep market archaeology
+  6. Customer discovery
