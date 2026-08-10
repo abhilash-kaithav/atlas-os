@@ -1,6 +1,6 @@
 # Atlas Bootstrap
 
-Last updated: 2026-08-09
+Last updated: 2026-08-10
 Status: Active first-read startup document
 
 ## Purpose
@@ -37,6 +37,16 @@ Atlas is successful when it can reliably:
 4. surface believable wedges into large categories instead of collapsing into feature thinking
 5. let future sessions resume from repository artifacts instead of reconstructing context from chat
 
+## Methodology Evolution
+
+Atlas no longer starts from an AI-first question. It now asks which economic systems are structurally inefficient and what changed to make them newly solvable.
+
+Structural Change Drivers may include AI, technology modernization, regulatory change, data availability, labor shortages, market fragmentation, behavioral change, cost pressure, and infrastructure shifts.
+
+This is a refinement to the existing reasoning model, not a new framework. Value Patterns, Opportunity Families, scoring, research, and validation remain the active discovery architecture.
+
+Conversation generates hypotheses. Git stores only durable methodology, evidence, decisions, and active state.
+
 ## Active Constitutional Artifacts
 
 Use these as the active governing set:
@@ -57,7 +67,7 @@ Treat these as historical context, not active authority:
 - `docs/PLAYBOOK.md`
 - `docs/AI_OPERATING_MANUAL.md`
 
-## Current Atlas State On 2026-08-09
+## Current Atlas State On 2026-08-10
 
 Atlas has completed the core setup required before discovery work:
 
@@ -66,7 +76,7 @@ Atlas has completed the core setup required before discovery work:
 - primitive taxonomy: complete
 - canonical job and domain taxonomy: complete
 - Atlas operating model v1.0: complete
-- Atlas reasoning model v1.0: complete
+- Atlas reasoning model refined around Structural Change Drivers: complete
 - bootstrap migration into the persistent Work environment: complete
 - first Value Pattern taxonomy and full concept map: complete
 - first Opportunity Family taxonomy and full family map: complete
@@ -77,16 +87,16 @@ Atlas has completed the core setup required before discovery work:
 - first buyer-access activation plan for founder-led outreach: complete
 - first market-archeology artifact for the renewal wedge: complete
 
-Atlas has now completed its eighth dedicated task and has a stronger founder-conviction layer around enterprise software renewals before direct customer outreach restarts.
+Atlas has now completed its ninth dedicated task and has a stronger founder-conviction layer around enterprise software renewals before direct customer outreach restarts.
 
 ### Active Next Task
 
 - Task ID: `TBD`
-- Title: `Next validation task not yet defined`
+- Title: `Next opportunity evaluation task not yet defined`
 - Status: `Pending definition`
-- State: `TASK-009` complete and approved; define the next validation task before founder-led outreach resumes
+- State: `TASK-009` complete and approved; define the next task using Structural Change Drivers and the revised evaluation order before founder-led outreach resumes
 
-`TASK-009` is complete and approved. Atlas should now define the next validation task using the market-archeology artifact before any founder-led outreach restarts.
+`TASK-009` is complete and approved. Atlas should now define the next task by answering why the target system is structurally inefficient, what changed now, and whether the enabling force is AI or another structural driver before any founder-led outreach restarts.
 
 ## Product Boundary
 
@@ -177,6 +187,7 @@ These are the permanent working rules carried forward from the Chat -> Work tran
 - Derived layers: taxonomies, summaries, mappings, and future pattern layers are additive and replaceable.
 - One recommended solution by default: recommend the single best path unless a real architectural tradeoff exists.
 - Evidence before redesign: do not reopen strategy or methodology because a new wording sounds better.
+- Conversation generates hypotheses; Git stores only durable methodology, evidence, decisions, and active state.
 - Fast artifact production: architecture discussions should quickly produce repository updates.
 - Git-mediated workflow: use the canonical checkout and normal git history instead of side channels.
 - Separate architecture and implementation: define the method clearly, then execute it immediately instead of looping in abstraction.
@@ -202,7 +213,7 @@ Every future Atlas session should:
 
 1. start from this bootstrap and the current repository state
 2. confirm the active task or create the next task artifact before execution
-3. use the reasoning model before naming new taxonomies or strategic abstractions
+3. use the reasoning model, including Why Now Analysis and Structural Change Drivers, before naming new taxonomies or strategic abstractions
 4. preserve traceability from conclusions back to concepts, QA, and evidence
 5. update touched source-of-truth documents in the same session
 6. log material strategic or process changes before closeout
@@ -211,6 +222,6 @@ An Atlas session is incomplete if it changes the thinking but leaves no durable 
 
 ## Immediate Next Move
 
-Define the next validation task before restarting founder-led outreach.
+Define the next opportunity evaluation task before restarting founder-led outreach.
 
-That next task should use `opportunity-engine/research/of-002_market_archaeology.md` to sharpen customer evidence collection around decision ownership, timing, benchmark trust, and economic leakage rather than resuming the earlier generic outreach framing unchanged.
+That next task should use `opportunity-engine/research/of-002_market_archaeology.md` to sharpen customer evidence collection around decision ownership, timing, benchmark trust, and economic leakage, but it should start with Why Now Analysis and Structural Change Drivers rather than resuming the earlier generic outreach framing unchanged.

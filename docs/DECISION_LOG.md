@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-09
+Last updated: 2026-08-10
 Status: Active
 
 ## Logging Rules
@@ -38,6 +38,7 @@ Status: Active
 | 2026-08-07 | D-023 | Treat buyer-access activation as a founder-led outreach design problem before expecting interview evidence. | The user clarified that Atlas cannot directly conduct real buyer interviews. `TASK-007` therefore converts the blocker into a practical system for the founder: target roles, company archetypes, channel order, messaging, and tracking. This keeps validation honest and execution-focused. | Active | Monthly |
 | 2026-08-09 | D-024 | Pause `TASK-008` and run a market-archeology pass before restarting founder-led outreach. | The renewal wedge had directional support, but Atlas did not yet contain a canonical map of the renewal decision lifecycle, stakeholder incentives, economic leakage, or current solution landscape. `TASK-009` creates that founder-conviction layer and preserves the chain from wedge thesis to decision anatomy before customer outreach resumes. | Active | After next task definition |
 | 2026-08-09 | D-025 | Close the current `OF-002` venture candidate after Market Archaeology while preserving the family as institutional knowledge. | `OF-002` advanced through Market Archaeology and validated the problem, but the entry wedge is not sufficiently differentiated. Outcome: `Validated Problem / Unattractive Entry`. Atlas methodology improvement: evaluate future opportunities in this order: `(1)` market magnitude, `(2)` incumbent map, `(3)` structural moat and cold-start test, `(4)` founder entry feasibility, `(5)` deep market archaeology, `(6)` customer discovery. | Active | Before next ranked opportunity |
+| 2026-08-10 | D-026 | Refine Atlas methodology around Structural Change Drivers instead of AI-first opportunity framing. | Atlas should optimize for discovering enduring company opportunities created by structural economic transformation regardless of enabling technology. AI remains an important driver, but it sits alongside technology modernization, regulatory change, data availability, labor shortages, market fragmentation, behavioral change, cost pressure, and infrastructure shifts. This refines the why-now lens while preserving the existing Value Pattern and Opportunity Family architecture. | Active | Before next task definition |
 
 ## Revision Notes
 

@@ -1,11 +1,11 @@
-# Atlas Reasoning Model v1.0
+# Atlas Reasoning Model v1.1
 
-Last updated: 2026-08-05
+Last updated: 2026-08-10
 Status: Active governing methodology
 
 ## Mission
 
-Atlas exists to discover enduring opportunity patterns from evidence rather than organizing ideas by market, technology, or trend. Its job is to turn a large concept base into reusable strategic knowledge without losing the evidence required to reconstruct, challenge, or refine the conclusion.
+Atlas exists to discover enduring company opportunities created by structural change from evidence rather than organizing ideas by market, technology, or trend. Its job is to turn a large concept base into reusable strategic knowledge without losing the evidence required to reconstruct, challenge, or refine the conclusion.
 
 ## First Principles (Atlas Laws)
 
@@ -22,15 +22,33 @@ Atlas exists to discover enduring opportunity patterns from evidence rather than
 6. Compression without information loss.
    Every abstraction must preserve traceability back to the underlying evidence so Atlas gains clarity without destroying reconstructability.
 
+## Structural Change Drivers
+
+Atlas is not AI-first. It evaluates economic systems based on whether structural change now makes a durable company possible.
+
+AI is one structural driver alongside:
+
+- Technology modernization
+- Regulatory change
+- Data availability
+- Labor shortages
+- Market fragmentation
+- Behavioral change
+- Cost pressure
+- Infrastructure shifts
+
+The enabling force may be one driver or several working together. It may or may not be AI.
+
 ## Atlas Reasoning Process
 
 Every major Atlas analysis follows one standard pipeline:
 
 ```text
-Evidence -> Candidate Patterns -> Framework Tests -> Evidence Review -> Freeze Taxonomy -> Classification -> Knowledge Discovery
+Evidence -> Why Now Analysis -> Candidate Patterns -> Framework Tests -> Evidence Review -> Freeze Taxonomy -> Classification -> Knowledge Discovery
 ```
 
 - `Evidence`: start from preserved concepts, observations, and other durable artifacts.
+- `Why Now Analysis`: identify the structurally inefficient system, the active Structural Change Drivers, and why the opportunity is newly solvable now.
 - `Candidate Patterns`: propose causal groupings that may explain how value is created.
 - `Framework Tests`: evaluate each candidate against the taxonomy creation standards.
 - `Evidence Review`: challenge the pattern against counterexamples, edge cases, and weak fits.
@@ -40,9 +58,18 @@ Evidence -> Candidate Patterns -> Framework Tests -> Evidence Review -> Freeze T
 
 Atlas should not skip directly from raw ideas to conclusions. The pipeline exists to separate preservation, pattern formation, testing, and interpretation.
 
+## Why Now Analysis
+
+Every opportunity evaluation must answer these two questions before Atlas promotes the opportunity into deeper prioritization, research, or venture thinking:
+
+1. Why is this economic system structurally inefficient?
+2. What changed that makes solving it possible now?
+
+A valid answer may cite any combination of Structural Change Drivers. The enabling force may be AI, but Atlas should not assume that in advance.
+
 ## Taxonomy Creation Framework
 
-A taxonomy is valid only when it explains value creation causally and can be applied repeatedly.
+A taxonomy is valid only when it explains value creation causally and can be applied repeatedly after the Why Now case is explicit.
 
 ### Value Pattern
 
@@ -70,6 +97,16 @@ Value Patterns are not feature categories or market segments. They are stable ex
 | Economic | The pattern reflects a real mechanism of value creation, capture, compounding, or efficiency. |
 
 If a candidate fails these tests, Atlas should revise or discard the taxonomy before scaling classification work.
+
+## Compatibility With Existing Discovery Architecture
+
+Structural Change Drivers are an upstream lens, not a replacement for the existing Atlas architecture.
+
+- Value Patterns still explain recurring mechanisms of value creation.
+- Opportunity Families still group related strategic spaces above Value Patterns.
+- Scoring, research, validation, and venture work still operate on the approved layered architecture.
+
+This preserves backwards compatibility: Atlas now asks a better why-now question without breaking the current taxonomy system.
 
 ## Evolution Rules
 
