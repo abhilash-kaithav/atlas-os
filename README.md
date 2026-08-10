@@ -1,133 +1,43 @@
 # Atlas OS
 
-Atlas OS is the versioned operating system for discovering, classifying, validating, and acting on asymmetric opportunities.
+Last updated: 2026-08-10
+Status: Active
 
-## Operating Priorities
+Atlas OS is a repository-first operating system for discovering enduring company opportunities from durable evidence.
 
-1. Evidence before escalation.
-2. Behaviors before features.
-3. Categories before products.
-4. Best answer first, concise first.
-5. Generate broadly, then converge through clustering and validation.
-6. Record decisions and document changes explicitly.
+## Read First
 
-## Repository Structure
+1. `core/BOOTSTRAP.md`
+2. `core/STATE.md`
+3. `core/ATLAS_CONSTITUTION.md`
+4. `core/ATLAS_REASONING_MODEL.md`
+5. `core/OPERATING_MODEL.md`
+6. `core/DECISION_LOG.md`
+7. `execution/TASK.md`
 
-```text
-atlas-os/
-├── README.md
-├── atlas/
-│   ├── STATE.md
-│   ├── TASK.md
-│   ├── RESULT.md
-│   ├── REVIEW.md
-│   ├── tasks/
-│   │   ├── TASK-001.yaml
-│   │   └── TASK_TEMPLATE.yaml
-│   ├── results/
-│   │   └── RESULT_TEMPLATE.yaml
-│   └── reviews/
-│       └── REVIEW_TEMPLATE.md
-├── data/
-│   ├── README.md
-│   ├── concepts_raw.csv
-│   ├── concepts_curated.csv
-│   └── concepts_inventory_qa.md
-├── docs/
-│   ├── AI_OPERATING_MANUAL.md
-│   ├── ATLAS_CONSTITUTION.md
-│   ├── ATLAS_REASONING_MODEL.md
-│   ├── BOOTSTRAP.md
-│   ├── CHARTER.md
-│   ├── CODEX_WORKFLOW.md
-│   ├── OPERATING_MANUAL.md
-│   ├── DECISION_LOG.md
-│   ├── PRODUCT_BOUNDARY.md
-│   └── PLAYBOOK.md
-├── knowledge/
-│   ├── README.md
-│   ├── hypotheses/
-│   ├── observations/
-│   └── principles/
-├── roadmap/
-│   └── ROADMAP.md
-├── opportunity-engine/
-│   ├── README.md
-│   ├── opportunity-families/
-│   │   ├── README.md
-│   │   ├── opportunity_family_map.csv
-│   │   └── opportunity_family_summary.md
-│   ├── research/
-│   │   ├── of-002_decision_and_foresight_memo.md
-│   │   └── of-002_wedge_shortlist.md
-│   ├── scoring/
-│   │   ├── README.md
-│   │   ├── opportunity_family_ranked_summary.md
-│   │   └── opportunity_family_scores.csv
-│   ├── validation/
-│   │   ├── README.md
-│   │   ├── of-002_buyer_access_activation_plan.md
-│   │   ├── of-002_interview_guide.md
-│   │   ├── of-002_live_teardown_request.md
-│   │   ├── of-002_outreach_message.md
-│   │   ├── of-002_renewal_copilot_validation_plan.md
-│   │   ├── of-002_validation_sprint_1_summary.md
-│   │   ├── of-002_validation_sprint_tracker.csv
-│   │   └── of-002_validation_test_queue.csv
-│   └── value-patterns/
-│       ├── README.md
-│       ├── value_pattern_map.csv
-│       └── value_pattern_summary.md
-├── opportunities/
-│   ├── opportunity_db.csv
-│   ├── clusters.md
-│   └── research/
-├── journals/
-├── templates/
-│   ├── RESEARCH_MEMO_TEMPLATE.md
-│   └── WEEKLY_JOURNAL_TEMPLATE.md
-└── assets/
-```
+## Repository Layout
 
-## Default Workflow
+- `core/`: constitution, reasoning model, operating model, state, decision log, and product boundary
+- `knowledge/`: concept evidence, observations, hypotheses, principles, case studies, and postmortems
+- `execution/`: live task, result, and review loop plus templates
+- `archive/`: Discovery v1 outputs, historical execution history, and superseded operating documents
+- `scripts/`: active rebuild utilities
+- `templates/`: reusable templates that still belong in the active system
 
-1. Capture ideas broadly before judging them.
-2. Translate recurring patterns into primitives, Value Patterns, and hypotheses.
-3. Compare opportunity space at the Opportunity Family layer before committing to deeper research.
-4. Score the approved families and pick one default research lane.
-5. Research the top family and name one recommended wedge by default.
-6. Validate the strongest wedge with direct evidence and a believable build path.
-7. Run interviews and concierge tests before broad product build work.
-8. Treat missing buyer access as an execution blocker, not automatic wedge invalidation.
-9. When buyer access depends on the founder, convert the blocker into a concrete outreach plan before expecting interview evidence.
-10. Recommend the next highest-leverage move in a compact format.
-11. Update the decision log, knowledge artifacts, and touched operating documents in the same pass.
+## Current State
 
-## Source of Truth
+Discovery v1 is frozen in `archive/discovery-v1/`.
 
-- First-read startup guide: `docs/BOOTSTRAP.md`
-- Active state, task, result, and review loop: `atlas/`
-- Mission, scope, and constraints: `docs/CHARTER.md`
-- Operating rules and workflows: `docs/OPERATING_MANUAL.md`
-- Governing methodology: `docs/ATLAS_REASONING_MODEL.md`
-- Historical precursor: `docs/ATLAS_CONSTITUTION.md`
-- Decision history and version control: `docs/DECISION_LOG.md`
-- Codex repository workflow: `docs/CODEX_WORKFLOW.md`
-- Concept inventory policy: `data/README.md`
-- Knowledge hierarchy: `knowledge/README.md`
-- Current phase and milestones: `roadmap/ROADMAP.md`
-- Opportunity system design: `opportunity-engine/README.md`
-- Value Pattern taxonomy: `opportunity-engine/value-patterns/README.md`
-- Opportunity Family taxonomy: `opportunity-engine/opportunity-families/README.md`
-- Opportunity Family scorecard: `opportunity-engine/scoring/README.md`
-- Active top-family research: `opportunity-engine/research/of-002_decision_and_foresight_memo.md`
-- Active validation plan: `opportunity-engine/validation/of-002_renewal_copilot_validation_plan.md`
-- Current validation sprint summary: `opportunity-engine/validation/of-002_validation_sprint_1_summary.md`
-- Active buyer-access activation plan: `opportunity-engine/validation/of-002_buyer_access_activation_plan.md`
+`OF-002` is closed as a current venture candidate and preserved as institutional knowledge in:
 
-`opportunities/` remains the working inventory for active opportunity records while the broader opportunity engine structure is formalized.
+- `knowledge/postmortems/OF-002.md`
+- `knowledge/research/case-studies/OF-002/market-archaeology.md`
 
-## Document Control
+The next task is to evaluate the next ranked opportunity using Structural Change Drivers and the revised evaluation order in `core/STATE.md` and `core/ATLAS_REASONING_MODEL.md`.
 
-- Initialized: 2026-08-03
-- Change rule: any strategic change must cite evidence and add a decision log entry.
+## Working Rules
+
+- Git stores durable methodology, evidence, decisions, and live state.
+- One concept maps to one authoritative document.
+- Historical discovery remains preserved in `archive/`, not in active navigation.
+- Material changes should leave a decision-log entry and a durable repository artifact.

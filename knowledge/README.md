@@ -1,56 +1,54 @@
-# Knowledge Base
+# Atlas Knowledge Base
 
-Last updated: 2026-08-04
+Last updated: 2026-08-10
 Status: Active
 
 ## Purpose
 
-The knowledge base preserves what Atlas has actually learned. It keeps raw pattern recognition separate from stronger claims so the system can compound insight without pretending certainty.
+The knowledge base preserves what Atlas has actually learned. It keeps evidence, interpretation, case studies, and postmortem learning separate enough that the system can compound insight without pretending certainty.
 
-## Knowledge Objects
+## Active Sections
+
+### Concept Evidence
+
+- `knowledge/evidence/concepts/` holds the raw concept inventory, curated analytical layer, QA report, and concept-taxonomy documentation.
+- This is active evidence, not archive material.
 
 ### Observations (`O-xxx`)
 
-Observations record direct patterns noticed in ideation, research, validation, or operating work.
-
 - Store them in `knowledge/observations/`.
-- Record what was seen, where it appeared, and what boundary conditions still apply.
-- Observations can be created immediately when the pattern is real enough to name.
+- Use them for direct patterns noticed in ideation, research, validation, or operating work.
 
 ### Hypotheses (`H-xxx`)
 
-Hypotheses are the current best explanations for repeated observations.
-
 - Store them in `knowledge/hypotheses/`.
 - Promote only after at least three independent observations point to the same explanation.
-- Include supporting evidence, contradicting evidence, and a falsification path.
 
 ### Principles (`P-xxx`)
 
-Principles are durable rules that have survived repeated evidence and active challenge.
-
 - Store them in `knowledge/principles/`.
-- Do not create a principle because it sounds right.
-- A principle should be stable enough to guide future work by default.
+- Add a principle only when the hypothesis has survived repeated support and active challenge.
+
+### Case Studies
+
+- Store them in `knowledge/research/case-studies/`.
+- Use them for durable research artifacts that should inform future opportunity evaluation.
+
+### Postmortems
+
+- Store them in `knowledge/postmortems/`.
+- Use them for rejected wedges, failed assumptions, and durable kill-fast learning.
 
 ### Decision Log (`D-xxx`)
 
-The decision log records durable choices about strategy, prioritization, workflow, or governance.
-
-- The authoritative log lives in `docs/DECISION_LOG.md`.
+- The authoritative log lives in `core/DECISION_LOG.md`.
 - Add a new entry instead of rewriting history when a decision changes.
-- Decisions should reference the evidence or rationale behind the call.
 
-## Promotion Rules
+## Historical Discovery
 
-The default ladder is:
+`archive/discovery-v1/` preserves the first large discovery cycle, including taxonomies, family ranking, OF-002 validation history, and completed execution artifacts.
 
-1. Observation
-2. Hypothesis
-3. Principle
-4. Decision-informed operating change
-
-Not every observation becomes a hypothesis, and not every hypothesis becomes a principle.
+That archive is part of Atlas memory, but it is not the active navigation layer.
 
 ## Writing Standard
 
@@ -59,4 +57,4 @@ For every knowledge artifact:
 1. Separate facts from interpretation.
 2. Record contradicting evidence, not only supporting evidence.
 3. Prefer short, scannable notes over long speculative essays.
-4. Link related artifacts when a pattern advances or weakens.
+4. Link related artifacts when a pattern advances, weakens, or gets falsified.

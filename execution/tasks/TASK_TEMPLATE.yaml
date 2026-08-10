@@ -1,0 +1,22 @@
+task_id: TASK-000
+title: "<task title>"
+status: Draft
+artifact_owner: Chat
+created_on: YYYY-MM-DD
+updated_on: YYYY-MM-DD
+objective: "<why this task exists>"
+context:
+  - "<current state or prerequisite>"
+inputs:
+  - "<input file or artifact>"
+deliverables:
+  - "<expected output>"
+constraints:
+  - "<important boundary or non-goal>"
+acceptance_criteria:
+  - "<how completion will be judged>"
+handoff_to: Work
+result_artifact: "execution/results/TASK-000.yaml"
+review_artifact: "execution/reviews/TASK-000.md"
+notes:
+  - "<optional note>"

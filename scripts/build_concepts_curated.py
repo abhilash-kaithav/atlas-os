@@ -12,7 +12,7 @@ from typing import Iterable
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "knowledge" / "evidence" / "concepts"
 RAW_PATH = DATA_DIR / "concepts_raw.csv"
 CURATED_PATH = DATA_DIR / "concepts_curated.csv"
 QA_PATH = DATA_DIR / "concepts_inventory_qa.md"
