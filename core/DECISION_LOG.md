@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-10
+Last updated: 2026-08-12
 Status: Active
 
 ## Logging Rules
@@ -40,6 +40,7 @@ Status: Active
 | 2026-08-09 | D-025 | Close the current `OF-002` venture candidate after Market Archaeology while preserving the family as institutional knowledge. | `OF-002` advanced through Market Archaeology and validated the problem, but the entry wedge is not sufficiently differentiated. Outcome: `Validated Problem / Unattractive Entry`. Atlas methodology improvement: evaluate future opportunities in this order: `(1)` market magnitude, `(2)` incumbent map, `(3)` structural moat and cold-start test, `(4)` founder entry feasibility, `(5)` deep market archaeology, `(6)` customer discovery. | Active | Before next ranked opportunity |
 | 2026-08-10 | D-026 | Refine Atlas methodology around Structural Change Drivers instead of AI-first opportunity framing. | Atlas should optimize for discovering enduring company opportunities created by structural economic transformation regardless of enabling technology. AI remains an important driver, but it sits alongside technology modernization, regulatory change, data availability, labor shortages, market fragmentation, behavioral change, cost pressure, and infrastructure shifts. This refines the why-now lens while preserving the existing Value Pattern and Opportunity Family architecture. | Active | Before next task definition |
 | 2026-08-10 | D-027 | Adopt Atlas v2 repository architecture and freeze Discovery v1 as historical archive. | Atlas had accumulated duplicate navigation layers, stale current-state documents, and active-looking historical artifacts. Atlas v2 promotes one active core, one live state artifact, one execution loop, one concept-evidence system, and an explicit archive for Discovery v1 and superseded operating documents. | Active | Monthly |
+| 2026-08-12 | D-028 | Shift Atlas discovery from idea-first exploration to economy-first exploration. | Discovery should now begin from the global economy, industry census, operating systems, and core workflows rather than from Opportunity Families. Discovery v1 remains a frozen knowledge asset. Novelty is no longer the objective; structural advantage is. Atlas should identify structural failures before forming a company thesis. | Active | Before next task definition |
 
 ## Revision Notes
 

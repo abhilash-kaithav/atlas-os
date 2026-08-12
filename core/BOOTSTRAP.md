@@ -1,6 +1,6 @@
 # Atlas Bootstrap
 
-Last updated: 2026-08-10
+Last updated: 2026-08-12
 Status: Active first-read startup document
 
 ## Purpose
@@ -28,6 +28,12 @@ Atlas is a repository-first operating system for discovering enduring company op
 
 Its purpose is not to collect interesting ideas. Its purpose is to preserve evidence, derive reusable strategic knowledge, and surface the rare opportunities worth building.
 
+## Exploration Philosophy
+
+- Start from the global economy, then move through industry census, operating systems, core workflows, and structural failures before writing a company thesis.
+- Treat `archive/discovery-v1/` as a frozen knowledge asset for inspiration and comparison, not as the default entry point for new work.
+- Optimize for structural advantage, not novelty.
+
 ## Active Source Of Truth
 
 Use these as the governing set:
@@ -51,22 +57,23 @@ Use these only when historical lineage matters:
 - `archive/superseded-core/`
 - `archive/snapshots/`
 
-## Current State On 2026-08-10
+## Current State On 2026-08-12
 
 - Discovery v1 is complete and frozen in `archive/discovery-v1/`.
 - `OF-002` is closed as a current venture candidate and preserved as institutional knowledge.
-- The active phase is to define and execute the next opportunity evaluation task using Structural Change Drivers and the revised evaluation order.
+- The active phase is Industry Census and Workflow Exploration.
+- The immediate goal is to identify reusable structural failures across industries before committing to a specific company thesis.
 
 ## Immediate Next Move
 
-Define the next opportunity evaluation task before any new deep research sprint begins.
+Define the first industry census and workflow exploration task before any new company thesis or deep research sprint begins.
 
 That task should:
 
-1. answer why the target system is structurally inefficient
-2. answer what changed now
-3. apply the revised evaluation order in `core/ATLAS_REASONING_MODEL.md`
-4. use `knowledge/postmortems/OF-002.md` and `knowledge/research/case-studies/OF-002/market-archaeology.md` as institutional learning, not as the active venture brief
+1. select industries worth mapping
+2. identify the operating systems and core workflows inside them
+3. isolate reusable structural failures before evaluating individual company theses
+4. use `archive/discovery-v1/` and `knowledge/postmortems/OF-002.md` as institutional learning, not as the default navigation layer
 
 ## Working Rules
 

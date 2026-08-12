@@ -1,11 +1,11 @@
-# Atlas Reasoning Model v1.2
+# Atlas Reasoning Model v1.3
 
-Last updated: 2026-08-10
+Last updated: 2026-08-12
 Status: Active governing methodology
 
 ## Mission
 
-Atlas exists to discover enduring company opportunities created by structural change from evidence rather than organizing ideas by market, technology, or trend. Its job is to turn a large concept base into reusable strategic knowledge without losing the evidence required to reconstruct, challenge, or refine the conclusion.
+Atlas exists to discover enduring company opportunities created by structural change from evidence rather than from idea novelty, market labels, or technology fashion. Its job is to turn preserved knowledge assets and live industry research into reusable strategic knowledge without losing the evidence required to reconstruct, challenge, or refine the conclusion.
 
 ## First Principles (Atlas Laws)
 
@@ -21,6 +21,8 @@ Atlas exists to discover enduring company opportunities created by structural ch
    Durable memory lives in versioned repository artifacts, not in chat transcripts or informal recollection.
 6. Compression without information loss.
    Every abstraction must preserve traceability back to the underlying evidence so Atlas gains clarity without destroying reconstructability.
+7. Optimize for structural advantage, not novelty.
+   Atlas prefers opportunities with durable structural leverage even when the surface idea appears unoriginal.
 
 ## Structural Change Drivers
 
@@ -39,24 +41,50 @@ AI is one structural driver alongside:
 
 The enabling force may be one driver or several working together. It may or may not be AI.
 
-## Atlas Reasoning Process
+## Discovery Orientation
 
-Every major Atlas analysis follows one standard sequence:
+Discovery v1 is a frozen knowledge asset. Its 700 concepts, taxonomies, Opportunity Families, rankings, and execution history may inspire research or provide historical comparison, but they are no longer the default entry point for new exploration.
+
+Atlas now begins discovery here:
 
 ```text
-Evidence -> Why Now Analysis -> Opportunity Evaluation Order -> Candidate Patterns -> Framework Tests -> Evidence Review -> Classification When Useful -> Knowledge Discovery
+Global Economy -> Industry Census -> Operating Systems -> Core Workflows -> Structural Failures -> Opportunity Evaluation -> Company Thesis
 ```
 
-- `Evidence`: start from preserved concepts, observations, case studies, postmortems, and other durable artifacts.
-- `Why Now Analysis`: identify the structurally inefficient system, the active Structural Change Drivers, and why the opportunity is newly solvable now.
-- `Opportunity Evaluation Order`: test whether the opportunity is attractive before investing in deep modeling or venture imagination.
-- `Candidate Patterns`: propose causal groupings that may explain how value is created.
-- `Framework Tests`: evaluate each candidate against the taxonomy creation standards.
-- `Evidence Review`: challenge the pattern against counterexamples, edge cases, weak fits, and competing explanations.
-- `Classification When Useful`: map evidence into a reusable taxonomy only when doing so improves causal clarity and future reuse.
-- `Knowledge Discovery`: derive insights, gaps, and next questions only after the evidence structure is explicit enough to challenge.
+### Discovery Tracks
 
-Atlas should not skip directly from raw ideas to conclusions. The sequence exists to separate preservation, pattern formation, evaluation, testing, and interpretation.
+Atlas uses two standing discovery tracks:
+
+- `Whitespace Discovery`: start with important workflows that remain underbuilt, fragmented, or structurally neglected.
+- `Incumbent Disruption`: start with important workflows already served by incumbents and test whether structural change opens a new attack surface.
+
+### Workflow Interrogation
+
+For every workflow Atlas evaluates, it must answer:
+
+- What value is being created?
+- Where does value leak?
+- Why hasn't this been solved?
+- Is the blocker technical, economic, organizational, regulatory, behavioral, or legacy architecture?
+- Why could a startup succeed where incumbents have not?
+
+## Atlas Reasoning Process
+
+Every major Atlas discovery cycle follows one standard sequence:
+
+```text
+Global Economy -> Industry Census -> Operating Systems -> Core Workflows -> Structural Failures -> Opportunity Evaluation -> Company Thesis
+```
+
+- `Global Economy`: identify broad sectors being reshaped by structural change.
+- `Industry Census`: enumerate industries worth studying rather than jumping to isolated ideas.
+- `Operating Systems`: find the systems of record, coordination layers, and control points that run the industry.
+- `Core Workflows`: isolate the recurring work that actually creates, moves, approves, or captures value.
+- `Structural Failures`: identify where value leaks, coordination breaks, incentives misalign, or the stack cannot adapt.
+- `Opportunity Evaluation`: answer the Why Now questions and apply the evaluation order before investing in venture imagination.
+- `Company Thesis`: define a venture thesis only after the structural failure and attack surface are explicit.
+
+When a cycle produces reusable causal patterns, Atlas may continue into taxonomy work, framework tests, evidence review, classification, and knowledge discovery. Atlas should not skip directly from high-level observations or raw ideas to conclusions.
 
 ## Why Now Analysis
 
@@ -115,11 +143,11 @@ If a candidate fails these tests, Atlas should revise or discard the taxonomy be
 
 ## Discovery Lineage
 
-Discovery v1 taxonomies, rankings, and execution history are preserved in `archive/discovery-v1/`.
+Discovery v1 concepts, taxonomies, Opportunity Families, rankings, and execution history are preserved in `archive/discovery-v1/`.
 
 They remain useful as historical outputs and as examples of how Atlas previously compressed a large concept base, but they are not the active navigation layer for Atlas v2.
 
-Future work may reuse Value Patterns, Opportunity Families, or other taxonomic layers when they improve causal clarity and traceability, but Atlas should not assume that every new cycle must recreate the exact Discovery v1 sequence.
+Future work may reuse Value Patterns, Opportunity Families, or other taxonomic layers when they improve causal clarity and traceability, but Atlas should not assume that every new cycle must begin there or recreate the exact Discovery v1 sequence.
 
 ## Evolution Rules
 
