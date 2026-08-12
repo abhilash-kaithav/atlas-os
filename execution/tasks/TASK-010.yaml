@@ -1,0 +1,43 @@
+task_id: TASK-010
+title: "Top 50 Industry Census"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-12
+updated_on: 2026-08-12
+objective: "Create a structured, evidence-backed census of the 50 largest and most economically significant private-market industries to support economy-first opportunity discovery."
+context:
+  - "Atlas has adopted economy-first exploration and needs a reproducible industry base before selecting deeper workflow research targets."
+  - "Discovery v1 remains archived and should not be the default starting point."
+inputs:
+  - "core/BOOTSTRAP.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "core/ATLAS_REASONING_MODEL.md"
+  - "https://apps.bea.gov/industry/Release/XLS/GDPxInd/GrossOutput.xlsx"
+  - "https://apps.bea.gov/industry/Release/XLS/GDPxInd/ValueAdded.xlsx"
+  - "https://www.bea.gov/data/gdp/gdp-industry"
+  - "Official sector context sources captured in the census CSV source_links field"
+deliverables:
+  - "Create knowledge/research/industry-census/top-50-industry-census.csv"
+  - "Create knowledge/research/industry-census/top-50-industry-census-summary.md"
+  - "Update core/STATE.md"
+  - "Record task/result/review artifacts for TASK-010"
+  - "Commit and push durable outputs"
+constraints:
+  - "No product ideation."
+  - "No company theses."
+  - "No opportunity ranking."
+  - "Preserve facts separately from hypotheses."
+  - "Prefer primary or authoritative sources and 2025-2026 data where available."
+  - "Keep the repository concise and avoid duplicate framework documents."
+acceptance_criteria:
+  - "CSV contains the required industry census fields and source links."
+  - "Summary markdown captures methodology, sources, caveats, and 10 notable cross-industry observations."
+  - "Hypotheses remain separate from facts and observations."
+  - "core/STATE.md reflects completion of the census and the next move."
+  - "Execution artifacts are recorded and git-pushable."
+handoff_to: Work
+result_artifact: "execution/results/TASK-010.yaml"
+review_artifact: "execution/reviews/TASK-010.md"
+notes:
+  - "Atlas scoped the census to BEA summary-table private-market leaf industries for recency and comparability."

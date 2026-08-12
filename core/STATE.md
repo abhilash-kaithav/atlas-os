@@ -22,6 +22,7 @@ Owner: Shared
 - Market Archaeology Sprint 2: Complete
 - OF-002 Investigation: Complete (Validated Problem / Unattractive Entry)
 - Discovery Reset: Complete (Economy-first exploration adopted)
+- Top 50 Industry Census: Complete
 
 ## Current Phase
 
@@ -29,14 +30,14 @@ Industry Census and Workflow Exploration.
 
 ## Immediate Goal
 
-Identify reusable structural failures across industries.
+Use the completed industry census to select the first operating-system and core-workflow deep dives.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: Identify reusable structural failures across industries
+- Title: Select the first industry operating-system deep dives from the census
 - Status: Ready for definition
-- Execution Note: `OF-002` investigation is complete and preserved as institutional knowledge. The next task should begin with industry census, then move through operating systems, core workflows, and structural failures to identify reusable breakdowns across industries before Atlas commits to another company thesis.
+- Execution Note: `TASK-010` completed the Top 50 Industry Census and preserved it in `knowledge/research/industry-census/`. The next task should choose the first industries to map at the operating-system and core-workflow level, using size, structural pressure, and visible inefficiency to drive selection before Atlas commits to another company thesis.
 
 ## Operating Model Summary
 
@@ -47,6 +48,7 @@ Identify reusable structural failures across industries.
 
 ## Immediate Focus
 
-1. Identify reusable structural failures across industries by mapping industry operating systems and the core workflows that create and capture value.
-2. Use archived Discovery v1 materials as reference and inspiration only, not as the default starting point for new exploration.
-3. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+1. Use `knowledge/research/industry-census/top-50-industry-census.csv` as the active census evidence layer for economy-first exploration.
+2. Start the next cycle at industry operating systems and core workflows, not venture ideation or opportunity ranking.
+3. Use archived Discovery v1 materials as reference and inspiration only, not as the default starting point for new exploration.
+4. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-10
-Status: Active
+Last updated: 2026-08-12
+Status: Latest task approved
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TBD`
-- Title: `Next opportunity evaluation task not yet defined`
-- Lifecycle Status: `Awaiting definition`
-- Structured Artifact: `Not yet created`
+- Task ID: `TASK-010`
+- Title: `Top 50 Industry Census`
+- Lifecycle Status: `Approved`
+- Structured Artifact: `execution/tasks/TASK-010.yaml`
 
 ## Ownership
 
