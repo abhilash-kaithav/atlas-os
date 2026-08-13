@@ -1,6 +1,6 @@
 # Atlas State
 
-Last updated: 2026-08-12
+Last updated: 2026-08-13
 Status: Active
 Owner: Shared
 
@@ -23,21 +23,22 @@ Owner: Shared
 - OF-002 Investigation: Complete (Validated Problem / Unattractive Entry)
 - Discovery Reset: Complete (Economy-first exploration adopted)
 - Top 50 Industry Census: Complete
+- Industry Census Normalization: Complete
 
 ## Current Phase
 
-Industry Census and Workflow Exploration.
+Phase 1 Complete; Phase 2 Not Started.
 
 ## Immediate Goal
 
-Use the completed industry census to select the first operating-system and core-workflow deep dives.
+Use the normalized industry census as the Phase 1 source of truth before any Phase 2 workflow mapping begins.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: Select the first industry operating-system deep dives from the census
-- Status: Ready for definition
-- Execution Note: `TASK-010` completed the Top 50 Industry Census and preserved it in `knowledge/research/industry-census/`. The next task should choose the first industries to map at the operating-system and core-workflow level, using size, structural pressure, and visible inefficiency to drive selection before Atlas commits to another company thesis.
+- Title: `Phase 2 Workflow Mapping Batch 1`
+- Status: `Ready for definition`
+- Execution Note: `TASK-011` completed Phase 1B normalization and established the active census layer in `knowledge/research/industry-census/top-50-industry-census-normalized.csv`. When Phase 2 begins, use the normalized operating-system, workflow, and systems-of-record vocabulary directly. Do not restart industry research.
 
 ## Operating Model Summary
 
@@ -48,7 +49,7 @@ Use the completed industry census to select the first operating-system and core-
 
 ## Immediate Focus
 
-1. Use `knowledge/research/industry-census/top-50-industry-census.csv` as the active census evidence layer for economy-first exploration.
-2. Start the next cycle at industry operating systems and core workflows, not venture ideation or opportunity ranking.
-3. Use archived Discovery v1 materials as reference and inspiration only, not as the default starting point for new exploration.
+1. Preserve `knowledge/research/industry-census/top-50-industry-census.csv` as the frozen raw research snapshot from Phase 1A.
+2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv` plus the operating-system, workflow, and systems-of-record taxonomy documents in the same folder as the active Phase 1 evidence layer.
+3. Keep Phase 2 scoped to workflow mapping only when it starts; do not add new industry research, opportunity analysis, or startup ideation inside the Phase 1 artifacts.
 4. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

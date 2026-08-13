@@ -1,0 +1,54 @@
+task_id: TASK-011
+title: "Phase 1B Industry Census Normalization"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-13
+updated_on: 2026-08-13
+source_task: "execution/tasks/TASK-011.yaml"
+summary: "Normalized the existing Top 50 industry census into canonical operating-system, workflow, and systems-of-record vocabularies, generated a validated Phase 1B evidence layer, and updated Atlas state without adding new research or beginning Phase 2."
+completed_work:
+  - "Created a reproducible normalization script that reads the existing census and generates the new Phase 1B artifacts from explicit Atlas mappings."
+  - "Created a normalized census CSV with canonical operating-system labels, five canonical workflows per industry, workflow-family tags, systems-of-record categories, and row-level validation fields."
+  - "Created operating-system, workflow, and systems-of-record taxonomy documents plus a concise normalization summary."
+  - "Updated state, decision, and execution artifacts so Atlas records Phase 1 as complete and keeps Phase 2 unstarted."
+deliverables:
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/industry-census/operating-system-taxonomy.md"
+  - "knowledge/research/industry-census/workflow-taxonomy.md"
+  - "knowledge/research/industry-census/systems-of-record-taxonomy.md"
+  - "knowledge/research/industry-census/phase-1b-normalization-summary.md"
+  - "scripts/build_industry_census_normalized.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-011.yaml"
+  - "execution/results/TASK-011.yaml"
+  - "execution/reviews/TASK-011.md"
+files_changed:
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/industry-census/operating-system-taxonomy.md"
+  - "knowledge/research/industry-census/workflow-taxonomy.md"
+  - "knowledge/research/industry-census/systems-of-record-taxonomy.md"
+  - "knowledge/research/industry-census/phase-1b-normalization-summary.md"
+  - "scripts/build_industry_census_normalized.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-011.yaml"
+  - "execution/results/TASK-011.yaml"
+  - "execution/reviews/TASK-011.md"
+validation:
+  - "Verified that the normalized CSV contains 50 industries plus header and that every row is marked `Complete` with no missing-field flags."
+  - "Verified that each row contains one canonical operating-system label, five canonical workflows, workflow-family tags, and systems-of-record categories."
+  - "Verified that the raw census snapshot remains unchanged and that the normalized layer is written to a separate CSV."
+  - "Verified that no new research sources, opportunity analysis, or Phase 2 workflow mapping were introduced."
+open_issues:
+  - "Systems-of-record categories are representative category mappings derived from the existing vendor fields, not exhaustive decompositions of every platform's product surface."
+  - "Phase 2 workflow anatomy, gap analysis, and opportunity classification remain intentionally out of scope."
+follow_up:
+  - "Define Phase 2 Workflow Mapping Batch 1 against the normalized census when the user is ready to start the next phase."
+review_artifact: "execution/reviews/TASK-011.md"

@@ -1,0 +1,41 @@
+task_id: TASK-011
+title: "Phase 1B Industry Census Normalization"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-13
+updated_on: 2026-08-13
+objective: "Normalize the existing Top 50 Industry Census into a canonical Atlas vocabulary so later phases can compare industries directly without adding new research."
+context:
+  - "Phase 1A produced a research snapshot of the Top 50 industries, but the operating-system, workflow, and systems labels were still too heterogeneous for direct comparison."
+  - "The user explicitly scoped this task to normalization only: no new industry research, no Phase 2 workflow mapping, and no opportunity analysis."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census.csv"
+  - "knowledge/research/industry-census/top-50-industry-census-summary.md"
+deliverables:
+  - "Create knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "Create knowledge/research/industry-census/operating-system-taxonomy.md"
+  - "Create knowledge/research/industry-census/workflow-taxonomy.md"
+  - "Create knowledge/research/industry-census/systems-of-record-taxonomy.md"
+  - "Create knowledge/research/industry-census/phase-1b-normalization-summary.md"
+  - "Update core/STATE.md"
+  - "Record task/result/review artifacts for TASK-011"
+  - "Commit and push durable outputs"
+constraints:
+  - "Use the existing Top 50 Industry Census as the only input."
+  - "Do not perform new industry research."
+  - "Do not begin Phase 2."
+  - "Do not identify opportunities, workflow gaps, or startup ideas."
+  - "Flag missing fields rather than inventing data."
+acceptance_criteria:
+  - "Every industry row has market-size fields, one canonical operating-system label, five canonical workflows, and normalized systems-of-record categories, or an explicit missing-field flag."
+  - "The normalized CSV preserves traceability back to the raw census observations."
+  - "The workflow, operating-system, and systems-of-record taxonomies are documented in durable repository artifacts."
+  - "core/STATE.md reflects completion of Phase 1B and leaves Phase 2 unstarted."
+  - "No new research, opportunity analysis, or Phase 2 workflow mapping appears in the deliverables."
+handoff_to: Work
+result_artifact: "execution/results/TASK-011.yaml"
+review_artifact: "execution/reviews/TASK-011.md"
+notes:
+  - "Preserve `knowledge/research/industry-census/top-50-industry-census.csv` as the frozen raw research snapshot."

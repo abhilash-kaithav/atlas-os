@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-12
+Last updated: 2026-08-13
 Status: Latest task approved
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-010`
-- Title: `Top 50 Industry Census`
+- Task ID: `TASK-011`
+- Title: `Phase 1B Industry Census Normalization`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-010.yaml`
+- Structured Artifact: `execution/tasks/TASK-011.yaml`
 
 ## Ownership
 

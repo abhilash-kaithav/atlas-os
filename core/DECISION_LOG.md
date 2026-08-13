@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-12
+Last updated: 2026-08-13
 Status: Active
 
 ## Logging Rules
@@ -42,6 +42,7 @@ Status: Active
 | 2026-08-10 | D-027 | Adopt Atlas v2 repository architecture and freeze Discovery v1 as historical archive. | Atlas had accumulated duplicate navigation layers, stale current-state documents, and active-looking historical artifacts. Atlas v2 promotes one active core, one live state artifact, one execution loop, one concept-evidence system, and an explicit archive for Discovery v1 and superseded operating documents. | Active | Monthly |
 | 2026-08-12 | D-028 | Shift Atlas discovery from idea-first exploration to economy-first exploration. | Discovery should now begin from the global economy, industry census, operating systems, and core workflows rather than from Opportunity Families. Discovery v1 remains a frozen knowledge asset. Novelty is no longer the objective; structural advantage is. Atlas should identify structural failures before forming a company thesis. | Active | Before next task definition |
 | 2026-08-12 | D-029 | Use BEA 2025 summary-table leaf industries as the first Top 50 Industry Census universe. | Atlas needed one current, authoritative, and reproducible industry base for its first economy-first census. BEA's 2025 current-dollar gross-output and value-added summary tables, supplemented with 2026 Q1 quarterly context, provide the cleanest comparable cross-industry foundation available before deeper operating-system research begins. Atlas should keep workflow and systems observations separate from hypotheses. | Active | Before first deep-dive selection |
+| 2026-08-13 | D-030 | Adopt the Phase 1B normalized census and canonical Atlas vocabularies as the active Phase 1 source of truth. | `TASK-011` normalized the existing Top 50 census into one canonical operating-system taxonomy, one reusable workflow-family vocabulary, and one systems-of-record category taxonomy without adding new research. The raw census snapshot remains preserved, but downstream work should reference the normalized layer so industries can be compared directly in Phase 2. | Active | Before Phase 2 kickoff |
 
 ## Revision Notes
 
