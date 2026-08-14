@@ -25,21 +25,22 @@ Owner: Shared
 - Top 50 Industry Census: Complete
 - Industry Census Normalization: Complete
 - Workflow Mapping: Complete
+- Structural Failure Atlas: Complete
 
 ## Current Phase
 
-Phase 2 Complete; Phase 3 Not Started.
+Phase 3 Complete; Phase 4 Not Started.
 
 ## Immediate Goal
 
-Use the canonical workflow library as the Phase 2 source of truth before any Phase 3 opportunity classification begins.
+Use the Structural Failure Atlas as the sole Phase 4 input before any opportunity classification begins.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Phase 3 Opportunity Matrix`
+- Title: `Phase 4 Opportunity Matrix`
 - Status: `Ready for definition`
-- Execution Note: `TASK-012` completed Phase 2 workflow mapping in `knowledge/research/workflow-library/`, including one current-state record for each of the 198 canonical workflows plus a workflow ↔ operating system ↔ industry index. When Phase 3 begins, classify from this evidence layer only. Do not reopen workflow anatomy except for factual corrections.
+- Execution Note: `TASK-013` completed Phase 3 structural-failure synthesis in `knowledge/research/structural-failure-atlas/`, including the failure taxonomy, workflow classification layer, frequency matrix, and Structural Failure Atlas v1. When Phase 4 begins, classify from this atlas only. Do not reopen workflow anatomy except for factual corrections, and do not add solution ideation inside the Phase 3 artifacts.
 
 ## Operating Model Summary
 
@@ -51,6 +52,6 @@ Use the canonical workflow library as the Phase 2 source of truth before any Pha
 ## Immediate Focus
 
 1. Preserve `knowledge/research/industry-census/top-50-industry-census.csv` as the frozen raw research snapshot from Phase 1A.
-2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv` plus `knowledge/research/workflow-library/` as the active Phase 1 and Phase 2 evidence layers.
-3. Keep Phase 3 scoped to opportunity classification only when it starts; do not add new solution ideation, startup concepts, or redesign work inside the Phase 2 workflow artifacts.
+2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv`, `knowledge/research/workflow-library/`, and `knowledge/research/structural-failure-atlas/` as the active Phase 1, Phase 2, and Phase 3 evidence layers.
+3. Keep Phase 4 scoped to opportunity classification only when it starts; do not add new solution ideation, startup concepts, or market prioritization inside the Phase 3 structural-failure artifacts.
 4. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

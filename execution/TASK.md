@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-012`
-- Title: `Phase 2 Workflow Mapping`
+- Task ID: `TASK-013`
+- Title: `Phase 3 Structural Failure Atlas`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-012.yaml`
+- Structured Artifact: `execution/tasks/TASK-013.yaml`
 
 ## Ownership
 

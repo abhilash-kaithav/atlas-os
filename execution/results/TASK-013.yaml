@@ -1,0 +1,58 @@
+task_id: TASK-013
+title: "Phase 3 Structural Failure Atlas"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-14
+updated_on: 2026-08-14
+source_task: "execution/tasks/TASK-013.yaml"
+summary: "Synthesized the normalized Phase 1 census and the approved Phase 2 workflow library into Structural Failure Atlas v1, including one workflow-level classification layer, one failure frequency matrix, one failure taxonomy, one executive summary, and the required state and decision updates without drifting into Phase 4."
+completed_work:
+  - "Created a reproducible Phase 3 generator that reads the workflow library and workflow usage index and emits the full structural-failure artifact set."
+  - "Classified all 198 canonical workflows into one primary structural failure and up to two secondary structural failures using deterministic evidence from the existing Phase 2 friction fields, workflow family, and root-cause label."
+  - "Created an expanded structural-failure frequency matrix across workflow, operating system, and industry usage links from the normalized census."
+  - "Created Structural Failure Atlas v1, a taxonomy artifact, and an executive summary that preserve evidence references back to the workflow library."
+  - "Updated Atlas state, decision, and execution artifacts so the repository records Phase 3 complete and leaves Phase 4 unstarted."
+deliverables:
+  - "knowledge/research/structural-failure-atlas/README.md"
+  - "knowledge/research/structural-failure-atlas/structural-failure-taxonomy.md"
+  - "knowledge/research/structural-failure-atlas/workflow-structural-failure-classification.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-frequency-matrix.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-atlas-v1.md"
+  - "knowledge/research/structural-failure-atlas/executive-summary.md"
+  - "scripts/build_structural_failure_atlas.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-013.yaml"
+  - "execution/results/TASK-013.yaml"
+  - "execution/reviews/TASK-013.md"
+files_changed:
+  - "knowledge/research/structural-failure-atlas/README.md"
+  - "knowledge/research/structural-failure-atlas/structural-failure-taxonomy.md"
+  - "knowledge/research/structural-failure-atlas/workflow-structural-failure-classification.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-frequency-matrix.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-atlas-v1.md"
+  - "knowledge/research/structural-failure-atlas/executive-summary.md"
+  - "scripts/build_structural_failure_atlas.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-013.yaml"
+  - "execution/results/TASK-013.yaml"
+  - "execution/reviews/TASK-013.md"
+validation:
+  - "Verified that `workflow-structural-failure-classification.csv` contains 198 workflow rows."
+  - "Verified that `structural-failure-frequency-matrix.csv` contains 709 failure-to-workflow-usage rows, including one primary assignment for each of the 250 workflow usage links."
+  - "Verified that the taxonomy contains 8 structural failure categories and that the atlas references only the normalized census and workflow-library artifacts."
+  - "Verified that the executive summary, taxonomy, and atlas do not include startup ideas, solution recommendations, opportunity scoring, or Phase 4 market classification."
+  - "Verified that `core/STATE.md` now records Phase 3 complete and Phase 4 not started."
+open_issues:
+  - "The workflow classification layer is deterministic and evidence-backed, but it is still a rules-based synthesis rather than a statistically learned model. Future revisions should change the taxonomy or scoring only when the underlying workflow evidence changes."
+  - "The Phase 2 corpus reuses recurring friction phrasings across workflow families, so recurrence counts should be read as repeated structural mechanisms across Atlas rather than 198 fully independent field studies."
+follow_up:
+  - "Define Phase 4 Opportunity Matrix from `knowledge/research/structural-failure-atlas/` only; do not reopen Phase 2 workflow anatomy or introduce solution ideation inside the Phase 3 artifacts."
+review_artifact: "execution/reviews/TASK-013.md"

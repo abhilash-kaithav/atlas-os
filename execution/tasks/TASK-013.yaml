@@ -1,0 +1,47 @@
+task_id: TASK-013
+title: "Phase 3 Structural Failure Atlas"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Synthesize the completed Phase 1 and Phase 2 evidence layers into the first Atlas Structural Failure Atlas without drifting into Phase 4 opportunity work."
+context:
+  - "TASK-012 is complete and approved. The canonical workflow library and workflow usage index are now the shared Phase 2 source of truth."
+  - "The user approved the Phase 3 objective: analyze every canonical workflow, identify recurring structural failures, cluster them across workflows, operating systems, and industries, and update the repository with durable artifacts."
+  - "Phase 3 must stay inside Atlas's existing knowledge base unless a specific finding requires validation. The primary evidence should remain the normalized census and workflow library."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/canonical-workflow-library.csv"
+  - "knowledge/research/workflow-library/workflow-operating-system-industry-index.csv"
+  - "knowledge/research/workflow-library/workflows/"
+deliverables:
+  - "Create knowledge/research/structural-failure-atlas/structural-failure-taxonomy.md"
+  - "Create knowledge/research/structural-failure-atlas/workflow-structural-failure-classification.csv"
+  - "Create knowledge/research/structural-failure-atlas/structural-failure-frequency-matrix.csv"
+  - "Create knowledge/research/structural-failure-atlas/structural-failure-atlas-v1.md"
+  - "Create knowledge/research/structural-failure-atlas/executive-summary.md"
+  - "Create knowledge/research/structural-failure-atlas/README.md"
+  - "Create scripts/build_structural_failure_atlas.py"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Record task/result/review artifacts for TASK-013"
+  - "Commit and push durable outputs"
+constraints:
+  - "Use the normalized Phase 1 census and the Phase 2 workflow library as the primary evidence base."
+  - "Do not generate startup ideas, recommend solutions, or enter Phase 4 opportunity classification."
+  - "Do not classify opportunities as Whitespace, Disruption, or Transformation."
+  - "Do not prioritize markets or recommend company theses."
+  - "Do not reopen workflow anatomy except for factual corrections."
+acceptance_criteria:
+  - "Every canonical workflow receives a structural-failure classification with evidence traceable back to the workflow library."
+  - "The Structural Failure Atlas includes failure name, description, frequency, operating systems affected, industries affected, systems of record involved, common human judgment points, common system-of-record escape points, common economic leakage, structural reason it persists, confidence, and workflow evidence references."
+  - "The frequency matrix expands structural failures across workflow, operating system, and industry links from the Phase 1 index."
+  - "core/STATE.md reflects Phase 3 complete and Phase 4 not started."
+  - "No startup ideas, solution design, or Phase 4 classification appears in the deliverables."
+handoff_to: Work
+result_artifact: "execution/results/TASK-013.yaml"
+review_artifact: "execution/reviews/TASK-013.md"
+notes:
+  - "Expected scale: 198 workflows, 250 workflow-usage rows, and one reusable taxonomy that can become the sole Phase 4 input."
