@@ -1,0 +1,52 @@
+task_id: TASK-016
+title: "RO-001 Exception Resolution Wedge Discovery"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Determine whether Exception Resolution contains a genuinely underserved venture wedge by attempting to disprove the thesis and killing the category if no defensible wedge survives."
+context:
+  - "TASK-015 completed the Phase 4B market-reality audit and killed the broad Exception Resolution opportunity as a horizontal thesis unless a narrower wedge could be found."
+  - "The user requested a fresh wedge-discovery pass anchored in customer pain, not prior Atlas conclusions."
+  - "The success condition allows the entire opportunity to be killed if no compelling wedge survives."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/opportunity-validation/"
+  - "knowledge/research/market-reality-audit/"
+deliverables:
+  - "Create knowledge/research/exception-resolution-wedge-discovery/README.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/executive-summary.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/exception-resolution-market-map.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/competitive-landscape-matrix.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/customer-pain-repository.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/workflow-wedge-analysis.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/economic-validation.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/competitive-stress-test.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/top-3-wedges.md"
+  - "Create knowledge/research/exception-resolution-wedge-discovery/final-recommendation.md"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-016"
+  - "Commit and push durable outputs"
+constraints:
+  - "Optimize for discovering why the opportunity should fail, not why it should succeed."
+  - "Customer evidence from review sites, communities, and public user forums has higher priority than vendor claims."
+  - "Do not preserve prior Atlas conclusions out of consistency."
+  - "Avoid TAM claims and focus on measurable business outcomes."
+  - "If no wedge survives the competitive stress test, kill the opportunity entirely."
+acceptance_criteria:
+  - "Atlas identifies 20 candidate workflows where exception handling is economically critical."
+  - "The output includes the requested market map, landscape matrix, pain repository, wedge analysis, economics, stress test, top 3, final recommendation, and executive summary."
+  - "Each final wedge candidate is tested against Microsoft, Salesforce, SAP, Oracle, ServiceNow, OpenAI, and the category leader."
+  - "The result ends with either one evidence-backed surviving wedge or a full kill recommendation."
+handoff_to: Work
+result_artifact: "execution/results/TASK-016.yaml"
+review_artifact: "execution/reviews/TASK-016.md"
+notes:
+  - "A narrow surviving wedge is acceptable; a horizontal surviving thesis is not."

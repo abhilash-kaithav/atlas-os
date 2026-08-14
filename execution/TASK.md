@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-015`
-- Title: `Phase 4B Market Reality Audit`
+- Task ID: `TASK-016`
+- Title: `RO-001 Exception Resolution Wedge Discovery`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-015.yaml`
+- Structured Artifact: `execution/tasks/TASK-016.yaml`
 
 ## Ownership
 

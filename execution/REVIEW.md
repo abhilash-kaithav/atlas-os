@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-015` review is complete.
+`TASK-016` review is complete.
 
-- Task ID: `TASK-015`
-- Title: `Phase 4B Market Reality Audit`
+- Task ID: `TASK-016`
+- Title: `RO-001 Exception Resolution Wedge Discovery`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-015.md`
+- Structured Artifact: `execution/reviews/TASK-016.md`
 
-The result meets the Phase 4B charter: it tests the five surviving Phase 4 candidates directly against the current market, refuses soft outcomes, and records the correct hard conclusion that none of the five currently earns Phase 5.
+The result meets the research objective: it tries to kill Exception Resolution instead of defend it, preserves only one narrow construction wedge, and documents why the broader category and the other strongest wedges should not move forward.
 
 ## Ownership
 

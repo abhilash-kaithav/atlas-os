@@ -1,0 +1,63 @@
+task_id: TASK-016
+title: "RO-001 Exception Resolution Wedge Discovery"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-14
+updated_on: 2026-08-14
+source_task: "execution/tasks/TASK-016.yaml"
+summary: "Completed the wedge-discovery pass for Exception Resolution, mapped 20 workflows, prioritized customer evidence over vendor claims, killed the horizontal category thesis, and preserved one narrow construction subcontractor billing wedge as the only surviving candidate."
+completed_work:
+  - "Mapped 20 exception-heavy workflows with buyer, department, KPI, system-of-record, and exception-type context from the Atlas evidence base."
+  - "Built a workflow and cluster-level competitive landscape using current vendor and review-site evidence."
+  - "Assembled a customer pain repository centered on recurring complaints, manual workarounds, spreadsheet dependence, and side-channel coordination."
+  - "Reduced the field to three serious wedge candidates, then stress-tested them against large platform incumbents and category leaders."
+  - "Killed the broad Exception Resolution thesis while preserving one narrow trade-contractor billing wedge for follow-on validation."
+deliverables:
+  - "knowledge/research/exception-resolution-wedge-discovery/README.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/executive-summary.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/exception-resolution-market-map.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/competitive-landscape-matrix.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/customer-pain-repository.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/workflow-wedge-analysis.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/economic-validation.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/competitive-stress-test.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/top-3-wedges.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/final-recommendation.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-016.yaml"
+  - "execution/results/TASK-016.yaml"
+  - "execution/reviews/TASK-016.md"
+files_changed:
+  - "knowledge/research/exception-resolution-wedge-discovery/README.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/executive-summary.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/exception-resolution-market-map.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/competitive-landscape-matrix.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/customer-pain-repository.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/workflow-wedge-analysis.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/economic-validation.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/competitive-stress-test.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/top-3-wedges.md"
+  - "knowledge/research/exception-resolution-wedge-discovery/final-recommendation.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-016.yaml"
+  - "execution/results/TASK-016.yaml"
+  - "execution/reviews/TASK-016.md"
+validation:
+  - "Verified that the deliverable set contains all requested research objective artifacts."
+  - "Verified that 20 candidate workflows are explicitly listed in the market map."
+  - "Verified that the broad Exception Resolution thesis is killed and that exactly one narrow wedge remains recommended."
+  - "Verified that the competitive stress test explicitly evaluates the top wedge candidates against large incumbents and category leaders."
+open_issues:
+  - "The surviving construction wedge still needs direct buyer interviews and win-loss style validation before it can become a company thesis."
+  - "The recommendation relies on public customer evidence and market positioning, not proprietary buyer access."
+follow_up:
+  - "Run direct validation on the trade-contractor pay-app exception wedge and kill it as well if controllers do not confirm urgency, budget, and cross-portal pain."
+review_artifact: "execution/reviews/TASK-016.md"
