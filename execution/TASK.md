@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-014`
-- Title: `Phase 4 Opportunity Validation Framework`
+- Task ID: `TASK-015`
+- Title: `Phase 4B Market Reality Audit`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-014.yaml`
+- Structured Artifact: `execution/tasks/TASK-015.yaml`
 
 ## Ownership
 

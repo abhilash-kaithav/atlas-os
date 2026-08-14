@@ -27,21 +27,22 @@ Owner: Shared
 - Workflow Mapping: Complete
 - Structural Failure Atlas: Complete
 - Opportunity Validation Framework: Complete
+- Market Reality Audit: Complete
 
 ## Current Phase
 
-Phase 4 Complete; Phase 5 Not Started.
+Phase 4B Complete; Phase 5 Not Started.
 
 ## Immediate Goal
 
-Use the Phase 4 opportunity-validation layer as the sole Phase 5 input before any company-thesis selection or product ideation begins.
+Use the Phase 4B market-reality layer to reset Atlas candidate selection before any company-thesis selection or product ideation begins.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Phase 5 Venture Thesis Selection`
+- Title: `Post-Phase-4B Candidate Regeneration`
 - Status: `Ready for definition`
-- Execution Note: `TASK-014` completed Phase 4 in `knowledge/research/opportunity-validation/`, validating eight structural failures into five surviving venture theses and three rejected standalone candidates. Phase 5 should choose among those five only, define the strongest specific company wedge, and avoid reopening Phases 1-4 except for factual corrections.
+- Execution Note: `TASK-015` completed Phase 4B in `knowledge/research/market-reality-audit/` and killed all five surviving Phase 4 candidates after direct market validation. Atlas should not begin Phase 5 from `OV-01` through `OV-05`. The next task must define how to regenerate or reframe candidate wedges under a stricter market-occupancy gate.
 
 ## Operating Model Summary
 
@@ -54,5 +55,6 @@ Use the Phase 4 opportunity-validation layer as the sole Phase 5 input before an
 
 1. Preserve `knowledge/research/industry-census/top-50-industry-census.csv` as the frozen raw research snapshot from Phase 1A.
 2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv`, `knowledge/research/workflow-library/`, and `knowledge/research/structural-failure-atlas/` as the active Phase 1, Phase 2, and Phase 3 evidence layers.
-3. Treat `knowledge/research/opportunity-validation/` as the active Phase 4 layer and keep Phase 5 limited to choosing among the five surviving theses rather than reopening broad opportunity discovery.
-4. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+3. Treat `knowledge/research/opportunity-validation/` as the historical Phase 4 hypothesis layer, not as an approved Phase 5 input set.
+4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
+5. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-014` review is complete.
+`TASK-015` review is complete.
 
-- Task ID: `TASK-014`
-- Title: `Phase 4 Opportunity Validation Framework`
+- Task ID: `TASK-015`
+- Title: `Phase 4B Market Reality Audit`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-014.md`
+- Structured Artifact: `execution/reviews/TASK-015.md`
 
-The result meets the Phase 4 charter: it starts from the approved Structural Failure Atlas, rejects weak candidates instead of padding the matrix, and leaves Atlas with five evidence-backed venture theses that Phase 5 can now refine into specific company wedges.
+The result meets the Phase 4B charter: it tests the five surviving Phase 4 candidates directly against the current market, refuses soft outcomes, and records the correct hard conclusion that none of the five currently earns Phase 5.
 
 ## Ownership
 

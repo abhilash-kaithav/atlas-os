@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-014` execution is complete.
+`TASK-015` execution is complete.
 
-- Task ID: `TASK-014`
-- Title: `Phase 4 Opportunity Validation Framework`
+- Task ID: `TASK-015`
+- Title: `Phase 4B Market Reality Audit`
 - Execution Status: `Completed`
-- Structured Artifact: `execution/results/TASK-014.yaml`
+- Structured Artifact: `execution/results/TASK-015.yaml`
 
-The execution converted the Structural Failure Atlas into a durable Phase 4 opportunity-validation layer: five surviving venture theses, three rejected standalone candidates, one structural constraint atlas, one incumbent handicap matrix, one founder advantage matrix, one timing report, one final opportunity matrix, and one kill sheet for each surviving thesis.
+The execution converted the five surviving Phase 4 opportunity territories into a durable Phase 4B market-reality layer: one executive summary, one market-reality audit report, one competitive landscape matrix, one underserved-wedge analysis, one incumbent-constraint validation report, one buyer-economics report, one founder-entry report, and one final GREEN/KILL scorecard. The result killed all five current survivors and prevented Atlas from drifting into Phase 5 on occupied markets.
 
 ## Ownership
 

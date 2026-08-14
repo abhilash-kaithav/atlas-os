@@ -1,0 +1,51 @@
+task_id: TASK-015
+title: "Phase 4B Market Reality Audit"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Validate whether the five surviving Phase 4 opportunity territories are actually underserved venture wedges or simply current, already-occupied software markets."
+context:
+  - "TASK-014 is complete and approved. Atlas currently has five surviving Phase 4 opportunity territories in `knowledge/research/opportunity-validation/`."
+  - "The user explicitly requested a market-reality audit before Phase 5, with a strict GREEN or KILL decision and no new opportunity categories."
+  - "The success condition allows Phase 4B to kill all five candidates if none can demonstrate a defensible underserved wedge."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/opportunity-validation/"
+deliverables:
+  - "Create knowledge/research/market-reality-audit/README.md"
+  - "Create knowledge/research/market-reality-audit/executive-summary.md"
+  - "Create knowledge/research/market-reality-audit/market-reality-audit-report.md"
+  - "Create knowledge/research/market-reality-audit/competitive-landscape-matrix.md"
+  - "Create knowledge/research/market-reality-audit/underserved-wedge-analysis.md"
+  - "Create knowledge/research/market-reality-audit/incumbent-constraint-validation.md"
+  - "Create knowledge/research/market-reality-audit/buyer-economics-report.md"
+  - "Create knowledge/research/market-reality-audit/founder-entry-report.md"
+  - "Create knowledge/research/market-reality-audit/green-kill-scorecard.md"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-015"
+  - "Commit and push durable outputs"
+constraints:
+  - "Evaluate only OV-01 through OV-05 from the existing Phase 4 layer."
+  - "Do not generate new opportunity categories."
+  - "Use current official or primary vendor sources wherever market landscape, current capabilities, regulations, or buyer-economics claims are materially date-sensitive."
+  - "Do not use gross-output figures as TAM."
+  - "Any candidate without a defensible underserved wedge must be killed."
+acceptance_criteria:
+  - "Each candidate includes current market landscape, underserved wedge, incumbent constraint validation, buyer economics, founder entry strategy, competitive stress test, and final GREEN or KILL decision."
+  - "The output includes the requested report, matrix, analyses, scorecard, and executive summary."
+  - "STATE and execution artifacts reflect the approved Phase 4B outcome."
+  - "Atlas exits Phase 4B with only evidence-backed GREEN opportunities, including the possibility of zero."
+handoff_to: Work
+result_artifact: "execution/results/TASK-015.yaml"
+review_artifact: "execution/reviews/TASK-015.md"
+notes:
+  - "If every surviving Phase 4 candidate fails the market-reality audit, record that clearly instead of manufacturing a softer outcome."
