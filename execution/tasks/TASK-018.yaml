@@ -1,0 +1,53 @@
+task_id: TASK-018
+title: "RO-003 Top-50 Atomic Wedge Portfolio Batch 001"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Launch the canonical Top-50 Atomic Wedge Portfolio program, create the required durable portfolio artifacts, and complete the first diverse batch across Housing, Administrative and support services, and Food services and drinking places."
+context:
+  - "TASK-017 narrowed the surviving construction category to one atomic wedge and made Atlas ready for cross-industry portfolio building."
+  - "The user explicitly asked for a batch-based Top-50 wedge discovery program with canonical portfolio, kill, merge, pattern, and evidence artifacts."
+  - "Construction must remain in the portfolio as W-001 but should not consume another discovery cycle in this batch."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/market-reality-audit/"
+  - "knowledge/research/exception-resolution-wedge-discovery/"
+  - "knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/"
+  - "External customer and product evidence"
+deliverables:
+  - "Create knowledge/research/wedge-discovery-program/README.md"
+  - "Create knowledge/research/wedge-discovery-program/wedge-portfolio.md"
+  - "Create knowledge/research/wedge-discovery-program/wedge-kill-register.md"
+  - "Create knowledge/research/wedge-discovery-program/merge-register.md"
+  - "Create knowledge/research/wedge-discovery-program/pattern-portfolio.md"
+  - "Create knowledge/research/wedge-discovery-program/research-journal.md"
+  - "Create knowledge/research/wedge-discovery-program/industry-coverage-tracker.md"
+  - "Create knowledge/research/wedge-discovery-program/customer-evidence-repository.md"
+  - "Create knowledge/research/wedge-discovery-program/batch-001-diverse-initial-pass.md"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-018"
+constraints:
+  - "Do not attempt all 50 industries in one pass."
+  - "Do not rank GREEN wedges against each other."
+  - "Kill aggressively and preserve evidence."
+  - "Customer evidence outranks vendor positioning."
+  - "Construction remains in the portfolio only as W-001 reference context, not as a fresh discovery batch."
+acceptance_criteria:
+  - "Atlas has canonical portfolio, kill, merge, pattern, journal, coverage, and customer evidence artifacts."
+  - "The first batch covers at least three diverse industries from the Top-50 census."
+  - "Every investigated industry ends with explicit GREEN, KILL, or MERGE outcomes."
+  - "W-001 remains in the portfolio and new wedges are not ranked."
+handoff_to: Work
+result_artifact: "execution/results/TASK-018.yaml"
+review_artifact: "execution/reviews/TASK-018.md"
+notes:
+  - "This task initializes the durable program layer and completes Batch 001."

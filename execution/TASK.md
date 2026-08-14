@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-017`
-- Title: `RO-002 Monopoly Wedge Discovery — Commercial Trade Contractor AR`
+- Task ID: `TASK-018`
+- Title: `RO-003 Top-50 Atomic Wedge Portfolio Batch 001`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-017.yaml`
+- Structured Artifact: `execution/tasks/TASK-018.yaml`
 
 ## Ownership
 

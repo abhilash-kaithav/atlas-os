@@ -30,21 +30,22 @@ Owner: Shared
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
+- Top-50 Atomic Wedge Portfolio: Active (Batch 001 complete)
 
 ## Current Phase
 
-Phase 4B Complete; Phase 5 Not Started.
+Post-Phase-4B Portfolio Build Active; Phase 5 Not Started.
 
 ## Immediate Goal
 
-Use the post-Phase-4B wedge-discovery work to validate whether the sole surviving atomic construction billing wedge merits further company-thesis work.
+Build a comparable cross-industry portfolio of atomic wedges with explicit `GREEN`, `KILL`, or `MERGE` outcomes before any company-thesis selection work begins.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Direct Validation of Pay-App Exception Desk Wedge`
+- Title: `RO-004 Top-50 Atomic Wedge Portfolio Batch 002`
 - Status: `Ready for definition`
-- Execution Note: `TASK-017` completed `RO-002` in `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/`, killed commercial trade-contractor AR as a broad company boundary, and preserved one surviving atomic candidate: subcontractor-side pay-application rejection diagnosis and resubmission orchestration. The next task should validate that wedge directly with controllers and AR leaders before any Phase 5-style venture selection work begins.
+- Execution Note: `TASK-018` launched `knowledge/research/wedge-discovery-program/`, preserved the construction candidate as `W-001`, added `W-002` in housing and `W-003` in staffing, killed the restaurant settlement wedge, and created the canonical portfolio, kill register, merge register, pattern portfolio, research journal, coverage tracker, and customer evidence repository. The next task should cover another diverse 3 to 5 industry batch rather than rank winners or revisit construction by default.
 
 ## Operating Model Summary
 
@@ -60,5 +61,7 @@ Use the post-Phase-4B wedge-discovery work to validate whether the sole survivin
 3. Treat `knowledge/research/opportunity-validation/` as the historical Phase 4 hypothesis layer, not as an approved Phase 5 input set.
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
 5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
-6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the active record for the surviving construction candidate: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge remains active.
-7. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
+7. Treat `knowledge/research/wedge-discovery-program/` as the active cross-industry program layer and use its canonical artifacts as the control plane for portfolio growth.
+8. Preserve `W-001`, `W-002`, and `W-003` in the wedge portfolio without ranking them or converting them into company theses yet.
+9. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
