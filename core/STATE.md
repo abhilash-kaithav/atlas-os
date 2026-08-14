@@ -29,6 +29,7 @@ Owner: Shared
 - Opportunity Validation Framework: Complete
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
+- Trade-Contractor AR Monopoly Wedge Discovery: Complete
 
 ## Current Phase
 
@@ -36,14 +37,14 @@ Phase 4B Complete; Phase 5 Not Started.
 
 ## Immediate Goal
 
-Use the post-Phase-4B wedge-discovery work to validate whether the sole surviving Exception Resolution wedge merits further company-thesis work.
+Use the post-Phase-4B wedge-discovery work to validate whether the sole surviving atomic construction billing wedge merits further company-thesis work.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Direct Validation of Trade-Contractor Billing Exception Wedge`
+- Title: `Direct Validation of Pay-App Exception Desk Wedge`
 - Status: `Ready for definition`
-- Execution Note: `TASK-016` completed `RO-001` in `knowledge/research/exception-resolution-wedge-discovery/`, killed Exception Resolution as a horizontal thesis, and preserved one narrow surviving candidate: trade-contractor pay-application, lien-waiver, and change-order exception resolution. The next task should validate that wedge directly with controllers and AR leaders before Phase 5 begins.
+- Execution Note: `TASK-017` completed `RO-002` in `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/`, killed commercial trade-contractor AR as a broad company boundary, and preserved one surviving atomic candidate: subcontractor-side pay-application rejection diagnosis and resubmission orchestration. The next task should validate that wedge directly with controllers and AR leaders before any Phase 5-style venture selection work begins.
 
 ## Operating Model Summary
 
@@ -58,5 +59,6 @@ Use the post-Phase-4B wedge-discovery work to validate whether the sole survivin
 2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv`, `knowledge/research/workflow-library/`, and `knowledge/research/structural-failure-atlas/` as the active Phase 1, Phase 2, and Phase 3 evidence layers.
 3. Treat `knowledge/research/opportunity-validation/` as the historical Phase 4 hypothesis layer, not as an approved Phase 5 input set.
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
-5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the active record for the Exception Resolution category: the horizontal thesis is dead and only the construction subcontractor billing wedge remains active.
-6. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
+6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the active record for the surviving construction candidate: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge remains active.
+7. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

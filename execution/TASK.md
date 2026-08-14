@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-016`
-- Title: `RO-001 Exception Resolution Wedge Discovery`
+- Task ID: `TASK-017`
+- Title: `RO-002 Monopoly Wedge Discovery — Commercial Trade Contractor AR`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-016.yaml`
+- Structured Artifact: `execution/tasks/TASK-017.yaml`
 
 ## Ownership
 

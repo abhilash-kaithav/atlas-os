@@ -1,0 +1,51 @@
+task_id: TASK-017
+title: "RO-002 Monopoly Wedge Discovery — Commercial Trade Contractor AR"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Determine whether a single narrowly defined workflow inside commercial trade-contractor accounts receivable can serve as the foundation of a venture-scale company by attempting to kill every candidate except one."
+context:
+  - "TASK-016 killed Exception Resolution as a horizontal thesis but preserved a surviving construction subcontractor billing wedge for further decomposition."
+  - "The user requested an atomic workflow pass inside commercial trade-contractor AR rather than another market-level validation."
+  - "The success condition allows the entire construction wedge to be killed if no atomic workflow satisfies the monopoly test."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/exception-resolution-wedge-discovery/"
+  - "External practitioner evidence"
+deliverables:
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/README.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/executive-summary.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/atomic-workflow-map.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/pain-heat-map.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/customer-voice-repository.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/competitive-gap-matrix.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/manual-work-inventory.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/buyer-economics.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/incumbent-gap-analysis.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/top-5-atomic-wedges.md"
+  - "Create knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/monopoly-wedge-recommendation.md"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-017"
+constraints:
+  - "Optimize for killing candidates rather than preserving the prior wedge."
+  - "Practitioner evidence outranks vendor claims."
+  - "Do not recommend a broad subcontractor AR platform."
+  - "Focus on measurable cash, labor, and working-capital pain instead of TAM."
+  - "If no atomic wedge clears the monopoly test, kill the construction opportunity entirely."
+acceptance_criteria:
+  - "The output decomposes commercial trade-contractor AR into atomic workflows."
+  - "Each atomic workflow is ranked across the required pain dimensions."
+  - "The deliverables identify existing products, feature gaps, workarounds, and manual work outside software for the highest-pain workflows."
+  - "The final recommendation preserves at most one wedge."
+handoff_to: Work
+result_artifact: "execution/results/TASK-017.yaml"
+review_artifact: "execution/reviews/TASK-017.md"
+notes:
+  - "A surviving wedge must be smaller than the surviving RO-001 wedge, not broader."

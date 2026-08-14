@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-016` review is complete.
+`TASK-017` review is complete.
 
-- Task ID: `TASK-016`
-- Title: `RO-001 Exception Resolution Wedge Discovery`
+- Task ID: `TASK-017`
+- Title: `RO-002 Monopoly Wedge Discovery — Commercial Trade Contractor AR`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-016.md`
+- Structured Artifact: `execution/reviews/TASK-017.md`
 
-The result meets the research objective: it tries to kill Exception Resolution instead of defend it, preserves only one narrow construction wedge, and documents why the broader category and the other strongest wedges should not move forward.
+The result meets the research objective: it breaks the surviving construction wedge into atomic workflows, preserves only one narrow winner, and documents why the broader subcontractor AR category and the other strongest atomic candidates should not move forward.
 
 ## Ownership
 
