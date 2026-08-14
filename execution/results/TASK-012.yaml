@@ -1,0 +1,56 @@
+task_id: TASK-012
+title: "Phase 2 Workflow Mapping"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-14
+updated_on: 2026-08-14
+source_task: "execution/tasks/TASK-012.yaml"
+summary: "Mapped all 198 canonical workflows from the normalized census into a reusable current-state workflow library, created a workflow ↔ operating system ↔ industry index, supplemented the software sections with additional vendor research from official product pages, and updated Atlas state without drifting into Phase 3."
+completed_work:
+  - "Created a reproducible workflow-library generator that reads the normalized census and emits the Phase 2 knowledge base from deterministic mappings."
+  - "Created a canonical workflow library CSV with one row per workflow and the full current-state anatomy required by the Phase 2 charter."
+  - "Created a workflow ↔ operating system ↔ industry index CSV with one row per workflow usage slot from the normalized census."
+  - "Created one workflow document per canonical workflow plus a reusable software research support artifact and a concise README for the workflow-library folder."
+  - "Updated state, decision, and execution artifacts so Atlas records Phase 2 as complete and keeps Phase 3 unstarted."
+deliverables:
+  - "knowledge/research/workflow-library/canonical-workflow-library.csv"
+  - "knowledge/research/workflow-library/workflow-operating-system-industry-index.csv"
+  - "knowledge/research/workflow-library/workflows/"
+  - "knowledge/research/workflow-library/software-research.md"
+  - "knowledge/research/workflow-library/README.md"
+  - "scripts/build_workflow_library.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-012.yaml"
+  - "execution/results/TASK-012.yaml"
+  - "execution/reviews/TASK-012.md"
+files_changed:
+  - "knowledge/research/workflow-library/canonical-workflow-library.csv"
+  - "knowledge/research/workflow-library/workflow-operating-system-industry-index.csv"
+  - "knowledge/research/workflow-library/workflows/"
+  - "knowledge/research/workflow-library/software-research.md"
+  - "knowledge/research/workflow-library/README.md"
+  - "scripts/build_workflow_library.py"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-012.yaml"
+  - "execution/results/TASK-012.yaml"
+  - "execution/reviews/TASK-012.md"
+validation:
+  - "Verified that `canonical-workflow-library.csv` contains 198 workflow rows and `workflow-operating-system-industry-index.csv` contains 250 workflow usage rows."
+  - "Verified that `knowledge/research/workflow-library/workflows/` contains 198 workflow documents."
+  - "Verified that every workflow-library row is marked `Complete` with no missing-field flags."
+  - "Verified that additional software research is confined to the `What software exists today?` support layer and uses official vendor or product pages only."
+  - "Verified that no opportunity analysis, solution design, or Phase 3 classification was introduced."
+open_issues:
+  - "The software layer is representative rather than exhaustive. It improves current market grounding, but it is not a full vendor landscape for every system category."
+  - "Most workflows in the first census appear in only one industry or operating-system context, so cross-industry recurrence will emerge primarily through Phase 3 aggregation rather than repeated workflow-doc coverage."
+follow_up:
+  - "Define Phase 3 Opportunity Matrix from the normalized census and workflow-library artifacts only; do not reopen Phase 2 workflow anatomy except for factual corrections."
+review_artifact: "execution/reviews/TASK-012.md"

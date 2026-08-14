@@ -1,0 +1,45 @@
+task_id: TASK-012
+title: "Phase 2 Workflow Mapping"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Build the canonical workflow knowledge base for every canonical workflow identified in the normalized Industry Census, using current-state mapping only."
+context:
+  - "The user explicitly chose to execute the full Phase 2 pass in one shot rather than in batches."
+  - "The normalized census is the sole workflow universe for this task. The user also explicitly allowed additional vendor research so the `What software exists today?` field is not limited to the original Phase 1 vendor strings."
+  - "Phase 2 should document current-state workflow anatomy only. It must not drift into opportunity analysis, solution design, or Phase 3 classification."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/industry-census/operating-system-taxonomy.md"
+  - "knowledge/research/industry-census/workflow-taxonomy.md"
+  - "knowledge/research/industry-census/systems-of-record-taxonomy.md"
+deliverables:
+  - "Create knowledge/research/workflow-library/canonical-workflow-library.csv"
+  - "Create knowledge/research/workflow-library/workflow-operating-system-industry-index.csv"
+  - "Create knowledge/research/workflow-library/workflows/ with one document per canonical workflow"
+  - "Create knowledge/research/workflow-library/software-research.md"
+  - "Create knowledge/research/workflow-library/README.md"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Record task/result/review artifacts for TASK-012"
+  - "Commit and push durable outputs"
+constraints:
+  - "Use the normalized industry census as the sole workflow universe."
+  - "Keep to current-state workflow mapping only."
+  - "Do not generate startup ideas, recommend solutions, or redesign workflows."
+  - "Do not score opportunities or classify Whitespace / Disruption / Transformation."
+  - "Additional vendor research is allowed only to improve the `What software exists today?` field."
+acceptance_criteria:
+  - "Every canonical workflow from Phase 1 has one workflow-library row and one workflow document."
+  - "Each workflow record captures workflow name, operating system context, industries using the workflow, objective, trigger, end outcome, primary actors, major decisions, major handoffs, systems of record involved, current software landscape, and the approved current-state friction questions."
+  - "The workflow ↔ operating system ↔ industry index is complete and traceable back to the normalized census."
+  - "core/STATE.md reflects Phase 2 complete and leaves Phase 3 unstarted."
+  - "No opportunity analysis, solution design, or Phase 3 classification appears in the deliverables."
+handoff_to: Work
+result_artifact: "execution/results/TASK-012.yaml"
+review_artifact: "execution/reviews/TASK-012.md"
+notes:
+  - "Expected scale: 198 canonical workflows and 250 workflow usage slots from the normalized census."

@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-13
+Last updated: 2026-08-14
 Status: Latest task approved
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-011`
-- Title: `Phase 1B Industry Census Normalization`
+- Task ID: `TASK-012`
+- Title: `Phase 2 Workflow Mapping`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-011.yaml`
+- Structured Artifact: `execution/tasks/TASK-012.yaml`
 
 ## Ownership
 

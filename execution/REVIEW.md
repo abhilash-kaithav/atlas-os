@@ -1,19 +1,19 @@
 # Atlas Review Board
 
-Last updated: 2026-08-13
+Last updated: 2026-08-14
 Status: Latest review approved
 Owner: Chat
 
 ## Current Review
 
-`TASK-011` review is complete.
+`TASK-012` review is complete.
 
-- Task ID: `TASK-011`
-- Title: `Phase 1B Industry Census Normalization`
+- Task ID: `TASK-012`
+- Title: `Phase 2 Workflow Mapping`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-011.md`
+- Structured Artifact: `execution/reviews/TASK-012.md`
 
-The result meets the task criteria: it keeps Phase 1 scoped to normalization only, preserves the original census snapshot, creates a durable canonical vocabulary for later comparison, and does not drift into Phase 2 or opportunity analysis.
+The result meets the Phase 2 charter: it uses the normalized census as the workflow universe, creates one current-state record per canonical workflow plus a durable index, enriches the software landscape with additional vendor research, and does not drift into opportunity analysis, solution design, or Phase 3 classification.
 
 ## Ownership
 
