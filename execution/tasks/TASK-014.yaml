@@ -1,0 +1,54 @@
+task_id: TASK-014
+title: "Phase 4 Opportunity Validation Framework"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-14
+updated_on: 2026-08-14
+objective: "Validate the Structural Failure Atlas into a small set of evidence-backed venture opportunities by eliminating weak candidates rather than reopening broad discovery."
+context:
+  - "TASK-013 is complete and approved. Structural Failure Atlas v1 is now the active Phase 3 knowledge base and the only primary input layer for Phase 4."
+  - "The user approved the Phase 4 methodology: validate each structural failure, identify the structural constraint, document incumbent handicap, founder advantage, timing, and a kill sheet, then classify only surviving opportunities."
+  - "Phase 4 must stay evidence-first. Phase 1, Phase 2, and Phase 3 remain the primary basis; current external validation is allowed only where timing-sensitive claims need confirmation."
+inputs:
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/canonical-workflow-library.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-atlas-v1.md"
+  - "knowledge/research/structural-failure-atlas/structural-failure-taxonomy.md"
+  - "knowledge/research/structural-failure-atlas/workflow-structural-failure-classification.csv"
+  - "knowledge/research/structural-failure-atlas/structural-failure-frequency-matrix.csv"
+deliverables:
+  - "Create knowledge/research/opportunity-validation/README.md"
+  - "Create knowledge/research/opportunity-validation/executive-summary.md"
+  - "Create knowledge/research/opportunity-validation/opportunity-validation-report.md"
+  - "Create knowledge/research/opportunity-validation/structural-constraint-atlas.md"
+  - "Create knowledge/research/opportunity-validation/incumbent-handicap-matrix.md"
+  - "Create knowledge/research/opportunity-validation/founder-advantage-matrix.md"
+  - "Create knowledge/research/opportunity-validation/timing-validation-report.md"
+  - "Create knowledge/research/opportunity-validation/final-opportunity-matrix.md"
+  - "Create knowledge/research/opportunity-validation/opportunity-validation-matrix.csv"
+  - "Create knowledge/research/opportunity-validation/kill-sheets/"
+  - "Create scripts/build_opportunity_validation.py"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Record task/result/review artifacts for TASK-014"
+  - "Commit and push durable outputs"
+constraints:
+  - "Use the Phase 1 normalized census, the Phase 2 workflow library, and the Phase 3 structural-failure outputs as the primary evidence base."
+  - "Do not perform broad new opportunity discovery or reopen workflow anatomy except for factual corrections."
+  - "Do not assume AI alone is sufficient for a company thesis."
+  - "Reject weak candidates rather than padding the output list."
+  - "Use targeted current official sources only where timing validation or incumbent context is materially date-sensitive."
+acceptance_criteria:
+  - "Every structural failure is evaluated as root cause versus symptom, recurrence, economic meaning, and pressure trend."
+  - "The deliverables include structural constraint, incumbent handicap, founder advantage, timing validation, kill-sheet analysis, and final classification."
+  - "Atlas ends with a small set of approximately 5-10 surviving venture theses, not a broad brainstorm list."
+  - "Rejected candidates are explicitly documented with reasons."
+  - "`core/STATE.md` reflects Phase 4 complete and Phase 5 not started."
+  - "Phase 5 can begin from the surviving theses only."
+handoff_to: Work
+result_artifact: "execution/results/TASK-014.yaml"
+review_artifact: "execution/reviews/TASK-014.md"
+notes:
+  - "If a candidate does not survive the kill sheet, eliminate it instead of weakening the framework."

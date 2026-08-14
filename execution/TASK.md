@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-013`
-- Title: `Phase 3 Structural Failure Atlas`
+- Task ID: `TASK-014`
+- Title: `Phase 4 Opportunity Validation Framework`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-013.yaml`
+- Structured Artifact: `execution/tasks/TASK-014.yaml`
 
 ## Ownership
 

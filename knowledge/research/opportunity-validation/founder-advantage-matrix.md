@@ -1,0 +1,15 @@
+# Founder Advantage Matrix
+
+Last updated: 2026-08-14
+Status: Active Phase 4 matrix
+
+| ID | Candidate | Founder advantage now | Why AI alone is not enough |
+| --- | --- | --- | --- |
+| OV-01 | Decision-Memory Infrastructure | A startup can combine modern multimodal AI, file inputs, tool use, and workflow-native writeback to create a trusted context layer without replacing the system of record. The product advantage is not generic summarization; it is persistent memory tied to actions, owners, and evidence. | The moat must come from workflow control, trust, evidence, or deployment model rather than generic model access. |
+| OV-02 | Exception-Resolution System of Action | A startup can treat exceptions as the primary object: capture them, classify them, assemble the supporting evidence, recommend actions, and escalate humans only where policy or materiality requires it. | The moat must come from workflow control, trust, evidence, or deployment model rather than generic model access. |
+| OV-03 | Reconciliation Truth Layer | Now a startup can combine modern matching, document understanding, and evidence retrieval to make reconciliation explainable rather than only rules-based. That makes hard-edge cases productizable without claiming zero human review. | The moat must come from workflow control, trust, evidence, or deployment model rather than generic model access. |
+| OV-04 | Live Replanning and Recovery Control | A startup can start from the messy signal layer: shift notes, telematics, exceptions, partner updates, and operator reasoning. Natural-language interaction and faster deployment make a live control layer more usable than another optimization workbench. | The moat must come from workflow control, trust, evidence, or deployment model rather than generic model access. |
+| OV-05 | Compliance Evidence Graph | Modern multimodal AI can read attachments, certifications, images, and supporting documents, while a workflow-native graph can preserve the source trail and human judgment required for auditability. | The moat must come from workflow control, trust, evidence, or deployment model rather than generic model access. |
+| RJ-01 | Generic Judgment Workbench | AI helps, but AI alone is not enough. The advantage only becomes real when paired with a stronger system layer such as decision memory or live control. | The thesis was rejected partly because AI alone does not create a defensible company boundary. |
+| RJ-02 | Approval and Onboarding Coordination Layer | The startup does not have a clean founder advantage unless it narrows into a richer exception or evidence-heavy wedge. | The thesis was rejected partly because AI alone does not create a defensible company boundary. |
+| RJ-03 | Multi-Party Trust Network | A startup could eventually build this from a single-enterprise wedge, but Atlas does not yet see a strong reason to start here instead of earning one side of the network first. | The thesis was rejected partly because AI alone does not create a defensible company boundary. |
