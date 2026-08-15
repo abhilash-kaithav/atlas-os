@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-019` execution is complete.
+`TASK-020` execution is complete.
 
-- Task ID: `TASK-019`
-- Title: `RO-004 Atlas Research Program v1.0 Rerun and Full Top-50 Coverage`
+- Task ID: `TASK-020`
+- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
 - Execution Status: `Completed`
-- Structured Artifact: `execution/results/TASK-019.yaml`
+- Structured Artifact: `execution/results/TASK-020.yaml`
 
-The execution adopted the frozen methodology, added the mandatory workflow-map layer, reran Batch 001, completed coverage across all 50 industries, preserved five wedges with explicit `GREEN` or `YELLOW` status, and closed the discovery program without ranking winners.
+The execution adopted the revamped methodology, reran Batch 1 only, created the required workflow and evidence layers, preserved two `GREEN` wedges and one `YELLOW` wedge, killed food services, and stopped at the review gate before Batch 2.
 
 ## Ownership
 

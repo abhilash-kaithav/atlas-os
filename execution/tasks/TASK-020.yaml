@@ -1,0 +1,45 @@
+task_id: TASK-020
+title: "RO-005 Revamped Methodology Batch 1 Rerun"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-15
+updated_on: 2026-08-15
+objective: "Treat the user-supplied Atlas Revamped Discovery Methodology document as the active operating specification, rerun Batch 1 only under that methodology, and stop at the review gate before proceeding to later industries."
+context:
+  - "The repository previously contained a full top-50 completion run under an earlier methodology-freeze document."
+  - "The user then supplied the revamped methodology and explicitly instructed Atlas to stop after Batch 1 for review."
+  - "Construction, housing, administrative and support services, and food services and drinking places are the required Batch 1 industries."
+inputs:
+  - "User-supplied Atlas Revamped Discovery Methodology document"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/wedge-discovery-program/"
+  - "External customer and product evidence"
+deliverables:
+  - "Create the Batch 1 workflow inventories, workflow-analysis matrix, pain inventory, and exception/recovery inventory under knowledge/research/revamped-discovery-program/"
+  - "Preserve only evidence-backed Batch 1 wedge outcomes with GREEN, YELLOW, or KILL decisions"
+  - "Create the Batch 1 wedge portfolio, kill register, merge register, pattern portfolio, customer evidence repository, research journal, batch review, and industry coverage tracker"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-020"
+constraints:
+  - "Execute the supplied revamped methodology exactly."
+  - "Stop after Batch 1 and do not continue to Batch 2."
+  - "Do not redesign the methodology during execution unless a contradiction appears."
+  - "Preserve the prior full-pass work as historical evidence instead of deleting it."
+acceptance_criteria:
+  - "All four Batch 1 industries have complete workflow inventories and workflow-level analysis artifacts."
+  - "The coverage tracker reflects Batch 1-only progress rather than a false full-program completion state."
+  - "Construction and housing remain GREEN, staffing is honestly classified, and food services is either preserved or killed with evidence."
+  - "The repository is left paused at the user review gate."
+handoff_to: Work
+result_artifact: "execution/results/TASK-020.yaml"
+review_artifact: "execution/reviews/TASK-020.md"
+notes:
+  - "This task supersedes the earlier active-state assumption that the full top-50 program was complete."

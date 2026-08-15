@@ -30,22 +30,22 @@ Owner: Shared
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
-- Top-50 Atomic Wedge Portfolio: Complete (Methodology Freeze v1 full coverage)
+- Top-50 Atomic Wedge Portfolio: In Progress (Revamped methodology active; Batch 1 complete and paused for review)
 
 ## Current Phase
 
-Top-50 Coverage Complete; Comparative Investment Review Not Started.
+Revamped Methodology Batch 1 complete; review gate active before Batch 2.
 
 ## Immediate Goal
 
-Preserve the completed top-50 wedge portfolio, keep methodology changes frozen, and prepare for a later comparative investment-committee review without selecting a company yet.
+Preserve the Batch 1 rerun as the active Atlas program state, review the new four-industry outputs, and avoid continuing the Top-50 program until the user explicitly approves the next batch.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Comparative Investment Committee Prep`
-- Status: `Ready for definition`
-- Execution Note: `TASK-019` adopted the frozen Atlas Research Program v1.0 specification, added mandatory workflow maps, reran Batch 001, completed all 50 industries, preserved `W-001` and `W-002` as `GREEN`, preserved `W-003`, `W-004`, and `W-005` as `YELLOW`, and recorded three `MERGE` decisions plus full industry coverage. The next task should prepare a comparative investment-committee framework rather than reopen discovery by default.
+- Title: `Revamped Methodology Batch 2`
+- Status: `Blocked pending user review`
+- Execution Note: `TASK-020` reran Batch 1 under the revamped methodology, created the required workflow and evidence layers, preserved `W-001` and `W-002` as `GREEN`, preserved `W-003` as `YELLOW`, killed the food-service candidate, and reset the coverage tracker to four complete industries plus 46 not started.
 
 ## Operating Model Summary
 
@@ -62,6 +62,8 @@ Preserve the completed top-50 wedge portfolio, keep methodology changes frozen, 
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
 5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
 6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
-7. Treat `knowledge/research/wedge-discovery-program/` as the active completed program layer and use its workflow maps, portfolio, kill register, merge register, pattern portfolio, evidence repository, and coverage tracker as the authoritative full-portfolio record.
-8. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003`, `W-004`, and `W-005` as current `YELLOW` wedges without ranking them or converting them into company theses yet.
-9. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+7. Treat `knowledge/research/wedge-discovery-program/` as a historical full-pass layer produced before the latest user instruction to stop after Batch 1.
+8. Treat `knowledge/research/revamped-discovery-program/` as the active wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, evidence repository, portfolio, kill register, pattern portfolio, and coverage tracker now define current program state.
+9. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003` as current `YELLOW` without ranking them or converting them into company theses yet.
+10. Keep food services and drinking places killed in the active Batch 1 layer unless contradictory evidence emerges.
+11. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

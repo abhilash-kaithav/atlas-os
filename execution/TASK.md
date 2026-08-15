@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-019`
-- Title: `RO-004 Atlas Research Program v1.0 Rerun and Full Top-50 Coverage`
+- Task ID: `TASK-020`
+- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-019.yaml`
+- Structured Artifact: `execution/tasks/TASK-020.yaml`
 
 ## Ownership
 

@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-019` review is complete.
+`TASK-020` review is complete.
 
-- Task ID: `TASK-019`
-- Title: `RO-004 Atlas Research Program v1.0 Rerun and Full Top-50 Coverage`
+- Task ID: `TASK-020`
+- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-019.md`
+- Structured Artifact: `execution/reviews/TASK-020.md`
 
-The result meets the research objective: it follows the frozen operating spec, reruns the prior batch honestly, completes the top-50 pass, preserves only a small evidence-backed set of wedges, and leaves Atlas ready for a later comparative review rather than more discovery.
+The result meets the research objective: it follows the revamped operating spec, reruns the required four-industry batch honestly, resets the active program to a true Batch 1 state, and stops for review before any continuation.
 
 ## Ownership
 
