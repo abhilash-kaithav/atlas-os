@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-020` execution is complete.
+`TASK-021` execution is complete.
 
-- Task ID: `TASK-020`
-- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
+- Task ID: `TASK-021`
+- Title: `RO-006 Final Calibration Before Full Top-50 Execution`
 - Execution Status: `Completed`
-- Structured Artifact: `execution/results/TASK-020.yaml`
+- Structured Artifact: `execution/results/TASK-021.yaml`
 
-The execution adopted the revamped methodology, reran Batch 1 only, created the required workflow and evidence layers, preserved two `GREEN` wedges and one `YELLOW` wedge, killed food services, and stopped at the review gate before Batch 2.
+The execution completed the final calibration on Batch 1, expanded the canonical workflow, pain, recovery, and role-scan layers to full coverage, preserved the same calibrated wedge set, and stopped before the remaining 46 industries as instructed.
 
 ## Ownership
 

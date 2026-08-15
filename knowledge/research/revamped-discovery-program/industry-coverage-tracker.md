@@ -1,7 +1,7 @@
 # Industry Coverage Tracker
 
 Last updated: 2026-08-15
-Status: Revamped methodology active; Batch 1 only
+Status: Final calibration complete; Batch 1 paused for approval
 
 ## Coverage Summary
 

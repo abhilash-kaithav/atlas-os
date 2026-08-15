@@ -1,0 +1,63 @@
+task_id: TASK-021
+title: "RO-006 Final Calibration Before Full Top-50 Execution"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-15
+updated_on: 2026-08-15
+source_task: "execution/tasks/TASK-021.yaml"
+summary: "Completed the final calibration on Batch 1 by expanding the workflow analysis to full recurring-workflow coverage, adding full pain and recovery inventories plus a worker-role scan, preserving the same calibrated wedge outcomes, and stopping before the remaining 46 industries."
+completed_work:
+  - "Expanded the canonical workflow-analysis matrix to one full row per workflow across the four Batch 1 industries."
+  - "Expanded the pain inventory and exception/recovery inventory to full workflow coverage."
+  - "Added a worker-role scan and refreshed the evidence, portfolio, and review artifacts to reflect the calibrated methodology."
+  - "Updated the active state and execution artifacts to show that the methodology is now frozen pending approval to continue."
+deliverables:
+  - "knowledge/research/revamped-discovery-program/workflow-analysis-matrix-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/pain-inventory-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/exception-recovery-inventory-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/worker-role-scan-batch-001.md"
+  - "knowledge/research/revamped-discovery-program/customer-evidence-repository.md"
+  - "knowledge/research/revamped-discovery-program/wedge-portfolio.md"
+  - "knowledge/research/revamped-discovery-program/research-journal.md"
+  - "knowledge/research/revamped-discovery-program/batch-001-review.md"
+  - "knowledge/research/revamped-discovery-program/industry-coverage-tracker.md"
+  - "knowledge/research/revamped-discovery-program/README.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-021.yaml"
+  - "execution/results/TASK-021.yaml"
+  - "execution/reviews/TASK-021.md"
+files_changed:
+  - "knowledge/research/revamped-discovery-program/README.md"
+  - "knowledge/research/revamped-discovery-program/workflow-analysis-matrix-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/pain-inventory-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/exception-recovery-inventory-batch-001.tsv"
+  - "knowledge/research/revamped-discovery-program/worker-role-scan-batch-001.md"
+  - "knowledge/research/revamped-discovery-program/customer-evidence-repository.md"
+  - "knowledge/research/revamped-discovery-program/wedge-portfolio.md"
+  - "knowledge/research/revamped-discovery-program/research-journal.md"
+  - "knowledge/research/revamped-discovery-program/batch-001-review.md"
+  - "knowledge/research/revamped-discovery-program/industry-coverage-tracker.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-021.yaml"
+  - "execution/results/TASK-021.yaml"
+  - "execution/reviews/TASK-021.md"
+validation:
+  - "Verified that the calibrated workflow matrix now contains 44 workflow rows."
+  - "Verified that the pain inventory now covers all 44 workflows."
+  - "Verified that the exception/recovery inventory now covers all 44 workflows."
+  - "Verified that the preserved wedge set did not change during calibration."
+  - "Verified that the coverage tracker still stops at four completed industries and 46 not started."
+open_issues:
+  - "W-003 remains a conditional preserve rather than a build-ready wedge."
+  - "The remaining 46 industries have not started and should not begin until the user approves continuation."
+follow_up:
+  - "Review Batch 1 calibration with the user and, if approved, continue through the remaining 46 industries with no methodology changes."
+review_artifact: "execution/reviews/TASK-021.md"

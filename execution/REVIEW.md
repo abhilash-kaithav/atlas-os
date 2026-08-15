@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-020` review is complete.
+`TASK-021` review is complete.
 
-- Task ID: `TASK-020`
-- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
+- Task ID: `TASK-021`
+- Title: `RO-006 Final Calibration Before Full Top-50 Execution`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-020.md`
+- Structured Artifact: `execution/reviews/TASK-021.md`
 
-The result meets the research objective: it follows the revamped operating spec, reruns the required four-industry batch honestly, resets the active program to a true Batch 1 state, and stops for review before any continuation.
+The result meets the research objective: it applies the final calibration amendments to Batch 1, proves full workflow coverage and workflow-level analysis, freezes the methodology for future use, and still stops for review before any continuation.
 
 ## Ownership
 

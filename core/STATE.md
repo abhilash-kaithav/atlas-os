@@ -30,22 +30,22 @@ Owner: Shared
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
-- Top-50 Atomic Wedge Portfolio: In Progress (Revamped methodology active; Batch 1 complete and paused for review)
+- Top-50 Atomic Wedge Portfolio: In Progress (Final calibration complete; Batch 1 validated and paused before the remaining 46 industries)
 
 ## Current Phase
 
-Revamped Methodology Batch 1 complete; review gate active before Batch 2.
+Final calibration Batch 1 complete; methodology frozen pending approval to continue with the remaining 46 industries.
 
 ## Immediate Goal
 
-Preserve the Batch 1 rerun as the active Atlas program state, review the new four-industry outputs, and avoid continuing the Top-50 program until the user explicitly approves the next batch.
+Preserve the calibrated Batch 1 output as the active Atlas program state, review the new workflow-complete analysis layer, and avoid continuing the Top-50 program until the user explicitly approves the remaining 46-industry run.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Revamped Methodology Batch 2`
+- Title: `Remaining 46 Industry Execution`
 - Status: `Blocked pending user review`
-- Execution Note: `TASK-020` reran Batch 1 under the revamped methodology, created the required workflow and evidence layers, preserved `W-001` and `W-002` as `GREEN`, preserved `W-003` as `YELLOW`, killed the food-service candidate, and reset the coverage tracker to four complete industries plus 46 not started.
+- Execution Note: `TASK-021` completed the final calibration before full execution. Batch 1 now includes comprehensive workflow inventories, a one-row-per-workflow canonical matrix, full pain and recovery coverage, a worker-role scan, and the same calibrated wedge outcomes: `W-001` and `W-002` remain `GREEN`, `W-003` remains `YELLOW`, food services remains `KILL`, and the remaining 46 industries stay unstarted until approval.
 
 ## Operating Model Summary
 
@@ -62,8 +62,9 @@ Preserve the Batch 1 rerun as the active Atlas program state, review the new fou
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
 5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
 6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
-7. Treat `knowledge/research/wedge-discovery-program/` as a historical full-pass layer produced before the latest user instruction to stop after Batch 1.
-8. Treat `knowledge/research/revamped-discovery-program/` as the active wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, evidence repository, portfolio, kill register, pattern portfolio, and coverage tracker now define current program state.
+7. Treat `knowledge/research/wedge-discovery-program/` as a historical full-pass layer produced before the final calibration request.
+8. Treat `knowledge/research/revamped-discovery-program/` as the active wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, worker-role scan, evidence repository, portfolio, kill register, pattern portfolio, and coverage tracker now define current program state.
 9. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003` as current `YELLOW` without ranking them or converting them into company theses yet.
 10. Keep food services and drinking places killed in the active Batch 1 layer unless contradictory evidence emerges.
-11. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+11. Treat the calibrated methodology as frozen for the remaining 46 industries once the user approves continuation.
+12. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

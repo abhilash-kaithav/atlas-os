@@ -39,3 +39,4 @@ Status: Batch 1 evidence layer
 - `High` evidence combines repeated practitioner signals with current product-boundary verification.
 - `Medium` evidence is directionally useful but not sufficient by itself to upgrade a candidate to `GREEN`.
 - Batch 1 preserved only wedges that cleared the evidence, economics, and boundary tests together.
+- Worker-role evidence is captured separately in [worker-role-scan-batch-001.md](./worker-role-scan-batch-001.md) and should be used as supporting operational proof rather than standalone validation.

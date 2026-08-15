@@ -30,6 +30,7 @@ Status: Canonical preserved wedge list for revamped Batch 1
 - Why now: digital pay-app tooling is widespread enough that the exception desk is visible and recurring; working-capital pressure makes the pain acute
 - Startup entry logic: enter as a neutral correction and resubmission layer across GC portals rather than a new construction ERP
 - Competitive threat: GCPay; Textura; Procore; Autodesk; Siteline
+- Validation gates: Workflow Coverage `Pass`; Customer Evidence `Pass`; Frequency `Pass`; Buyer `Pass`; Bottom-up Economics `Pass`; Incumbent Boundary `Pass`; Timing `Pass`; Competitive Stress Test `Pass`; Kill Test `Pass`
 - Key assumptions: rejection volume is high enough to justify budget; neutral multi-portal workflow is valuable
 - Invalidation evidence: trade contractors report current portals already make correction fast and obvious
 - Source links:
@@ -59,6 +60,7 @@ Status: Canonical preserved wedge list for revamped Batch 1
 - Why now: labor scarcity and vacancy sensitivity make each missed ready date more expensive while mobile tooling makes the gap more legible
 - Startup entry logic: enter as a readiness-recovery layer that protects turn dates rather than as a general PMS replacement
 - Competitive threat: Yardi; Entrata; AppFolio; ResMan; Property Meld
+- Validation gates: Workflow Coverage `Pass`; Customer Evidence `Pass`; Frequency `Pass`; Buyer `Pass`; Bottom-up Economics `Pass`; Incumbent Boundary `Pass`; Timing `Pass`; Competitive Stress Test `Pass`; Kill Test `Pass`
 - Key assumptions: the pain is diagnosable coordination failure rather than uncontrollable capex backlog
 - Invalidation evidence: operators report that modern PMS plus maintenance add-ons already resolve most missed-ready-date cases
 - Source links:
@@ -88,6 +90,7 @@ Status: Canonical preserved wedge list for revamped Batch 1
 - Why now: tighter staffing margins and better time/pay APIs make a cross-system overlay more plausible
 - Startup entry logic: enter as a pay/bill exception desk that sits on top of existing middle-office stacks and client portals
 - Competitive threat: Bullhorn; Avionte; Ascen; category-adjacent middle-office tooling
+- Validation gates: Workflow Coverage `Pass`; Customer Evidence `Borderline`; Frequency `Pass`; Buyer `Pass`; Bottom-up Economics `Pass`; Incumbent Boundary `Borderline`; Timing `Pass`; Competitive Stress Test `Borderline`; Kill Test `Borderline`
 - Key assumptions: staffing firms will buy standalone exception software rather than continue staffing the workflow manually
 - Invalidation evidence: middle-office suites prove good enough and buyers keep treating the problem as clerical labor instead of a software budget
 - Source links:

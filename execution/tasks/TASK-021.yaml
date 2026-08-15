@@ -1,0 +1,44 @@
+task_id: TASK-021
+title: "RO-006 Final Calibration Before Full Top-50 Execution"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-15
+updated_on: 2026-08-15
+objective: "Apply the user-supplied final calibration amendments to Batch 1, validate that every recurring workflow is covered and analyzed before wedge discovery, and stop for approval before the remaining 46 industries are processed."
+context:
+  - "The repository already contained a Batch 1 rerun under the revamped methodology, but the final calibration document raised the standard from lifecycle coverage to full recurring-workflow coverage."
+  - "The user requested that the attached final-calibration document be treated as the operating instruction."
+  - "The document explicitly requires a pause after Batch 1 review, even if the methodology validates successfully."
+inputs:
+  - "User-supplied Atlas Discovery Program final-calibration document"
+  - "knowledge/research/revamped-discovery-program/"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "External customer, product, and role evidence"
+deliverables:
+  - "Upgrade Batch 1 workflow inventories into a workflow-complete analysis layer"
+  - "Expand the canonical workflow matrix to one full row per recurring workflow"
+  - "Expand the pain inventory and exception/recovery inventory to every workflow"
+  - "Add a worker-role scan for Batch 1"
+  - "Update the Batch 1 review, wedge portfolio, and evidence layers"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-021"
+constraints:
+  - "Treat this as a methodology refinement, not a philosophy rewrite."
+  - "Do not continue to the remaining 46 industries in this task."
+  - "Freeze the calibrated methodology for future execution once this task is complete."
+acceptance_criteria:
+  - "All four Batch 1 industries have workflow-complete inventories."
+  - "The canonical matrix contains one row per workflow with the required calibration fields."
+  - "Pain and exception/recovery coverage now exist for every Batch 1 workflow."
+  - "Worker-role evidence exists for the Batch 1 industries where appropriate."
+  - "The repo ends at the Batch 1 review gate rather than continuing to the remaining 46 industries."
+handoff_to: Work
+result_artifact: "execution/results/TASK-021.yaml"
+review_artifact: "execution/reviews/TASK-021.md"
+notes:
+  - "This task validates the frozen methodology that will be used for the remaining 46 industries once approved."

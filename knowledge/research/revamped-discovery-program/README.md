@@ -1,11 +1,11 @@
 # Revamped Discovery Program
 
 Last updated: 2026-08-15
-Status: Batch 1 complete and stopped for review
+Status: Final calibration Batch 1 complete; methodology frozen pending review
 
 ## Purpose
 
-This folder is the active research layer for the "Atlas Revamped Discovery Methodology" run.
+This folder is the active research layer for the final calibrated Atlas discovery run.
 
 It is separate from `knowledge/research/wedge-discovery-program/`, which remains the historical output of the prior methodology.
 
@@ -33,6 +33,7 @@ Batch 1 therefore includes:
 - `workflow-analysis-matrix-batch-001.tsv`
 - `pain-inventory-batch-001.tsv`
 - `exception-recovery-inventory-batch-001.tsv`
+- `worker-role-scan-batch-001.md`
 - `customer-evidence-repository.md`
 - `wedge-portfolio.md`
 - `kill-register.md`
@@ -44,4 +45,4 @@ Batch 1 therefore includes:
 
 ## Stop Rule
 
-The revamped methodology requires Atlas to stop after Batch 1 and return the output for review before continuing to the remaining industries.
+The final calibration requires Atlas to stop after Batch 1 and return the output for review before continuing to the remaining 46 industries.

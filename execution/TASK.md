@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-020`
-- Title: `RO-005 Revamped Methodology Batch 1 Rerun`
+- Task ID: `TASK-021`
+- Title: `RO-006 Final Calibration Before Full Top-50 Execution`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-020.yaml`
+- Structured Artifact: `execution/tasks/TASK-021.yaml`
 
 ## Ownership
 
