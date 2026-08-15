@@ -1,11 +1,13 @@
 # Wedge Kill Register
 
-Last updated: 2026-08-14
+Last updated: 2026-08-15
 Status: Canonical KILL register
 
 ## Purpose
 
 This register records wedge or territory candidates that Atlas deliberately killed so they are not rediscovered later without new evidence.
+
+Industries that failed before a canonical candidate was formed are tracked in `industry-coverage-tracker.md` rather than here.
 
 ## Register
 
@@ -25,6 +27,16 @@ This register records wedge or territory candidates that Atlas deliberately kill
 | K-012 | Company boundary | Administrative and support services | Broad staffing middle-office replacement | Too broad and too close to incumbent ATS plus payroll suite categories | `TASK-018` |
 | K-013 | Atomic wedge | Administrative and support services | Onboarding document correction as the first beachhead | Real pain, but less economically direct than pay/bill exceptions and too entangled with front-office and compliance surfaces | `TASK-018` |
 | K-014 | Workflow boundary | Food services and drinking places | General restaurant close and reconciliation | Too broad and already distributed across POS, accounting suites, and bookkeeping workflows | `TASK-018` |
+| K-015 | Territory | Other real estate | CAM reconciliation as the first wedge | Real pain, but the evidence was too vendor-shaped and the annual cadence was too weak relative to preserved wedges | `TASK-019` |
+| K-016 | Territory | Food and beverage and tobacco products | Deduction recovery as the first wedge | The market is now clearly validated and current tools materially improve the workflow; remaining gaps looked incremental or service-backed | `TASK-019` |
+| K-017 | Territory | Care delivery and reimbursement | Patient access, billing, and claims exception desk | Reconfirmed that EHR and RCM leaders already own too much of the reimbursement boundary | `TASK-019` |
+| K-018 | Territory | Insurance carriers and related activities | Claims exception desk as the first wedge | Pain is strong, but policy and claims incumbents sit too close to the job boundary | `TASK-019` |
+| K-019 | Territory | Deposit, credit, and payment intermediation | Account onboarding and payment exception desk | Core-banking and compliance stacks already own too much of the workflow and data boundary | `TASK-019` |
+| K-020 | Territory | Professional services and matter management | Time-to-bill exception desk | PSA, practice-management, and services-heavy operating models already cover too much of the boundary | `TASK-019` |
+| K-021 | Territory | Digital platform and subscription operations | Usage billing and monetization exceptions under the frozen methodology | Reconfirmed the prior kill: the category remains too occupied to preserve | `TASK-019` |
+| K-022 | Territory | Air transportation | Operational recovery and disruption management as the first wedge | Incumbent depth, integration cost, and control-center economics made startup entry unattractive | `TASK-019` |
+| K-023 | Territory | Manufacturing cross-industry | Quality and certification exception management as a horizontal thesis | Plant-specific variation and incumbent MES/QMS control prevented a clean atomic wedge | `TASK-019` |
+| K-024 | Territory | Motion picture and sound recording industries | Royalty exception desk as the first wedge | Manual work exists, but repeated practitioner evidence and startup entry logic were too weak to preserve | `TASK-019` |
 
 ## Reopen Rule
 

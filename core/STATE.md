@@ -1,6 +1,6 @@
 # Atlas State
 
-Last updated: 2026-08-14
+Last updated: 2026-08-15
 Status: Active
 Owner: Shared
 
@@ -30,22 +30,22 @@ Owner: Shared
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
-- Top-50 Atomic Wedge Portfolio: Active (Batch 001 complete)
+- Top-50 Atomic Wedge Portfolio: Complete (Methodology Freeze v1 full coverage)
 
 ## Current Phase
 
-Post-Phase-4B Portfolio Build Active; Phase 5 Not Started.
+Top-50 Coverage Complete; Comparative Investment Review Not Started.
 
 ## Immediate Goal
 
-Build a comparable cross-industry portfolio of atomic wedges with explicit `GREEN`, `KILL`, or `MERGE` outcomes before any company-thesis selection work begins.
+Preserve the completed top-50 wedge portfolio, keep methodology changes frozen, and prepare for a later comparative investment-committee review without selecting a company yet.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `RO-004 Top-50 Atomic Wedge Portfolio Batch 002`
+- Title: `Comparative Investment Committee Prep`
 - Status: `Ready for definition`
-- Execution Note: `TASK-018` launched `knowledge/research/wedge-discovery-program/`, preserved the construction candidate as `W-001`, added `W-002` in housing and `W-003` in staffing, killed the restaurant settlement wedge, and created the canonical portfolio, kill register, merge register, pattern portfolio, research journal, coverage tracker, and customer evidence repository. The next task should cover another diverse 3 to 5 industry batch rather than rank winners or revisit construction by default.
+- Execution Note: `TASK-019` adopted the frozen Atlas Research Program v1.0 specification, added mandatory workflow maps, reran Batch 001, completed all 50 industries, preserved `W-001` and `W-002` as `GREEN`, preserved `W-003`, `W-004`, and `W-005` as `YELLOW`, and recorded three `MERGE` decisions plus full industry coverage. The next task should prepare a comparative investment-committee framework rather than reopen discovery by default.
 
 ## Operating Model Summary
 
@@ -62,6 +62,6 @@ Build a comparable cross-industry portfolio of atomic wedges with explicit `GREE
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
 5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
 6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
-7. Treat `knowledge/research/wedge-discovery-program/` as the active cross-industry program layer and use its canonical artifacts as the control plane for portfolio growth.
-8. Preserve `W-001`, `W-002`, and `W-003` in the wedge portfolio without ranking them or converting them into company theses yet.
+7. Treat `knowledge/research/wedge-discovery-program/` as the active completed program layer and use its workflow maps, portfolio, kill register, merge register, pattern portfolio, evidence repository, and coverage tracker as the authoritative full-portfolio record.
+8. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003`, `W-004`, and `W-005` as current `YELLOW` wedges without ranking them or converting them into company theses yet.
 9. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.

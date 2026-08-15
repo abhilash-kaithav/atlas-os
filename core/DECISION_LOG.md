@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-14
+Last updated: 2026-08-15
 Status: Active
 
 ## Logging Rules
@@ -53,6 +53,11 @@ Status: Active
 | 2026-08-14 | D-038 | Preserve multifamily make-ready blocker diagnosis and readiness orchestration as `W-002`. | `TASK-018` found repeated practitioner and product-adjacent evidence that missed ready dates still escape modern PMS and maintenance tools into vendor chasing, approval loops, spreadsheets, and blocker recovery work. The surviving job is atomic, buyer-visible, and measurable in vacancy days and coordinator labor. | Active | During portfolio comparison |
 | 2026-08-14 | D-039 | Preserve staffing pay/bill mismatch diagnosis and correction as `W-003`. | `TASK-018` found recurring evidence that approved staffing hours still break across ATS, VMS, payroll, and invoicing layers, forcing staffing back offices into manual discrepancy resolution before payroll close and billing. The evidence base is weaker than `W-001` and `W-002`, but it is strong enough to preserve for comparative portfolio analysis. | Active | During future validation planning |
 | 2026-08-14 | D-040 | Kill restaurant third-party delivery payout and settlement reconciliation as a first-beachhead wedge. | `TASK-018` confirmed real operator pain, but the boundary is already heavily occupied by Toast, Restaurant365, Otter, and marketplace tooling. The remaining entry point appears too incremental and weakly differentiated to preserve as a `GREEN` wedge. | Active | Reopen only with contradictory evidence |
+| 2026-08-15 | D-041 | Adopt Atlas Research Program v1.0 as the frozen operating specification for the wedge-discovery program. | The user supplied a methodology-freeze document that now governs execution. `TASK-019` applied it exactly, including mandatory end-to-end workflow mapping, completeness checks, validation gates, and the reintroduction of `YELLOW` as a preserved-but-not-yet-strong-enough status. | Active | Before any methodology revision |
+| 2026-08-15 | D-042 | Complete Phase 0 workflow maps and full Top-50 industry coverage before any investment-committee comparison. | `TASK-019` used the frozen method to map every industry's operating lifecycle, rerun Batch 001, and complete the remaining coverage in one pass. Atlas now has a full-portfolio record rather than an in-progress batch program. | Active | Before investment-committee task definition |
+| 2026-08-15 | D-043 | Reclassify the current portfolio under the frozen validation gates: keep `W-001` and `W-002` as `GREEN`, downgrade `W-003` to `YELLOW`, and keep the restaurant settlement candidate dead. | The rerun showed that staffing pay/bill exceptions still clear recurrence and economics, but do not clear the customer-evidence and incumbent-boundary gates strongly enough for an honest `GREEN`. Housing remained solidly `GREEN`; food services remained dead. | Active | During portfolio comparison |
+| 2026-08-15 | D-044 | Preserve two additional `YELLOW` wedges: `W-004` capital-markets and fund-operations reconciliation break triage and `W-005` truck-transportation billing exception recovery. | `TASK-019` found these were the only additional industries that consistently cleared recurrence, buyer economics, and plausible startup entry strongly enough to preserve, while still falling short of `GREEN` on customer-evidence depth or incumbent-boundary proof. | Active | During future validation planning |
+| 2026-08-15 | D-045 | Record three merge outcomes and close Top-50 discovery without ranking wedges. | Accommodation merged into `W-002`, securities operations merged into `W-004`, and transportation support merged into `W-005`. Atlas should now stop discovery by default and prepare for a later comparative review rather than continue generating new wedges. | Active | Before investment-committee kickoff |
 
 ## Revision Notes
 

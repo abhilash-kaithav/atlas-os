@@ -1,0 +1,47 @@
+task_id: TASK-019
+title: "RO-004 Atlas Research Program v1.0 Rerun and Full Top-50 Coverage"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-15
+updated_on: 2026-08-15
+objective: "Treat the user-supplied Atlas Research Program v1.0 document as the frozen operating specification, rerun Batch 001 under that exact methodology, and continue through the remaining industries until all 50 are complete in one run."
+context:
+  - "The prior wedge-discovery program was already active, but the new frozen specification adds mandatory Phase 0 workflow mapping, Phase 0B completeness checks, validation gates, and the YELLOW status."
+  - "The user explicitly instructed Atlas not to reinterpret or redesign the method unless a contradiction appears."
+  - "Construction remains the control example and should stay preserved as W-001."
+inputs:
+  - "User-supplied Atlas Research Program v1.0 operating specification"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/wedge-discovery-program/"
+  - "External customer and product evidence"
+deliverables:
+  - "Create canonical workflow maps that satisfy Phase 0 and Phase 0B"
+  - "Rerun Batch 001 under the frozen methodology"
+  - "Complete the remaining Top 50 industries in one run with explicit GREEN, YELLOW, KILL, or MERGE outcomes"
+  - "Update wedge portfolio, kill register, merge register, pattern portfolio, customer evidence repository, coverage tracker, and research journal"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-019"
+constraints:
+  - "Execute the supplied operating specification exactly."
+  - "Do not redesign the methodology during execution."
+  - "Record methodological observations only as research-journal entries."
+  - "Do not compare wedges or select a company."
+acceptance_criteria:
+  - "All 50 industries are marked complete in the coverage tracker."
+  - "Phase 0 workflow maps and Phase 0B completeness checks exist as durable artifacts."
+  - "Batch 001 is rerun under the frozen methodology."
+  - "Every preserved wedge is explicitly GREEN or YELLOW."
+  - "The repository is updated to reflect the completed full-coverage state."
+handoff_to: Work
+result_artifact: "execution/results/TASK-019.yaml"
+review_artifact: "execution/reviews/TASK-019.md"
+notes:
+  - "This task supersedes the earlier in-progress batch model and closes the Top-50 discovery program under the frozen method."

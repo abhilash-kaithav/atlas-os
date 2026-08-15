@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-14
+Last updated: 2026-08-15
 Status: Latest task approved
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-018`
-- Title: `RO-003 Top-50 Atomic Wedge Portfolio Batch 001`
+- Task ID: `TASK-019`
+- Title: `RO-004 Atlas Research Program v1.0 Rerun and Full Top-50 Coverage`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-018.yaml`
+- Structured Artifact: `execution/tasks/TASK-019.yaml`
 
 ## Ownership
 
