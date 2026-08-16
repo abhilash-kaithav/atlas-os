@@ -6,14 +6,14 @@ Owner: Work
 
 ## Current Result
 
-`TASK-022` execution is complete.
+`TASK-023` execution is complete.
 
-- Task ID: `TASK-022`
-- Title: `RO-007 Calibrated Top-50 Completion`
+- Task ID: `TASK-023`
+- Title: `RO-008 Investment Committee`
 - Execution Status: `Completed`
-- Structured Artifact: `execution/results/TASK-022.yaml`
+- Structured Artifact: `execution/results/TASK-023.yaml`
 
-The execution completed the remaining 46 industries under the frozen calibrated methodology, promoted the revamped discovery layer to a full Top-50 state, and closed the discovery program with explicit preserve, merge, and kill outcomes.
+The execution completed the Investment Committee using the canonical discovery base only, produced the full committee artifact set plus an Investment Decision Ledger, and left Atlas with a tiered candidate portfolio rather than a company decision.
 
 ## Ownership
 

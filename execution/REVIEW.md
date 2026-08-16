@@ -6,14 +6,14 @@ Owner: Chat
 
 ## Current Review
 
-`TASK-022` review is complete.
+`TASK-023` review is complete.
 
-- Task ID: `TASK-022`
-- Title: `RO-007 Calibrated Top-50 Completion`
+- Task ID: `TASK-023`
+- Title: `RO-008 Investment Committee`
 - Review Decision: `Approved`
-- Structured Artifact: `execution/reviews/TASK-022.md`
+- Structured Artifact: `execution/reviews/TASK-023.md`
 
-The result meets the research objective: it continues from the approved calibrated Batch 1 checkpoint, completes the remaining 46 industries without changing method, and leaves Atlas with a closed Top-50 portfolio rather than an in-progress discovery program.
+The result meets the research objective: it evaluates the surviving candidates without reopening discovery, records every material committee decision in a dedicated ledger, and ends with a tiered portfolio instead of a premature company choice.
 
 ## Ownership
 

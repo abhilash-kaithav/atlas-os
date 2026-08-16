@@ -31,21 +31,22 @@ Owner: Shared
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
 - Top-50 Atomic Wedge Portfolio: Complete (Calibrated methodology; all 50 industries covered)
+- Investment Committee: Complete (Tiered portfolio; no company selected)
 
 ## Current Phase
 
-Top-50 wedge discovery is complete under the calibrated methodology. Atlas is now holding a preserved portfolio rather than running active discovery.
+The Investment Committee phase is complete. Atlas now has a tiered post-discovery portfolio and a permanent decision ledger, but no company has been selected.
 
 ## Immediate Goal
 
-Preserve the completed calibrated portfolio as the active Atlas program state and prepare for a later comparative Investment Committee review without reopening discovery.
+Preserve the committee output as the active Atlas decision state and prepare founder-validation planning for the surviving committee tiers without reopening discovery.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Comparative Investment Committee Review`
+- Title: `Founder Validation Planning`
 - Status: `Not started`
-- Execution Note: `TASK-022` completed the remaining 46 industries under the frozen calibrated method and promoted `knowledge/research/revamped-discovery-program/` to the active full-program research layer. Current preserved outcomes are `W-001` and `W-002` as `GREEN`, `W-003`, `W-004`, and `W-005` as `YELLOW`, `M-001` through `M-003` as `MERGE`, and `42` industry-level `KILL` outcomes.
+- Execution Note: `TASK-023` completed the Investment Committee using the canonical discovery base only. `W-001` is now `Tier 1`, `W-002` is `Tier 2`, and `W-003` through `W-005` are rejected for active pursuit. The next step is to design validation work for `W-001` first and `W-002` second without selecting a company prematurely.
 
 ## Operating Model Summary
 
@@ -60,11 +61,11 @@ Preserve the completed calibrated portfolio as the active Atlas program state an
 2. Use `knowledge/research/industry-census/top-50-industry-census-normalized.csv`, `knowledge/research/workflow-library/`, and `knowledge/research/structural-failure-atlas/` as the active Phase 1, Phase 2, and Phase 3 evidence layers.
 3. Treat `knowledge/research/opportunity-validation/` as the historical Phase 4 hypothesis layer, not as an approved Phase 5 input set.
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
-5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
-6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
-7. Treat `knowledge/research/wedge-discovery-program/` as the historical pre-calibration full-pass layer. Preserve it for comparison, but do not treat it as the active program state.
-8. Treat `knowledge/research/revamped-discovery-program/` as the active Top-50 wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, worker-role scan, evidence repository, portfolio, kill register, merge register, pattern portfolio, coverage tracker, research journal, and full-coverage pass now define current Atlas state.
-9. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003`, `W-004`, and `W-005` as current `YELLOW` wedges without ranking them or converting them into company theses yet.
-10. Keep `42` industry-level `KILL` outcomes and `3` `MERGE` outcomes closed unless contradictory evidence emerges.
-11. Treat the calibrated methodology as frozen and the discovery program as complete; do not reopen industries or generate new wedges by default.
-12. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
+5. Treat `knowledge/research/exception-resolution-wedge-discovery/` and `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as historical narrowing layers that produced the construction control example and later portfolio logic.
+6. Treat `knowledge/research/revamped-discovery-program/` as the canonical discovery input layer for the completed Top-50 program.
+7. Treat `knowledge/research/investment-committee/` as the active post-discovery evaluation layer. Its report, updated candidate portfolio, dossiers, matrices, memorandums, and investment decision ledger now define current Atlas recommendation state.
+8. Preserve `W-001` as the current `Tier 1` candidate and `W-002` as the current `Tier 2` candidate.
+9. Keep `W-003`, `W-004`, and `W-005` rejected unless contradictory evidence emerges that would specifically reverse the committee's qualification decisions.
+10. Keep the discovery program closed by default. Do not generate new wedges or reopen killed industries during founder-validation planning.
+11. Use `knowledge/research/investment-committee/investment-decision-ledger.md` as the durable record of why candidates advanced, why they were rejected, what evidence mattered most, what assumptions remain unresolved, and what future evidence could reverse the decision.
+12. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through discovery, committee review, and future validation work.

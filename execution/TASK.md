@@ -6,10 +6,10 @@ Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-022`
-- Title: `RO-007 Calibrated Top-50 Completion`
+- Task ID: `TASK-023`
+- Title: `RO-008 Investment Committee`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-022.yaml`
+- Structured Artifact: `execution/tasks/TASK-023.yaml`
 
 ## Ownership
 

@@ -1,0 +1,57 @@
+task_id: TASK-023
+title: "RO-008 Investment Committee"
+execution_status: Completed
+artifact_owner: Work
+recorded_on: 2026-08-16
+updated_on: 2026-08-16
+source_task: "execution/tasks/TASK-023.yaml"
+summary: "Completed the Investment Committee using only the canonical discovery base, rejected the three borderline `YELLOW` candidates at qualification, tiered the two surviving `GREEN` candidates, and added a permanent Investment Decision Ledger."
+completed_work:
+  - "Created the canonical `knowledge/research/investment-committee/` layer."
+  - "Produced the committee report, updated candidate portfolio, dossiers, ranking matrix, pareto analysis, optimization matrix, sensitivity analysis, head-to-head comparison, devil's-advocate report, founder evaluation, opportunity landscape, and investment memorandums."
+  - "Created the Investment Decision Ledger and recorded every material advance/reject/tiering decision."
+  - "Updated Atlas state, decision history, and execution boards to reflect that the committee is complete and no company has been selected."
+deliverables:
+  - "knowledge/research/investment-committee/README.md"
+  - "knowledge/research/investment-committee/investment-committee-report.md"
+  - "knowledge/research/investment-committee/investment-candidate-portfolio.md"
+  - "knowledge/research/investment-committee/investment-candidate-dossiers.md"
+  - "knowledge/research/investment-committee/dimension-ranking-matrix.md"
+  - "knowledge/research/investment-committee/pareto-analysis.md"
+  - "knowledge/research/investment-committee/optimization-matrix.md"
+  - "knowledge/research/investment-committee/sensitivity-analysis.md"
+  - "knowledge/research/investment-committee/head-to-head-comparison.md"
+  - "knowledge/research/investment-committee/devils-advocate-report.md"
+  - "knowledge/research/investment-committee/founder-evaluation.md"
+  - "knowledge/research/investment-committee/opportunity-landscape.md"
+  - "knowledge/research/investment-committee/investment-memorandums.md"
+  - "knowledge/research/investment-committee/investment-decision-ledger.md"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-023.yaml"
+  - "execution/results/TASK-023.yaml"
+  - "execution/reviews/TASK-023.md"
+files_changed:
+  - "knowledge/research/investment-committee/"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+  - "execution/TASK.md"
+  - "execution/RESULT.md"
+  - "execution/REVIEW.md"
+  - "execution/tasks/TASK-023.yaml"
+  - "execution/results/TASK-023.yaml"
+  - "execution/reviews/TASK-023.md"
+validation:
+  - "Verified that the committee evaluated only the five surviving discovery candidates."
+  - "Verified that `W-001` and `W-002` passed qualification while `W-003`, `W-004`, and `W-005` were rejected."
+  - "Verified that the committee ends with a `Tier 1` / `Tier 2` portfolio and no company selection."
+  - "Verified that the Investment Decision Ledger records all material committee decisions and reversal criteria."
+open_issues:
+  - "The committee remains founder-agnostic because no founder-specific profile exists in the canonical inputs."
+  - "The next phase still requires direct founder validation before any build or company decision."
+follow_up:
+  - "Define founder-validation planning for `W-001` first and `W-002` second."
+review_artifact: "execution/reviews/TASK-023.md"

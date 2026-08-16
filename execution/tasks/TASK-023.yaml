@@ -1,0 +1,52 @@
+task_id: TASK-023
+title: "RO-008 Investment Committee"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-16
+updated_on: 2026-08-16
+objective: "Execute the Atlas Investment Committee methodology against the surviving discovery candidates only, produce the full committee artifact set, and add a permanent Investment Decision Ledger."
+context:
+  - "TASK-022 completed the calibrated Top-50 discovery program and left Atlas with two `GREEN` and three `YELLOW` preserved candidates."
+  - "The user supplied the Investment Committee operating specification as the next phase instruction."
+  - "The user additionally required a permanent ledger that records why candidates advanced, why they were rejected, what evidence mattered most, what assumptions remain unresolved, and what future evidence would reverse each decision."
+inputs:
+  - "User-supplied Atlas Investment Committee v1.0 operating specification"
+  - "knowledge/research/revamped-discovery-program/"
+  - "core/STATE.md"
+  - "core/DECISION_LOG.md"
+deliverables:
+  - "Investment Committee Report"
+  - "Investment Candidate Dossiers"
+  - "Dimension Ranking Matrix"
+  - "Pareto Analysis"
+  - "Optimization Matrix"
+  - "Sensitivity Analysis"
+  - "Head-to-Head Comparison"
+  - "Devil's Advocate Report"
+  - "Founder Evaluation"
+  - "Opportunity Landscape"
+  - "Investment Memorandums"
+  - "Updated Investment Candidate Portfolio"
+  - "Investment Decision Ledger"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-023"
+constraints:
+  - "Use only the canonical Atlas knowledge base."
+  - "Do not perform additional wedge discovery."
+  - "Do not redesign the methodology."
+  - "Do not choose a company."
+  - "Do not use weighted scoring as the final decision method."
+acceptance_criteria:
+  - "Every surviving discovery candidate receives a committee qualification decision."
+  - "All required committee deliverables exist in a canonical investment-committee layer."
+  - "The Investment Decision Ledger records why candidates advanced or were rejected, what evidence mattered most, unresolved assumptions, and reversal evidence."
+  - "Atlas state reflects a tiered portfolio rather than a selected company."
+handoff_to: Work
+result_artifact: "execution/results/TASK-023.yaml"
+review_artifact: "execution/reviews/TASK-023.md"
+notes:
+  - "This task should leave Atlas ready for founder-validation planning, not more discovery."
