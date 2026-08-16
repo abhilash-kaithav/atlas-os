@@ -1,7 +1,7 @@
 # Customer Evidence Repository
 
-Last updated: 2026-08-15
-Status: Batch 1 evidence layer
+Last updated: 2026-08-16
+Status: Canonical practitioner evidence layer
 
 ## Rules
 
@@ -33,10 +33,19 @@ Status: Batch 1 evidence layer
 | CE-B1-018 | Food services and drinking places | Killed candidate | Medium | G2 review | 2026-08-15 | [Otter Restaurant Operating System Reviews | G2](https://www.g2.com/products/otter-restaurant-operating-system-ros/reviews) | Users value channel aggregation but still describe support and workflow gaps. | Aggregation does not create a defensible new wedge on its own. |
 | CE-B1-019 | Food services and drinking places | Killed candidate | Medium | Product documentation | 2026-08-15 | [Look Up Third-Party Deliveries | Toast](https://support.toasttab.com/en/article/Lookin-Up-Third-Party-Deliveries) | Toast already exposes delivery-carrier reporting inside the restaurant stack. | Major platforms already control too much of the data boundary for a thin entrant. |
 | CE-B1-020 | Food services and drinking places | Killed candidate | Medium | Job posting | 2026-08-15 | [Bookkeeper | Shadowbrook Restaurant](https://www.shadowbrook-capitola.com/employment/) | Restaurant bookkeeping roles still include daily sales and reconciliation work. | Operators often tolerate the problem with clerical labor instead of adding software. |
+| CE-FP-021 | Funds and capital-markets operations | `W-004` | Medium | G2 review | 2026-08-15 | [Clearwater Analytics Reviews | G2](https://www.g2.com/it/products/clearwater-analytics/reviews) | Users describe reconciliation support and faster book close as core value, which implies that manual break work still matters operationally. | Reconciliation labor reduction remains a live buying reason in capital-markets operations. |
+| CE-FP-022 | Funds and capital-markets operations | `W-004` | Medium | Job posting | 2026-08-15 | [Analyst, Fund Accounting @ Principal Financial Services](https://www.tealhq.com/job/analyst-fund-accounting_c40ca656-f356-4f90-a7c7-b7a4e864e1cc) | The role requires daily cash and position reconciliation, discrepancy research, and exception review before reporting. | The break-resolution loop is recurring enough to justify dedicated headcount. |
+| CE-FP-023 | Funds and capital-markets operations | `W-004` | Medium | Job posting | 2026-08-15 | [Fund Accounting Edge Opportunities](https://fundaccountingedge.com/opportunities/) | Fund-accounting roles still emphasize issue resolution and liaison work across clients, custodians, and internal teams. | The workflow remains multi-party, time-sensitive, and manual enough to preserve as a `YELLOW` wedge. |
+| CE-FP-024 | Truck transportation | `W-005` | Medium | G2 review | 2026-08-15 | [IntelliTrans Transportation Freight Audit & Payment Reviews | G2](https://www.g2.com/products/intellitrans-transportation-freight-audit-payment/reviews) | A trucking user says the tool still lacked operational detail and required manual handling of rate differences. | Freight-audit tooling can still miss trucking-specific billing nuance and push work back to staff. |
+| CE-FP-025 | Truck transportation | `W-005` | Medium | Job posting | 2026-08-15 | [Invoice Audit Analyst | Worldpac](https://careers.worldpac.com/careers-home/jobs/4510?lang=en-us) | The role audits about 2,500 invoices weekly, validates line items against contracts and delivery records, flags exceptions, and prepares dispute packages. | The document-and-rate exception desk is recurring, high-volume, and measurable. |
+| CE-FP-026 | Truck transportation | `W-005` | Medium | Job posting | 2026-08-15 | [Transportation Brokerage Billing Specialist | Patterson Companies](https://recruiting.paylocity.com/recruiting/jobs/Details/4275058/Patterson-Companies-Inc/Transportation-Brokerage-Billing-Specialist) | The job centers on missing paperwork, POD collection, billing workflow queues, accessorial verification, and customer billing requirements. | Billing recovery still escapes into manual chase work after the load is complete. |
+| CE-FP-027 | Accommodation | Merge evidence for `M-001` | Medium | G2 review | 2026-08-15 | [RoomChecking Reviews | G2](https://www.g2.com/products/roomchecking/reviews) | A hotel operator says housekeeping and maintenance need one shared workflow because room attendants still surface maintenance issues while cleaning rooms. | Hospitality room-turn recovery follows the same mechanics as housing make-ready recovery. |
+| CE-FP-028 | Food and beverage and tobacco products | Killed candidate | Medium | G2 review | 2026-08-15 | [Vividly Reviews | G2](https://www.g2.com/products/vividly/reviews) | A user says deductions-to-promotion matching improved materially after adopting a specialist tool, while complaints shifted to workflow polish rather than missing category coverage. | The deductions market is validated, but current pain may be too incremental to preserve as a first wedge. |
+| CE-FP-029 | Food and beverage and tobacco products | Killed candidate | Medium | G2 review | 2026-08-15 | [SPS Commerce Revenue Recovery Reviews | G2](https://www.g2.com/products/sps-commerce-revenue-recovery/reviews) | Users describe the product as largely hands-off and valuable because it handles disputes for them, while complaints focus on integrations and scope. | A service-heavy recovery model already covers much of the deduction-dispute boundary. |
 
 ## Usage Notes
 
 - `High` evidence combines repeated practitioner signals with current product-boundary verification.
 - `Medium` evidence is directionally useful but not sufficient by itself to upgrade a candidate to `GREEN`.
-- Batch 1 preserved only wedges that cleared the evidence, economics, and boundary tests together.
-- Worker-role evidence is captured separately in [worker-role-scan-batch-001.md](./worker-role-scan-batch-001.md) and should be used as supporting operational proof rather than standalone validation.
+- Worker-role evidence is captured in [worker-role-scan.md](./worker-role-scan.md) and should be used as supporting operational proof rather than standalone validation.
+- Full-program kills often relied on weaker customer evidence or stronger incumbent-boundary evidence than preserved wedges; those industries still appear in the coverage tracker even if they do not each have a deep evidence cluster here.

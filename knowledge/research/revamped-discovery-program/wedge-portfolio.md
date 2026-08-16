@@ -1,15 +1,17 @@
 # Wedge Portfolio
 
-Last updated: 2026-08-15
-Status: Canonical preserved wedge list for revamped Batch 1
+Last updated: 2026-08-16
+Status: Canonical preserved wedge list for the completed Top-50 program
 
 ## Summary
 
 | Wedge ID | Industry | Atomic job summary | Evidence strength | Status | Source objective |
 | --- | --- | --- | --- | --- | --- |
-| W-001 | Construction | Diagnose why a submitted pay app was blocked and coordinate the corrected resubmission before payment slips a cycle. | High | GREEN | `TASK-017`, `TASK-020` |
-| W-002 | Housing | Diagnose why a vacant unit will miss its make-ready date and coordinate blockers before vacancy days extend. | High | GREEN | `TASK-018`, `TASK-020` |
-| W-003 | Administrative and support services | Diagnose why approved staffing hours cannot flow cleanly into payroll and invoicing and correct the mismatch before close. | Medium | YELLOW | `TASK-018`, `TASK-020` |
+| W-001 | Construction | Diagnose why a submitted pay app was blocked and coordinate the corrected resubmission before payment slips a cycle. | High | GREEN | `TASK-017`, `TASK-021`, `TASK-022` |
+| W-002 | Housing | Diagnose why a vacant unit will miss its make-ready date and coordinate blockers before vacancy days extend. | High | GREEN | `TASK-018`, `TASK-021`, `TASK-022` |
+| W-003 | Administrative and support services | Diagnose why approved staffing hours cannot flow cleanly into payroll and invoicing and correct the mismatch before close. | Medium | YELLOW | `TASK-018`, `TASK-021`, `TASK-022` |
+| W-004 | Funds, trusts, and other financial vehicles | Diagnose why cash, position, pricing, or accounting records do not reconcile across administrator, custodian, and portfolio systems before NAV and reporting. | Medium | YELLOW | `TASK-021`, `TASK-022` |
+| W-005 | Truck transportation | Assemble missing proof, validate rates and accessorials, and resolve billing disputes so completed loads invoice cleanly and cash is not delayed. | Medium | YELLOW | `TASK-021`, `TASK-022` |
 
 ## W-001
 
@@ -70,6 +72,66 @@ Status: Canonical preserved wedge list for revamped Batch 1
   - [Maintenance Coordinator | Edgewood Properties](https://careers.edgewoodproperties.com/jobs/2026-5245)
 - Status: `GREEN`
 - Related wedges: `W-001`
+
+## W-004
+
+- Industry: `Funds, trusts, and other financial vehicles`
+- Operating system: `Capital Markets and Investment Management`
+- Workflow: `Valuation, NAV, and reconciliation`
+- Structural failure: `SF-02 Cross-System Reconciliation`; related `SF-03 Decision Context Escapes the Record`
+- End user: NAV oversight analyst; fund accountant; reconciliation lead
+- Economic buyer: COO; CFO; or head of fund operations at a manager, allocator platform, or administrator
+- Atomic job:
+  - "Fund operations staff need to diagnose why cash, position, pricing, or accounting records do not reconcile across the administrator, custodian, and portfolio systems before NAV publication or investor reporting."
+- Existing systems/products: SS&C Geneva and fund-accounting services; Clearwater; SimCorp; State Street Alpha; Allvue
+- Existing workaround: spreadsheets for break logs; email with administrators and custodians; shadow-accounting workpapers; manual exception comments before close
+- Customer pain evidence: practitioner roles still revolve around daily reconciliations, break research, and escalation; current users still frame reconciliation labor reduction as a core purchase reason rather than a solved commodity
+- Economic impact: delayed NAV; slower investor reporting; audit risk; staff cost; client-confidence and oversight burden
+- Frequency: `Daily or period-close recurring habit`
+- Why current solution fails: books and records remain split across managers, administrators, custodians, and reporting layers; exception narratives still live outside the authoritative record and are often absorbed by services teams
+- Why now: transparency demands are higher; multi-provider operating models remain common; ingestion and workflow tooling are better than when many incumbent stacks were designed
+- Startup entry logic: enter as an oversight and break-triage layer that sits across manager, administrator, custodian, and reporting boundaries
+- Competitive threat: SS&C; Clearwater; SimCorp; State Street; BlackRock Aladdin
+- Validation gates: Workflow Coverage `Pass`; Customer Evidence `Borderline`; Frequency `Pass`; Buyer `Pass`; Bottom-up Economics `Pass`; Incumbent Boundary `Borderline`; Timing `Pass`; Competitive Stress Test `Borderline`; Kill Test `Borderline`
+- Key assumptions: operators will buy a standalone oversight layer instead of continuing to absorb break research through administrators or shadow accounting
+- Invalidation evidence: buyers say administrators already clear breaks fast enough or prefer outsourced operations over a new software category
+- Source links:
+  - [Customer Evidence Repository](./customer-evidence-repository.md)
+  - [Funds, Trusts, and Other Financial Vehicles Workflow Inventory](./workflow-inventories/funds-trusts-and-other-financial-vehicles.md)
+  - [Clearwater Analytics Reviews | G2](https://www.g2.com/it/products/clearwater-analytics/reviews)
+  - [Analyst, Fund Accounting @ Principal Financial Services](https://www.tealhq.com/job/analyst-fund-accounting_c40ca656-f356-4f90-a7c7-b7a4e864e1cc)
+- Status: `YELLOW`
+- Related wedges: `W-005`
+
+## W-005
+
+- Industry: `Truck transportation`
+- Operating system: `Transportation Network Operations`
+- Workflow: `Freight audit and billing`
+- Structural failure: `SF-02 Cross-System Reconciliation`; related `SF-01 Exception-Path Breakdown`
+- End user: billing specialist; freight auditor; brokerage billing coordinator
+- Economic buyer: controller; head of settlement or billing; operations finance leader at a carrier or broker
+- Atomic job:
+  - "Transportation billing staff need to assemble missing proof, validate rates and accessorials, and resolve detention or billing disputes so completed loads invoice cleanly and cash is not delayed."
+- Existing systems/products: McLeod LoadMaster; Descartes transportation management and local haulage tools; Oracle Transportation Management; Trimble; project44 adjacent visibility
+- Existing workaround: spreadsheets; email with drivers, carriers, brokers, and customers; manual POD chasing; local dispute logs
+- Customer pain evidence: freight-billing roles explicitly exist to validate rates, proof, and discrepancy queues; software reviews still point to missing trucking-specific billing logic and manual rate handling
+- Economic impact: missed accessorials; delayed billing; over- or undercharges; higher DSO; extra back-office labor; lower load margin
+- Frequency: `Daily and weekly invoice cycle across completed loads`
+- Why current solution fails: clean-path TMS automation still depends on late or missing proof, customer-specific requirements, and multi-party document collection; exception memory still leaves the core system
+- Why now: mobile document capture, connected TMS workflows, and API/EDI maturity improve the chance of a thin exception layer; margin pressure makes missed charges more painful
+- Startup entry logic: enter as a billing-recovery and exception-resolution layer on top of existing TMS and document flows rather than as a full TMS replacement
+- Competitive threat: McLeod; Descartes; Oracle Transportation Management; Trimble; TMS vendors that can extend billing modules
+- Validation gates: Workflow Coverage `Pass`; Customer Evidence `Borderline`; Frequency `Pass`; Buyer `Pass`; Bottom-up Economics `Pass`; Incumbent Boundary `Borderline`; Timing `Pass`; Competitive Stress Test `Borderline`; Kill Test `Borderline`
+- Key assumptions: carriers and brokers will pay for a focused recovery layer instead of adding more clerical headcount or waiting for TMS vendors
+- Invalidation evidence: current TMS plus document-capture stacks already solve the issue well enough or TMS vendors can close the gap quickly
+- Source links:
+  - [Customer Evidence Repository](./customer-evidence-repository.md)
+  - [Truck Transportation Workflow Inventory](./workflow-inventories/truck-transportation.md)
+  - [IntelliTrans Transportation Freight Audit & Payment Reviews | G2](https://www.g2.com/products/intellitrans-transportation-freight-audit-payment/reviews)
+  - [Invoice Audit Analyst | Worldpac](https://careers.worldpac.com/careers-home/jobs/4510?lang=en-us)
+- Status: `YELLOW`
+- Related wedges: `W-001`, `W-004`
 
 ## W-003
 

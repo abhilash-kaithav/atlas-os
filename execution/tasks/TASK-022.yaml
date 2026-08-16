@@ -1,0 +1,48 @@
+task_id: TASK-022
+title: "RO-007 Calibrated Top-50 Completion"
+status: Approved
+artifact_owner: Chat
+created_on: 2026-08-16
+updated_on: 2026-08-16
+objective: "Continue from the approved Batch 1 calibration checkpoint and complete the remaining 46 industries under the frozen calibrated methodology, updating Atlas to a full Top-50 completion state."
+context:
+  - "TASK-021 completed the final calibration on Batch 1 and froze the methodology after the required pause-for-review gate."
+  - "The user then instructed Atlas to keep going and finish the entire process."
+  - "The active calibrated research layer is `knowledge/research/revamped-discovery-program/`, while the older full-pass layer remains historical evidence only."
+inputs:
+  - "User approval to continue after calibrated Batch 1 review"
+  - "execution/tasks/TASK-021.yaml"
+  - "execution/results/TASK-021.yaml"
+  - "execution/reviews/TASK-021.md"
+  - "knowledge/research/revamped-discovery-program/"
+  - "knowledge/research/industry-census/top-50-industry-census-normalized.csv"
+  - "knowledge/research/workflow-library/"
+  - "knowledge/research/structural-failure-atlas/"
+  - "knowledge/research/wedge-discovery-program/"
+  - "External customer, product, and role evidence already gathered for preserved and merged candidates"
+deliverables:
+  - "Complete workflow inventories for the remaining 46 industries"
+  - "Promote the workflow-analysis matrix, pain inventory, and exception/recovery inventory to full Top-50 coverage"
+  - "Create a canonical full-program worker-role scan and full-coverage pass"
+  - "Refresh the wedge portfolio, kill register, merge register, pattern portfolio, evidence repository, research journal, and coverage tracker"
+  - "Update core/STATE.md"
+  - "Update core/DECISION_LOG.md"
+  - "Update execution/TASK.md"
+  - "Update execution/RESULT.md"
+  - "Update execution/REVIEW.md"
+  - "Record task/result/review artifacts for TASK-022"
+constraints:
+  - "Use the calibrated methodology exactly as approved in TASK-021."
+  - "Do not redesign the methodology during execution."
+  - "Do not reopen kills unless contradictory evidence appears."
+  - "Do not rank wedges or select a company."
+acceptance_criteria:
+  - "All 50 industries are complete in the coverage tracker."
+  - "The active revamped discovery layer contains full-program workflow inventories plus canonical workflow, pain, and recovery analysis artifacts."
+  - "The preserved portfolio is explicitly recorded as `2` GREEN wedges, `3` YELLOW wedges, `3` MERGE outcomes, and `42` industry-level KILL outcomes."
+  - "Atlas state and execution artifacts reflect that Top-50 discovery is complete under the calibrated methodology."
+handoff_to: Work
+result_artifact: "execution/results/TASK-022.yaml"
+review_artifact: "execution/reviews/TASK-022.md"
+notes:
+  - "This task completes discovery. The next Atlas task should be a comparative Investment Committee review rather than more wedge generation."

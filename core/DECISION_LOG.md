@@ -1,6 +1,6 @@
 # Decision Log
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 Status: Active
 
 ## Logging Rules
@@ -64,6 +64,9 @@ Status: Active
 | 2026-08-15 | D-049 | Adopt the final calibration amendments as the frozen Top-50 execution methodology once Batch 1 is approved. | The user supplied a final-calibration document requiring comprehensive workflow inventories, workflow-completeness validation, a one-row-per-workflow canonical matrix, full pain and recovery inventories, and worker-role scans before the remaining 46 industries are processed. | Active | At approval to continue |
 | 2026-08-15 | D-050 | Validate the calibrated methodology on Batch 1 without changing the preserved wedge set. | `TASK-021` reran Batch 1 with the fuller matrix, pain, recovery, and role-scan layers. The calibration did not surface a stronger hidden wedge: construction and housing stayed `GREEN`, staffing stayed `YELLOW`, and food services stayed `KILL`. | Active | During Batch 1 approval |
 | 2026-08-15 | D-051 | Keep the remaining 46 industries unstarted until the user explicitly approves continuation under the now-frozen methodology. | The final-calibration document requires a pause after Batch 1 review even if the methodology validates successfully. Atlas should not begin the remaining 46 industries by default. | Active | At next user instruction |
+| 2026-08-16 | D-052 | Resume the calibrated program from the approved Batch 1 checkpoint and complete the remaining 46 industries with no methodology changes. | After reviewing the calibrated Batch 1 output, the user instructed Atlas to keep going and finish the entire process. `TASK-022` therefore applies the exact frozen calibrated method to the remaining industries rather than reopening methodology design. | Active | Before investment-committee task definition |
+| 2026-08-16 | D-053 | Close calibrated Top-50 discovery with five preserved wedges, three merges, and forty-two industry kills. | `TASK-022` completed all remaining industries inside `knowledge/research/revamped-discovery-program/` and preserved the final calibrated portfolio as `W-001` and `W-002` (`GREEN`), `W-003`, `W-004`, and `W-005` (`YELLOW`), `M-001` through `M-003` (`MERGE`), and `42` industry-level `KILL` outcomes. | Active | During future portfolio comparison |
+| 2026-08-16 | D-054 | Promote `knowledge/research/revamped-discovery-program/` as the active full-program Atlas discovery layer and preserve prior full-pass artifacts as historical evidence only. | The remaining-46 completion was executed inside the revamped calibrated layer, which now contains the canonical workflow inventories, matrices, evidence, registers, and coverage state. The earlier `knowledge/research/wedge-discovery-program/` layer remains useful historical evidence but should not define current Atlas state. | Active | Before any discovery restart |
 
 ## Revision Notes
 

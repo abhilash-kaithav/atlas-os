@@ -1,7 +1,7 @@
 # Revamped Discovery Program
 
-Last updated: 2026-08-15
-Status: Final calibration Batch 1 complete; methodology frozen pending review
+Last updated: 2026-08-16
+Status: Top-50 coverage complete under the calibrated methodology
 
 ## Purpose
 
@@ -9,31 +9,20 @@ This folder is the active research layer for the final calibrated Atlas discover
 
 It is separate from `knowledge/research/wedge-discovery-program/`, which remains the historical output of the prior methodology.
 
-## Batch 1 Scope
+## Program Outcome
 
-The revamped methodology explicitly requires Atlas to re-evaluate the industries already completed under the prior method before proceeding further.
-
-Batch 1 therefore includes:
-
-- `Construction`
-- `Housing`
-- `Administrative and support services`
-- `Food services and drinking places`
-
-## Batch 1 Outcome
-
-- `W-001` Construction -> `GREEN`
-- `W-002` Housing -> `GREEN`
-- `W-003` Administrative and support services -> `YELLOW`
-- Food services and drinking places -> `KILL`
+- Preserved `GREEN` wedges: `W-001`, `W-002`
+- Preserved `YELLOW` wedges: `W-003`, `W-004`, `W-005`
+- `MERGE` outcomes: `M-001`, `M-002`, `M-003`
+- `KILL` outcomes: `42` industry-level kills plus earlier wedge and territory kills preserved in the registers
 
 ## Canonical Artifacts in This Folder
 
 - `workflow-inventories/`
-- `workflow-analysis-matrix-batch-001.tsv`
-- `pain-inventory-batch-001.tsv`
-- `exception-recovery-inventory-batch-001.tsv`
-- `worker-role-scan-batch-001.md`
+- `workflow-analysis-matrix.tsv`
+- `pain-inventory.tsv`
+- `exception-recovery-inventory.tsv`
+- `worker-role-scan.md`
 - `customer-evidence-repository.md`
 - `wedge-portfolio.md`
 - `kill-register.md`
@@ -41,8 +30,16 @@ Batch 1 therefore includes:
 - `pattern-portfolio.md`
 - `industry-coverage-tracker.md`
 - `research-journal.md`
+- `full-coverage-pass.md`
+
+## Historical Calibration Artifacts
+
 - `batch-001-review.md`
+- `workflow-analysis-matrix-batch-001.tsv`
+- `pain-inventory-batch-001.tsv`
+- `exception-recovery-inventory-batch-001.tsv`
+- `worker-role-scan-batch-001.md`
 
-## Stop Rule
+## Next Phase
 
-The final calibration requires Atlas to stop after Batch 1 and return the output for review before continuing to the remaining 46 industries.
+The discovery program is complete. Atlas should not reopen discovery or rank wedges by default. The next task is the comparative Investment Committee review.

@@ -1,15 +1,15 @@
 # Atlas Task Board
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 Status: Latest task approved
 Owner: Chat
 
 ## Current Task
 
-- Task ID: `TASK-021`
-- Title: `RO-006 Final Calibration Before Full Top-50 Execution`
+- Task ID: `TASK-022`
+- Title: `RO-007 Calibrated Top-50 Completion`
 - Lifecycle Status: `Approved`
-- Structured Artifact: `execution/tasks/TASK-021.yaml`
+- Structured Artifact: `execution/tasks/TASK-022.yaml`
 
 ## Ownership
 

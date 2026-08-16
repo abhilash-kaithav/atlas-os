@@ -1,6 +1,6 @@
 # Atlas State
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 Status: Active
 Owner: Shared
 
@@ -30,22 +30,22 @@ Owner: Shared
 - Market Reality Audit: Complete
 - Exception Resolution Wedge Discovery: Complete
 - Trade-Contractor AR Monopoly Wedge Discovery: Complete
-- Top-50 Atomic Wedge Portfolio: In Progress (Final calibration complete; Batch 1 validated and paused before the remaining 46 industries)
+- Top-50 Atomic Wedge Portfolio: Complete (Calibrated methodology; all 50 industries covered)
 
 ## Current Phase
 
-Final calibration Batch 1 complete; methodology frozen pending approval to continue with the remaining 46 industries.
+Top-50 wedge discovery is complete under the calibrated methodology. Atlas is now holding a preserved portfolio rather than running active discovery.
 
 ## Immediate Goal
 
-Preserve the calibrated Batch 1 output as the active Atlas program state, review the new workflow-complete analysis layer, and avoid continuing the Top-50 program until the user explicitly approves the remaining 46-industry run.
+Preserve the completed calibrated portfolio as the active Atlas program state and prepare for a later comparative Investment Committee review without reopening discovery.
 
 ## Next Task
 
 - Task ID: `TBD`
-- Title: `Remaining 46 Industry Execution`
-- Status: `Blocked pending user review`
-- Execution Note: `TASK-021` completed the final calibration before full execution. Batch 1 now includes comprehensive workflow inventories, a one-row-per-workflow canonical matrix, full pain and recovery coverage, a worker-role scan, and the same calibrated wedge outcomes: `W-001` and `W-002` remain `GREEN`, `W-003` remains `YELLOW`, food services remains `KILL`, and the remaining 46 industries stay unstarted until approval.
+- Title: `Comparative Investment Committee Review`
+- Status: `Not started`
+- Execution Note: `TASK-022` completed the remaining 46 industries under the frozen calibrated method and promoted `knowledge/research/revamped-discovery-program/` to the active full-program research layer. Current preserved outcomes are `W-001` and `W-002` as `GREEN`, `W-003`, `W-004`, and `W-005` as `YELLOW`, `M-001` through `M-003` as `MERGE`, and `42` industry-level `KILL` outcomes.
 
 ## Operating Model Summary
 
@@ -62,9 +62,9 @@ Preserve the calibrated Batch 1 output as the active Atlas program state, review
 4. Treat `knowledge/research/market-reality-audit/` as the active gate on whether any future candidate is defensible enough to enter Phase 5.
 5. Treat `knowledge/research/exception-resolution-wedge-discovery/` as the historical narrowing layer for Exception Resolution: the horizontal thesis is dead and only the construction subcontractor billing category survived that pass.
 6. Treat `knowledge/research/trade-contractor-ar-monopoly-wedge-discovery/` as the historical narrowing layer for construction: the broad subcontractor AR thesis is dead and only the pay-app rejection and resubmission wedge survived as `W-001`.
-7. Treat `knowledge/research/wedge-discovery-program/` as a historical full-pass layer produced before the final calibration request.
-8. Treat `knowledge/research/revamped-discovery-program/` as the active wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, worker-role scan, evidence repository, portfolio, kill register, pattern portfolio, and coverage tracker now define current program state.
-9. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003` as current `YELLOW` without ranking them or converting them into company theses yet.
-10. Keep food services and drinking places killed in the active Batch 1 layer unless contradictory evidence emerges.
-11. Treat the calibrated methodology as frozen for the remaining 46 industries once the user approves continuation.
+7. Treat `knowledge/research/wedge-discovery-program/` as the historical pre-calibration full-pass layer. Preserve it for comparison, but do not treat it as the active program state.
+8. Treat `knowledge/research/revamped-discovery-program/` as the active Top-50 wedge-discovery layer. Its workflow inventories, workflow-analysis matrix, pain inventory, exception/recovery inventory, worker-role scan, evidence repository, portfolio, kill register, merge register, pattern portfolio, coverage tracker, research journal, and full-coverage pass now define current Atlas state.
+9. Preserve `W-001` and `W-002` as current `GREEN` wedges and `W-003`, `W-004`, and `W-005` as current `YELLOW` wedges without ranking them or converting them into company theses yet.
+10. Keep `42` industry-level `KILL` outcomes and `3` `MERGE` outcomes closed unless contradictory evidence emerges.
+11. Treat the calibrated methodology as frozen and the discovery program as complete; do not reopen industries or generate new wedges by default.
 12. Keep `knowledge/evidence/concepts/concepts_raw.csv` immutable and preserve one-to-one traceability from raw concepts through archived Discovery v1 outputs and all future higher-order analyses.
